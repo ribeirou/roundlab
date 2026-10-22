@@ -1,0 +1,11 @@
+node_modules/
+.env
+.env.*
+!.env.example
+data/raw/
+data/manifest.json
+public/data/
+work/
+*.log
+.DS_Store
+Thumbs.db
