@@ -26,6 +26,17 @@ function makeSampleItem(overrides = {}) {
   };
 }
 
+test('keeps the same round for two teams and removes only the requested perspective', () => {
+  const item = makeSampleItem();
+  let agenda = addEvidence([], {...item, teamId:'poli-plague'});
+  agenda = addEvidence(agenda, {...item, teamId:'unicamp',teamLabel:'Unicamp'});
+  assert.equal(agenda.length,2);
+  assert.equal(agenda[0].teamId,'poli-plague');
+  agenda = removeEvidence(agenda,item.metricKey,item.roundId,'unicamp');
+  assert.equal(agenda.length,1);
+  assert.equal(agenda[0].teamId,'poli-plague');
+});
+
 test('doesNotDuplicateEvidence', () => {
   const item1 = makeSampleItem();
   const item1Duplicate = makeSampleItem({

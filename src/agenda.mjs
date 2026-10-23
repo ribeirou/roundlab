@@ -9,6 +9,7 @@ export function getMetricLabel(metricKey) {
 
 export function createAgendaItem({
   metricKey,
+  teamId = '',
   teamLabel,
   matchId,
   roundId,
@@ -52,6 +53,7 @@ export function createAgendaItem({
 
   return {
     metricKey,
+    teamId,
     teamLabel,
     matchId,
     roundId,
@@ -69,7 +71,8 @@ export function addEvidence(agenda, item) {
   }
 
   const exists = current.some(
-    (entry) => entry.metricKey === item.metricKey && entry.roundId === item.roundId
+    (entry) => entry.metricKey === item.metricKey && entry.roundId === item.roundId &&
+      (entry.teamId || entry.teamLabel) === (item.teamId || item.teamLabel)
   );
   if (exists) {
     return current;
@@ -88,6 +91,7 @@ export function addEvidence(agenda, item) {
     ...current,
     {
       metricKey: item.metricKey,
+      teamId: item.teamId ?? '',
       teamLabel: item.teamLabel ?? '',
       matchId: item.matchId ?? '',
       roundId: item.roundId,
@@ -99,10 +103,11 @@ export function addEvidence(agenda, item) {
   ];
 }
 
-export function removeEvidence(agenda, metricKey, roundId) {
+export function removeEvidence(agenda, metricKey, roundId, teamId) {
   if (!Array.isArray(agenda)) return [];
   return agenda.filter(
-    (entry) => !(entry.metricKey === metricKey && entry.roundId === roundId)
+    (entry) => !(entry.metricKey === metricKey && entry.roundId === roundId &&
+      (teamId === undefined || (entry.teamId || entry.teamLabel) === teamId))
   );
 }
 

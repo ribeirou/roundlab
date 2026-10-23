@@ -125,7 +125,7 @@
 
       <!-- Cartões dos dois indicadores coletivos -->
       <section class="metrics-section" aria-label="Indicadores coletivos">
-        <div class="section-heading"><div><p class="eyebrow">01 / DIAGNÓSTICO</p><h2>O que os rounds mostram</h2></div><span class="section-note">Selecione um indicador para explorar</span></div>
+        <div class="section-heading"><div><p class="eyebrow">01 / DIAGNÓSTICO</p><h2>O que os rounds mostram</h2></div><button type="button" id="btn-methodology" class="method-trigger" aria-haspopup="dialog">Como ler os dados ⓘ</button></div>
         <div class="metrics-grid" id="metrics-grid"></div>
         <div class="review-prompt" id="review-prompt" aria-live="polite"></div>
       </section>
@@ -169,6 +169,11 @@
             </div>
           </div>
 
+          <div class="evidence-search no-print">
+            <label for="evidence-query">Buscar nas evidências</label>
+            <div class="search-control"><span aria-hidden="true">⌕</span><input type="search" id="evidence-query" placeholder="Jogador, adversário ou nº do round" autocomplete="off" /><button type="button" id="btn-clear-search" aria-label="Limpar busca" hidden>×</button></div>
+            <span id="evidence-search-count" aria-live="polite"></span>
+          </div>
           <div id="evidence-list-container" class="evidence-list-container"></div>
           <div id="excluded-rounds-container" class="excluded-rounds-container"></div>
         </div>
@@ -188,6 +193,16 @@
       ></section>
     </main>
 
+    <dialog id="methodology-dialog" class="methodology-dialog" aria-labelledby="methodology-title">
+      <form method="dialog"><span class="eyebrow">DADOS → EVIDÊNCIAS → TREINO</span><button class="dialog-close" aria-label="Fechar explicação">×</button></form>
+      <h2 id="methodology-title">Os números têm contexto.</h2>
+      <p id="corpus-summary">Dados oficiais das Classificatórias 1 a 4 do Univavá.</p>
+      <div class="method-formula"><span>01 / PRIMEIRA ELIMINAÇÃO</span><h3>O time abriu o round. Conseguiu fechá-lo?</h3><p>Vitórias após a primeira eliminação válida da equipe ÷ rounds em que a equipe conseguiu essa primeira eliminação.</p><small>Eventos repetidos são deduplicados. Primeiras eliminações simultâneas entre os times são excluídas por ambiguidade.</small></div>
+      <div class="method-formula"><span>02 / PÓS-PLANT</span><h3>A Spike foi plantada. E depois?</h3><p>Vitórias após o plant válido da equipe ÷ rounds com plant válido da equipe. O filtro de site afeta apenas este indicador.</p><small>Plants com jogador não identificado ou horários inconsistentes ficam fora do cálculo.</small></div>
+      <div class="method-caveat"><strong>Amostra pequena não é um veredito.</strong><p>Menos de 10 oportunidades recebe um aviso. Sem oportunidades, mostramos “Sem dados”. As taxas descrevem o que aconteceu; não explicam sozinhas por que aconteceu. Exercícios são hipóteses para o treinador avaliar.</p></div>
+      <p class="method-privacy">A pauta é salva somente neste navegador. Para compartilhar com a equipe, use copiar ou baixar. Nenhum dado é enviado a um serviço externo.</p>
+      <form method="dialog"><button class="btn btn-primary">Entendi, voltar à análise</button></form>
+    </dialog>
     <div id="action-feedback" class="action-feedback no-print" role="status" aria-live="polite"></div>
     <footer class="footer no-print">
       <div class="container footer-inner">
