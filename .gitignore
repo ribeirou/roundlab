@@ -5,6 +5,7 @@ node_modules/
 data/raw/
 data/manifest.json
 public/data/
+dist/
 work/
 *.log
 .DS_Store
