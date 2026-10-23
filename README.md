@@ -2,6 +2,20 @@
 
 Ferramenta pós-partida para ajudar treinadores e equipes universitárias de VALORANT a transformar os dados oficiais do **Univavá (Classificatórias 1 a 4)** em análises coletivas rastreáveis e uma pauta de revisão e treino.
 
+![Centro tático do RoundLab, com visão da equipe e indicadores de conversão](docs/centro-tatico.png)
+
+A interface organiza a revisão em diagnóstico, evidências e pauta de treino. O Centro tático usa grafite e coral, filtros recolhíveis no celular e transições que respeitam a preferência por movimento reduzido. [Detalhes e verificação da reformulação](docs/centro-tatico.md).
+
+### Ferramentas para a revisão
+
+- Busca por jogador envolvido nos eventos, equipe, mapa ou número exato do round; filtra apenas a lista de evidências, sem alterar os indicadores.
+- Pauta salva neste navegador e restaurada a partir das referências da base atual. Ela não é sincronizada com outros dispositivos; use copiar ou baixar `.txt` para compartilhar.
+- Inclusão e remoção identificam a perspectiva da equipe. A limpeza da pauta pode ser desfeita durante a sessão.
+- “Como ler os dados” explica as fórmulas, exclusões e limites de interpretação.
+- Carregamento com limite de 15 segundos e tentativa manual de recuperação quando os dados não estão disponíveis.
+
+[Comportamento e validação dessas ferramentas](docs/ferramentas-de-revisao.md).
+
 ---
 
 ## Escopo do Protótipo (MVP)

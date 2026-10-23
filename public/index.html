@@ -5,16 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>RoundLab — Revisão Pós-Partida e Pauta de Treino (VALORANT Universitário)</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./tactical.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Pular para a análise</a>
+    <aside class="command-rail no-print" aria-label="Navegação do RoundLab">
+      <a class="rail-brand" href="#main-content" aria-label="RoundLab — início">
+        <span class="lab-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>round<span class="brand-light">lab</span><span class="brand-dot">.</span></span>
+      </a>
+      <div class="rail-workspace"><span class="workspace-avatar">U</span><div>Univavá<span>Espaço de análise</span></div><span class="workspace-chevron" aria-hidden="true">⌄</span></div>
+      <span class="rail-caption">PREPARAÇÃO DA EQUIPE</span>
+      <nav class="rail-nav">
+        <a href="#diagnostico" class="rail-link active"><span aria-hidden="true">◫</span> Visão da equipe <small>01</small></a>
+        <a href="#evidencias" class="rail-link"><span aria-hidden="true">⊕</span> Revisão de rounds <small>02</small></a>
+        <a href="#agenda-section" class="rail-link"><span aria-hidden="true">☷</span> Pauta de treino <small id="rail-agenda-count">0</small></a>
+      </nav>
+      <div class="rail-note"><span class="rail-note-icon" aria-hidden="true">↗</span><strong>O próximo treino<br>começa nos dados.</strong><p>Encontre o padrão.<br>Confira as evidências.<br>Leve para a equipe.</p></div>
+      <div class="rail-bottom"><span class="status-dot"></span> Análise pós-partida<span class="rail-version">ROUNDLAB / 01</span></div>
+    </aside>
     <header class="topbar">
       <div class="topbar-inner">
         <div class="brand">
           <span class="brand-badge" aria-hidden="true">RL</span>
           <div>
-            <h1 class="brand-title">RoundLab</h1>
+            <p class="brand-title">Centro tático <span class="header-separator">/</span> <span class="header-current">Visão da equipe</span></p>
             <p class="brand-subtitle">
-              Análise coletiva rastreável e pauta de revisão pós-partida · Univavá (C1–C4)
+              UNIVAVÁ · CLASSIFICATÓRIAS 1–4
             </p>
           </div>
         </div>
@@ -25,7 +42,7 @@
             class="btn btn-secondary"
             title="Carregar o caso de referência validado na Classificatória 1 (Poli Plague 10 x 13 Unicamp Tritons Red)"
           >
-            Caso referência C1 (Poli Plague)
+            Abrir caso de referência ↗
           </button>
           <button
             type="button"
@@ -33,13 +50,22 @@
             class="btn btn-ghost"
             title="Manter equipe atual e limpar filtros de classificatória, mapa, partida e site"
           >
-            Ver todas as partidas da equipe
+            Limpar recorte
           </button>
         </div>
       </div>
+      <nav class="mobile-flow no-print" aria-label="Etapas da revisão">
+        <a href="#diagnostico">01 <span>Diagnóstico</span></a>
+        <a href="#evidencias">02 <span>Rounds</span></a>
+        <a href="#agenda-section">03 <span>Pauta de treino</span></a>
+      </nav>
     </header>
 
     <main class="container" id="main-content">
+      <section class="team-overview no-print" id="diagnostico" aria-labelledby="team-heading">
+        <div class="team-overview-copy"><p class="eyebrow"><span></span> VISÃO DA EQUIPE</p><h1 id="team-heading">Seu próximo<br>passo começa aqui.</h1><p id="team-context" class="overview-description">Da partida ao próximo treino. Escolha uma equipe para explorar seus padrões.</p></div>
+        <div class="session-note"><span class="session-label">SEU FLUXO DE REVISÃO</span><ol><li><span>01</span><div>Encontre um padrão<small>Indicadores com contexto</small></div></li><li><span>02</span><div>Revise os rounds<small>Eventos que sustentam os números</small></div></li><li><span>03</span><div>Prepare o próximo treino<small>Uma pauta para levar à equipe</small></div></li></ol></div>
+      </section>
       <!-- Estado de carregamento / erro -->
       <section id="status-banner" class="status-banner" role="status" aria-live="polite">
         Carregando dados derivados locais das Classificatórias 1 a 4…
@@ -47,7 +73,8 @@
 
       <!-- Barra de filtros compartilhados -->
       <section class="filters-panel" aria-label="Filtros de recorte">
-        <div class="filters-grid">
+        <div class="filter-heading"><span class="eyebrow">RECORTE DA ANÁLISE</span><span class="filter-helper">Todos os indicadores acompanham estes filtros</span><button type="button" class="filter-toggle" id="btn-toggle-filters" aria-expanded="false" aria-controls="analysis-filters">Refinar recorte ↓</button></div>
+        <div class="filters-grid" id="analysis-filters">
           <div class="filter-field">
             <label for="filter-team">Equipe analisada</label>
             <select id="filter-team" name="teamId" disabled>
@@ -98,10 +125,13 @@
 
       <!-- Cartões dos dois indicadores coletivos -->
       <section class="metrics-section" aria-label="Indicadores coletivos">
+        <div class="section-heading"><div><p class="eyebrow">01 / DIAGNÓSTICO</p><h2>O que os rounds mostram</h2></div><button type="button" id="btn-methodology" class="method-trigger" aria-haspopup="dialog">Como ler os dados ⓘ</button></div>
         <div class="metrics-grid" id="metrics-grid"></div>
+        <div class="review-prompt" id="review-prompt" aria-live="polite"></div>
       </section>
 
       <!-- Painel dividido: lista de evidências por round + detalhe do round -->
+      <div class="section-heading no-print" id="evidencias"><div><p class="eyebrow">02 / EVIDÊNCIAS</p><h2>Por trás do resultado</h2></div><span class="section-note">Um round de cada vez</span></div>
       <section class="workspace-grid" aria-label="Exploração de evidências e detalhe do round">
         <div class="panel evidence-panel">
           <div class="panel-header">
@@ -139,6 +169,11 @@
             </div>
           </div>
 
+          <div class="evidence-search no-print">
+            <label for="evidence-query">Buscar nas evidências</label>
+            <div class="search-control"><span aria-hidden="true">⌕</span><input type="search" id="evidence-query" placeholder="Jogador, adversário ou nº do round" autocomplete="off" /><button type="button" id="btn-clear-search" aria-label="Limpar busca" hidden>×</button></div>
+            <span id="evidence-search-count" aria-live="polite"></span>
+          </div>
           <div id="evidence-list-container" class="evidence-list-container"></div>
           <div id="excluded-rounds-container" class="excluded-rounds-container"></div>
         </div>
@@ -158,6 +193,17 @@
       ></section>
     </main>
 
+    <dialog id="methodology-dialog" class="methodology-dialog" aria-labelledby="methodology-title">
+      <form method="dialog"><span class="eyebrow">DADOS → EVIDÊNCIAS → TREINO</span><button class="dialog-close" aria-label="Fechar explicação">×</button></form>
+      <h2 id="methodology-title">Os números têm contexto.</h2>
+      <p id="corpus-summary">Dados oficiais das Classificatórias 1 a 4 do Univavá.</p>
+      <div class="method-formula"><span>01 / PRIMEIRA ELIMINAÇÃO</span><h3>O time abriu o round. Conseguiu fechá-lo?</h3><p>Vitórias após a primeira eliminação válida da equipe ÷ rounds em que a equipe conseguiu essa primeira eliminação.</p><small>Eventos repetidos são deduplicados. Primeiras eliminações simultâneas entre os times são excluídas por ambiguidade.</small></div>
+      <div class="method-formula"><span>02 / PÓS-PLANT</span><h3>A Spike foi plantada. E depois?</h3><p>Vitórias após o plant válido da equipe ÷ rounds com plant válido da equipe. O filtro de site afeta apenas este indicador.</p><small>Plants com jogador não identificado ou horários inconsistentes ficam fora do cálculo.</small></div>
+      <div class="method-caveat"><strong>Amostra pequena não é um veredito.</strong><p>Menos de 10 oportunidades recebe um aviso. Sem oportunidades, mostramos “Sem dados”. As taxas descrevem o que aconteceu; não explicam sozinhas por que aconteceu. Exercícios são hipóteses para o treinador avaliar.</p></div>
+      <p class="method-privacy">A pauta é salva somente neste navegador. Para compartilhar com a equipe, use copiar ou baixar. Nenhum dado é enviado a um serviço externo.</p>
+      <form method="dialog"><button class="btn btn-primary">Entendi, voltar à análise</button></form>
+    </dialog>
+    <div id="action-feedback" class="action-feedback no-print" role="status" aria-live="polite"></div>
     <footer class="footer no-print">
       <div class="container footer-inner">
         <span>

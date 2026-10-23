@@ -11,6 +11,7 @@ import {
   formatAgenda,
   getMetricLabel,
 } from './lib/agenda.mjs';
+import { loadMatchDataset, saveAgenda, loadSavedAgenda, searchEvidence, AGENDA_STORAGE_KEY } from './lib/review.mjs';
 
 const C1_REFERENCE_PRESET = {
   teamId: 'poli-plague',
@@ -28,12 +29,90 @@ const state = {
   outcomeFilter: 'all',
   copyFeedback: null,
   showManualCopyFallback: false,
+  searchQuery: '',
+  storageStatus: 'empty',
+  storageDropped: 0,
 };
 
 let allMatches = [];
 let matchesById = new Map();
 let teamsDirectory = [];
 let allMaps = [];
+let feedbackTimer;
+let previousDetailId = null;
+let previousAgendaCount = 0;
+let eventsBound = false;
+let loading = false;
+let agendaLoaded = false;
+let clearedAgenda = [];
+let agendaStorage;
+try { agendaStorage = window.localStorage; } catch { /* Storage may be disabled. */ }
+
+function persistAgenda() {
+  state.storageStatus = saveAgenda(agendaStorage, state.agenda) ? 'saved' : 'unavailable';
+  state.storageDropped = 0;
+}
+
+function visibleEvidence(metric, roundLookup) {
+  const byOutcome = metric.evidence.filter(ev => state.outcomeFilter === 'lost' ? !ev.won : state.outcomeFilter === 'won' ? ev.won : true);
+  return searchEvidence(byOutcome, state.searchQuery, roundLookup, matchesById);
+}
+
+function restoreSavedEvidence(ref) {
+  const match = matchesById.get(ref.matchId);
+  const round = match?.rounds.find(r => r.id === ref.roundId);
+  if (!round || !match.teams.some(t => t.id === ref.teamId)) return null;
+  const metric = ref.metricKey === 'firstKill' ? firstKillConversion([round],ref.teamId) : postPlantConversion([round],ref.teamId);
+  if (!metric.evidence.some(ev => ev.roundId === ref.roundId)) return null;
+  return buildAgendaItem(round,match,ref.metricKey,ref.teamId);
+}
+
+function motionAllowed() {
+  return !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+}
+
+function announceAction(message) {
+  const feedback = document.getElementById('action-feedback');
+  feedback.textContent = message;
+  feedback.classList.add('visible');
+  clearTimeout(feedbackTimer);
+  feedbackTimer = setTimeout(() => feedback.classList.remove('visible'), 2800);
+}
+
+function revealRound(roundId) {
+  state.selectedRoundId = roundId;
+  renderApp();
+  const detail = document.getElementById('round-detail-panel');
+  // At the single-column breakpoint the detail sits below the evidence list.
+  if (window.matchMedia('(max-width: 1220px)').matches) {
+    detail.scrollIntoView({ behavior: motionAllowed() ? 'smooth' : 'instant', block: 'start' });
+  }
+  const close = document.getElementById('btn-close-detail');
+  close?.focus({ preventScroll: true });
+}
+
+function renderTacticalOverview(filteredMatches, filteredRounds, metric) {
+  const label = getTeamLabel(state.filters.teamId);
+  document.getElementById('team-heading').textContent = label;
+  document.getElementById('team-context').textContent = `${filteredMatches.length} ${filteredMatches.length === 1 ? 'partida' : 'partidas'} · ${filteredRounds.length} rounds no recorte. Encontre um padrão e transforme a revisão em treino.`;
+  document.getElementById('rail-agenda-count').textContent = state.agenda.length;
+  const lost = metric.opportunities - metric.wins;
+  const prompt = document.getElementById('review-prompt');
+  const context = state.metricKey === 'firstKill' ? 'após a primeira eliminação da equipe' : 'após o plant da equipe';
+  prompt.innerHTML = `
+    <span class="review-symbol" aria-hidden="true">↗</span>
+    <div class="review-copy"><strong>${lost > 0 ? `${lost} ${lost === 1 ? 'round para revisar' : 'rounds para revisar'} ${context}` : metric.opportunities ? 'Todas as oportunidades deste recorte foram convertidas' : 'Ainda não há oportunidades neste recorte'}</strong>
+    <p>${lost > 0 ? 'Veja como esses rounds terminaram. Os eventos ajudam a orientar a conversa com a equipe.' : metric.opportunities ? 'Explore as vitórias para discutir o que repetir no próximo treino.' : 'Experimente outra partida, mapa ou classificatória para ampliar a análise.'}</p></div>
+    <button class="btn" id="btn-review-evidence" ${metric.opportunities ? '' : 'disabled'}>${lost > 0 ? 'Revisar derrotas' : metric.opportunities ? 'Explorar vitórias' : 'Sem evidências'} <span aria-hidden="true">↗</span></button>`;
+  document.getElementById('btn-review-evidence').addEventListener('click', () => {
+    state.outcomeFilter = lost > 0 ? 'lost' : 'won';
+    state.searchQuery = '';
+    state.selectedRoundId = null;
+    renderApp();
+    document.getElementById('evidencias').scrollIntoView({ behavior: motionAllowed() ? 'smooth' : 'instant' });
+    document.getElementById(lost > 0 ? 'tab-outcome-lost' : 'tab-outcome-won').focus({ preventScroll: true });
+  });
+}
 
 function escapeHtml(value) {
   return String(value ?? '')
@@ -196,20 +275,19 @@ function describeEvidenceKeyEvent(round, match, metricKey) {
 
 function isRoundInAgenda(metricKey, roundId) {
   return state.agenda.some(
-    (item) => item.metricKey === metricKey && item.roundId === roundId
+    (item) => item.metricKey === metricKey && item.roundId === roundId && item.teamId === state.filters.teamId
   );
 }
 
-function handleAddRoundToAgenda(round, match, metricKey) {
-  if (!round || !match) return;
-  const teamId = state.filters.teamId;
+function buildAgendaItem(round, match, metricKey, teamId) {
   const teamLabel = getTeamLabel(teamId);
   const won = round.winnerTeamId === teamId;
   const roleLabel = getTeamRoleLabel(round, teamId);
   const eventSummary = describeEvidencePlainText(round, match, metricKey);
 
-  const item = createAgendaItem({
+  return createAgendaItem({
     metricKey,
+    teamId,
     teamLabel,
     matchId: match.id,
     roundId: round.id,
@@ -222,22 +300,24 @@ function handleAddRoundToAgenda(round, match, metricKey) {
     eventSummary,
     site: round.plant?.site || state.filters.site || '',
   });
-
-  state.agenda = addEvidence(state.agenda, item);
-  state.copyFeedback = null;
-  renderApp();
 }
 
-function reconcileIncompatibleRoundSelection(activeMetric) {
+function handleAddRoundToAgenda(round, match, metricKey) {
+  if (!round || !match) return;
+  const item = buildAgendaItem(round, match, metricKey, state.filters.teamId);
+  state.agenda = addEvidence(state.agenda, item);
+  persistAgenda();
+  state.copyFeedback = null;
+  renderApp();
+  announceAction(`Round ${round.number} adicionado à pauta de treino`);
+}
+
+function reconcileIncompatibleRoundSelection(activeMetric, roundLookup) {
   if (!state.selectedRoundId) return;
 
-  const visibleEvidence = activeMetric.evidence.filter((ev) => {
-    if (state.outcomeFilter === 'lost') return !ev.won;
-    if (state.outcomeFilter === 'won') return ev.won;
-    return true;
-  });
+  const candidates = visibleEvidence(activeMetric, roundLookup);
 
-  const stillCompatible = visibleEvidence.some((ev) => ev.roundId === state.selectedRoundId);
+  const stillCompatible = candidates.some((ev) => ev.roundId === state.selectedRoundId);
   if (!stillCompatible) {
     state.selectedRoundId = null;
   }
@@ -380,8 +460,8 @@ function renderMetricCards(fkMetric, ppMetric) {
             </div>
             ${
               isActive
-                ? `<span class="metric-active-pill">Indicador selecionado</span>`
-                : `<span class="badge badge-neutral">Selecionar</span>`
+                ? `<span class="metric-active-pill">Em análise ↗</span>`
+                : `<span class="badge badge-neutral">Explorar ↗</span>`
             }
           </div>
 
@@ -400,6 +480,8 @@ function renderMetricCards(fkMetric, ppMetric) {
             </span>
           </div>
 
+          <div class="conversion-track" aria-hidden="true"><span style="width: ${hasData ? m.rate * 100 : 0}%"></span><i></i></div>
+
           <div class="metric-badges">
             ${
               hasData
@@ -413,7 +495,7 @@ function renderMetricCards(fkMetric, ppMetric) {
             }
             ${
               m.smallSample
-                ? `<span class="badge badge-warn">⚠️ Amostra pequena (&lt; 10 oportunidades: ${m.opportunities})</span>`
+                ? `<span class="badge badge-warn">Amostra pequena · ${m.opportunities} oportunidades</span>`
                 : `<span class="badge badge-neutral">Amostra: ${m.opportunities} oportunidades</span>`
             }
             ${
@@ -455,7 +537,7 @@ function renderEvidenceList(activeMetric, roundLookup) {
   const lostCount = activeMetric.evidence.filter((e) => !e.won).length;
   const wonCount = activeMetric.evidence.filter((e) => e.won).length;
 
-  titleEl.textContent = `Situações Revisáveis — ${metricLabel}`;
+  titleEl.textContent = metricLabel;
   subtitleEl.textContent = `${totalCount} ${
     totalCount === 1 ? 'oportunidade sustentada' : 'oportunidades sustentadas'
   } pelos dados (${lostCount} ${lostCount === 1 ? 'derrota' : 'derrotas'}, ${wonCount} ${
@@ -471,13 +553,14 @@ function renderEvidenceList(activeMetric, roundLookup) {
       'active',
       btn.getAttribute('data-outcome-filter') === state.outcomeFilter
     );
+    btn.setAttribute('aria-pressed', String(btn.getAttribute('data-outcome-filter') === state.outcomeFilter));
   });
 
-  const filteredEvidence = activeMetric.evidence.filter((ev) => {
-    if (state.outcomeFilter === 'lost') return !ev.won;
-    if (state.outcomeFilter === 'won') return ev.won;
-    return true;
-  });
+  const filteredEvidence = visibleEvidence(activeMetric, roundLookup);
+  const queryInput = document.getElementById('evidence-query');
+  if (queryInput.value !== state.searchQuery) queryInput.value = state.searchQuery;
+  document.getElementById('btn-clear-search').hidden = !state.searchQuery;
+  document.getElementById('evidence-search-count').textContent = `${filteredEvidence.length} ${filteredEvidence.length === 1 ? 'round exibido' : 'rounds exibidos'} · A busca não altera os indicadores`;
 
   if (filteredEvidence.length === 0) {
     listContainer.innerHTML = `
@@ -487,7 +570,7 @@ function renderEvidenceList(activeMetric, roundLookup) {
           ${
             activeMetric.opportunities === 0
               ? 'O recorte atual não possui oportunidades elegíveis para este indicador (denominador zero / sem dados).'
-              : 'Não há rounds com o resultado selecionado neste indicador. Alterne para "Todos" acima.'
+              : state.searchQuery ? 'Nenhum round corresponde à busca neste resultado. Limpe a busca ou alterne para “Todos”.' : 'Não há rounds com o resultado selecionado neste indicador. Alterne para "Todos" acima.'
           }
         </p>
       </div>
@@ -518,11 +601,12 @@ function renderEvidenceList(activeMetric, roundLookup) {
             }"
             data-round-id="${escapeHtml(ev.roundId)}"
             tabindex="0"
-            role="button"
+            role="row"
             aria-selected="${isSelected ? 'true' : 'false'}"
+            aria-label="Round ${round.number}, ${escapeHtml(matchShort)}, ${ev.won ? 'vitória' : 'derrota'} — abrir evidências"
           >
             <td class="round-num-cell">Round ${round.number}</td>
-            <td>${escapeHtml(matchShort)}</td>
+            <td>${escapeHtml(matchShort)}<span class="evidence-role">${escapeHtml(roleLabel)}</span></td>
             <td><span class="badge badge-neutral">${escapeHtml(roleLabel)}</span></td>
             <td class="event-summary-cell">${eventSummaryHtml}</td>
             <td>${resultBadge}</td>
@@ -531,8 +615,9 @@ function renderEvidenceList(activeMetric, roundLookup) {
                 type="button"
                 class="btn btn-secondary btn-sm btn-inspect-round"
                 data-round-id="${escapeHtml(ev.roundId)}"
+                aria-label="Abrir round ${round.number} contra ${escapeHtml(opponent?.label || 'adversário')}"
               >
-                ${isSelected ? 'Aberto' : 'Ver round'}
+                <span aria-hidden="true">${isSelected ? '●' : '↗'}</span>
               </button>
               <button
                 type="button"
@@ -553,12 +638,12 @@ function renderEvidenceList(activeMetric, roundLookup) {
         <table class="evidence-table">
           <thead>
             <tr>
-              <th>Round</th>
-              <th>Partida / Mapa</th>
-              <th>Lado</th>
-              <th>Evento que sustenta o indicador</th>
-              <th>Resultado</th>
-              <th>Ações</th>
+              <th scope="col">Round</th>
+              <th scope="col">Partida / Mapa</th>
+              <th scope="col">Lado</th>
+              <th scope="col">Evento que sustenta o indicador</th>
+              <th scope="col">Resultado</th>
+              <th scope="col">Ações</th>
             </tr>
           </thead>
           <tbody>
@@ -572,15 +657,13 @@ function renderEvidenceList(activeMetric, roundLookup) {
       const roundId = row.getAttribute('data-round-id');
       row.addEventListener('click', (e) => {
         if (e.target.closest('.btn-add-agenda')) return;
-        state.selectedRoundId = roundId;
-        renderApp();
+        revealRound(roundId);
       });
       row.addEventListener('keydown', (e) => {
         if (e.target.closest('.btn-add-agenda')) return;
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
-          state.selectedRoundId = roundId;
-          renderApp();
+          revealRound(roundId);
         }
       });
     });
@@ -743,6 +826,10 @@ function renderRoundDetail(roundLookup) {
           Arquivo oficial: <code>${escapeHtml(match.source?.file)}</code> · Vencedor oficial:
           <strong>${escapeHtml(winnerLabel)}</strong>
         </p>
+        <div class="round-ribbon" aria-label="Resultados dos rounds da partida">
+          ${match.rounds.map((r) => `<span class="${r.winnerTeamId === state.filters.teamId ? 'win' : 'loss'} ${r.id === round.id ? 'current' : ''}" title="Round ${r.number}: ${r.winnerTeamId === state.filters.teamId ? 'vitória' : 'derrota'}" aria-label="Round ${r.number}: ${r.winnerTeamId === state.filters.teamId ? 'vitória' : 'derrota'}${r.id === round.id ? ', selecionado' : ''}">${r.number}<small aria-hidden="true">${r.winnerTeamId === state.filters.teamId ? '✓' : '×'}</small></span>`).join('')}
+        </div>
+        <div class="ribbon-caption"><span>SEQUÊNCIA DA PARTIDA</span><span>✓ Vitória · ✕ Derrota</span></div>
       </div>
       <div style="display: flex; gap: 6px; flex-wrap: wrap;">
         <button
@@ -845,6 +932,7 @@ function renderRoundDetail(roundLookup) {
     closeBtn.addEventListener('click', () => {
       state.selectedRoundId = null;
       renderApp();
+      document.getElementById('tab-outcome-all').focus({ preventScroll: true });
     });
   }
 }
@@ -879,6 +967,14 @@ function renderAgendaSection() {
         <button
           type="button"
           class="btn btn-secondary btn-sm"
+          id="btn-download-agenda"
+          ${hasItems ? '' : 'disabled'}
+        >
+          Baixar pauta (.txt)
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary btn-sm"
           id="btn-print-agenda"
           ${hasItems ? '' : 'disabled'}
         >
@@ -894,6 +990,9 @@ function renderAgendaSection() {
         </button>
       </div>
     </div>
+
+    <p class="agenda-save-state ${state.storageStatus === 'unavailable' || state.storageStatus === 'invalid' ? 'save-warning' : ''}" role="status">${state.storageStatus === 'unavailable' ? 'Não foi possível salvar neste navegador. A pauta permanece nesta aba: baixe ou copie antes de sair.' : state.storageStatus === 'invalid' ? 'A pauta salva não pôde ser restaurada. Você pode criar uma nova pauta ou usar uma cópia exportada.' : state.storageDropped ? `Pauta restaurada. ${state.storageDropped} referência(s) indisponível(is) na base atual foram ignoradas.` : '✓ Pauta salva neste navegador · Não é sincronizada com outros dispositivos'}</p>
+    ${clearedAgenda.length ? '<button type="button" class="btn btn-secondary btn-sm no-print" id="btn-undo-clear">↶ Desfazer limpeza da pauta</button>' : ''}
 
     ${
       state.copyFeedback
@@ -935,6 +1034,7 @@ function renderAgendaSection() {
                     class="btn btn-ghost btn-sm btn-remove-agenda no-print"
                     data-metric-key="${escapeHtml(item.metricKey)}"
                     data-round-id="${escapeHtml(item.roundId)}"
+                    data-team-id="${escapeHtml(item.teamId || item.teamLabel)}"
                   >
                     Remover
                   </button>
@@ -978,7 +1078,8 @@ function renderAgendaSection() {
     btn.addEventListener('click', () => {
       const mKey = btn.getAttribute('data-metric-key');
       const rId = btn.getAttribute('data-round-id');
-      state.agenda = removeEvidence(state.agenda, mKey, rId);
+      state.agenda = removeEvidence(state.agenda, mKey, rId, btn.getAttribute('data-team-id'));
+      persistAgenda();
       state.copyFeedback = null;
       renderApp();
     });
@@ -1016,14 +1117,35 @@ function renderAgendaSection() {
     });
   }
 
+  document.getElementById('btn-download-agenda').addEventListener('click', () => {
+    const url = URL.createObjectURL(new Blob(['\uFEFF', formattedText], {type:'text/plain;charset=utf-8'}));
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'roundlab-pauta-de-treino.txt';
+    document.body.append(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    announceAction('Arquivo da pauta preparado para download');
+  });
+
   const clearBtn = document.getElementById('btn-clear-agenda');
   if (clearBtn) {
     clearBtn.addEventListener('click', () => {
+      clearedAgenda = [...state.agenda];
       state.agenda = [];
+      persistAgenda();
       state.copyFeedback = null;
       renderApp();
     });
   }
+  document.getElementById('btn-undo-clear')?.addEventListener('click', () => {
+    for (const item of clearedAgenda) state.agenda = addEvidence(state.agenda,item);
+    clearedAgenda = [];
+    persistAgenda();
+    renderApp();
+    announceAction('Pauta de treino restaurada');
+  });
 }
 
 function renderApp() {
@@ -1047,16 +1169,78 @@ function renderApp() {
 
   const activeMetric = state.metricKey === 'firstKill' ? fkMetric : ppMetric;
 
-  reconcileIncompatibleRoundSelection(activeMetric);
+  reconcileIncompatibleRoundSelection(activeMetric, roundLookup);
 
   renderScopeSummary(filteredMatches, filteredRounds);
   renderMetricCards(fkMetric, ppMetric);
   renderEvidenceList(activeMetric, roundLookup);
   renderRoundDetail(roundLookup);
   renderAgendaSection();
+  renderTacticalOverview(filteredMatches, filteredRounds, activeMetric);
+  if (motionAllowed() && typeof Element.prototype.animate === 'function') {
+    if (state.selectedRoundId && state.selectedRoundId !== previousDetailId) {
+      document.getElementById('round-detail-panel').animate(
+        [{ opacity: 0, transform: 'translateY(7px)' }, { opacity: 1, transform: 'translateY(0)' }],
+        { duration: 250, easing: 'cubic-bezier(.22,.8,.25,1)' }
+      );
+    }
+    if (state.agenda.length > previousAgendaCount) {
+      document.getElementById('rail-agenda-count').animate(
+        [{ transform: 'scale(1)' }, { transform: 'scale(1.4)', color: '#ff7765' }, { transform: 'scale(1)' }],
+        { duration: 280 }
+      );
+    }
+  }
+  previousDetailId = state.selectedRoundId;
+  previousAgendaCount = state.agenda.length;
 }
 
 function bindGlobalEvents() {
+  document.getElementById('evidence-query').addEventListener('input', (event) => {
+    state.searchQuery = event.target.value;
+    renderApp();
+  });
+  document.getElementById('btn-clear-search').addEventListener('click', () => {
+    state.searchQuery = '';
+    renderApp();
+    document.getElementById('evidence-query').focus();
+  });
+  document.getElementById('btn-methodology').addEventListener('click', () => {
+    document.getElementById('methodology-dialog').showModal();
+  });
+  window.addEventListener('storage', (event) => {
+    if (event.key !== AGENDA_STORAGE_KEY || !allMatches.length) return;
+    const restored = loadSavedAgenda(agendaStorage,restoreSavedEvidence);
+    state.agenda = restored.agenda;
+    state.storageStatus = restored.status;
+    state.storageDropped = restored.dropped;
+    renderApp();
+    announceAction('Pauta atualizada em outra aba deste navegador');
+  });
+  document.getElementById('btn-toggle-filters').addEventListener('click', (event) => {
+    const expanded = document.querySelector('.filters-panel').classList.toggle('filters-open');
+    event.currentTarget.setAttribute('aria-expanded', String(expanded));
+    event.currentTarget.textContent = expanded ? 'Fechar filtros ↑' : 'Refinar recorte ↓';
+  });
+  const navLinks = [...document.querySelectorAll('.rail-link')];
+  navLinks.forEach((link) => link.addEventListener('click', () => {
+    navLinks.forEach((item) => item.classList.toggle('active', item === link));
+  }));
+  if ('IntersectionObserver' in window) {
+    const navigationObserver = new IntersectionObserver((entries) => {
+      const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+      if (!visible) return;
+      const id = visible.target.id;
+      document.querySelectorAll('.rail-link, .mobile-flow a').forEach((link) => {
+        const active = link.getAttribute('href') === `#${id}`;
+        link.classList.toggle('active', active);
+        if (active) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+      document.querySelector('.header-current').textContent = id === 'agenda-section' ? 'Pauta de treino' : id === 'evidencias' ? 'Revisão de rounds' : 'Visão da equipe';
+    }, { rootMargin: '-90px 0px -35% 0px', threshold: 0 });
+    ['diagnostico', 'evidencias', 'agenda-section'].forEach((id) => navigationObserver.observe(document.getElementById(id)));
+  }
   document.getElementById('filter-team').addEventListener('change', (e) => {
     state.filters.teamId = e.target.value;
     state.filters.matchId = '';
@@ -1087,6 +1271,7 @@ function bindGlobalEvents() {
     state.filters = { ...C1_REFERENCE_PRESET };
     state.metricKey = 'firstKill';
     state.outcomeFilter = 'all';
+    state.searchQuery = '';
     state.selectedRoundId = 'fc187928-9b72-42b3-aaaf-8ca6689a3937:r16';
     renderApp();
   });
@@ -1110,6 +1295,7 @@ function bindGlobalEvents() {
   });
 
   window.addEventListener('keydown', (e) => {
+    if (document.getElementById('methodology-dialog').open) return;
     if (e.key === 'Escape' && state.selectedRoundId) {
       state.selectedRoundId = null;
       renderApp();
@@ -1118,27 +1304,36 @@ function bindGlobalEvents() {
 }
 
 async function init() {
+  if (loading) return;
+  loading = true;
   const banner = document.getElementById('status-banner');
-  bindGlobalEvents();
+  banner.classList.remove('hidden', 'error');
+  banner.textContent = 'Abrindo a base oficial de partidas…';
 
   try {
-    const res = await fetch('./data/matches.json');
-    if (!res.ok) {
-      throw new Error(`Falha ao carregar matches.json (HTTP ${res.status})`);
-    }
-    const data = await res.json();
-    if (!Array.isArray(data) || data.length === 0) {
-      throw new Error('Conjunto de partidas vazio ou inválido.');
-    }
+    if (!eventsBound) { bindGlobalEvents(); eventsBound = true; }
+    const data = await loadMatchDataset();
 
     allMatches = data;
     buildDirectories(allMatches);
+    document.getElementById('corpus-summary').textContent = `${allMatches.length} partidas oficiais das Classificatórias 1 a 4 do Univavá. Cada indicador pode ser conferido nos rounds que o sustentam.`;
+    if (!agendaLoaded) {
+      const restored = loadSavedAgenda(agendaStorage,restoreSavedEvidence);
+      state.agenda = restored.agenda;
+      state.storageStatus = restored.status;
+      state.storageDropped = restored.dropped;
+      agendaLoaded = true;
+    }
     banner.classList.add('hidden');
     renderApp();
   } catch (err) {
     banner.classList.remove('hidden');
     banner.classList.add('error');
-    banner.textContent = `Erro ao carregar dados derivados: ${err.message}. Execute "npm run import" antes de iniciar o servidor.`;
+    const message = /^(Dados indisponíveis|Conjunto de partidas|O carregamento demorou)/.test(err.message) ? err.message : 'O carregamento foi interrompido. Tente novamente ou recarregue esta página.';
+    banner.innerHTML = `<div><strong>Não foi possível abrir as partidas.</strong><p>${escapeHtml(message)}</p></div><button type="button" class="btn btn-secondary" id="btn-retry-data">Tentar novamente ↻</button>`;
+    document.getElementById('btn-retry-data').addEventListener('click', init);
+  } finally {
+    loading = false;
   }
 }
 
