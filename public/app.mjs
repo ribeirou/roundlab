@@ -34,6 +34,55 @@ let allMatches = [];
 let matchesById = new Map();
 let teamsDirectory = [];
 let allMaps = [];
+let feedbackTimer;
+let previousDetailId = null;
+let previousAgendaCount = 0;
+
+function motionAllowed() {
+  return !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+}
+
+function announceAction(message) {
+  const feedback = document.getElementById('action-feedback');
+  feedback.textContent = message;
+  feedback.classList.add('visible');
+  clearTimeout(feedbackTimer);
+  feedbackTimer = setTimeout(() => feedback.classList.remove('visible'), 2800);
+}
+
+function revealRound(roundId) {
+  state.selectedRoundId = roundId;
+  renderApp();
+  const detail = document.getElementById('round-detail-panel');
+  // At the single-column breakpoint the detail sits below the evidence list.
+  if (window.matchMedia('(max-width: 1220px)').matches) {
+    detail.scrollIntoView({ behavior: motionAllowed() ? 'smooth' : 'instant', block: 'start' });
+  }
+  const close = document.getElementById('btn-close-detail');
+  close?.focus({ preventScroll: true });
+}
+
+function renderTacticalOverview(filteredMatches, filteredRounds, metric) {
+  const label = getTeamLabel(state.filters.teamId);
+  document.getElementById('team-heading').textContent = label;
+  document.getElementById('team-context').textContent = `${filteredMatches.length} ${filteredMatches.length === 1 ? 'partida' : 'partidas'} · ${filteredRounds.length} rounds no recorte. Encontre um padrão e transforme a revisão em treino.`;
+  document.getElementById('rail-agenda-count').textContent = state.agenda.length;
+  const lost = metric.opportunities - metric.wins;
+  const prompt = document.getElementById('review-prompt');
+  const context = state.metricKey === 'firstKill' ? 'após a primeira eliminação da equipe' : 'após o plant da equipe';
+  prompt.innerHTML = `
+    <span class="review-symbol" aria-hidden="true">↗</span>
+    <div class="review-copy"><strong>${lost > 0 ? `${lost} ${lost === 1 ? 'round para revisar' : 'rounds para revisar'} ${context}` : metric.opportunities ? 'Todas as oportunidades deste recorte foram convertidas' : 'Ainda não há oportunidades neste recorte'}</strong>
+    <p>${lost > 0 ? 'Veja como esses rounds terminaram. Os eventos ajudam a orientar a conversa com a equipe.' : metric.opportunities ? 'Explore as vitórias para discutir o que repetir no próximo treino.' : 'Experimente outra partida, mapa ou classificatória para ampliar a análise.'}</p></div>
+    <button class="btn" id="btn-review-evidence" ${metric.opportunities ? '' : 'disabled'}>${lost > 0 ? 'Revisar derrotas' : metric.opportunities ? 'Explorar vitórias' : 'Sem evidências'} <span aria-hidden="true">↗</span></button>`;
+  document.getElementById('btn-review-evidence').addEventListener('click', () => {
+    state.outcomeFilter = lost > 0 ? 'lost' : 'won';
+    state.selectedRoundId = null;
+    renderApp();
+    document.getElementById('evidencias').scrollIntoView({ behavior: motionAllowed() ? 'smooth' : 'instant' });
+    document.getElementById(lost > 0 ? 'tab-outcome-lost' : 'tab-outcome-won').focus({ preventScroll: true });
+  });
+}
 
 function escapeHtml(value) {
   return String(value ?? '')
@@ -226,6 +275,7 @@ function handleAddRoundToAgenda(round, match, metricKey) {
   state.agenda = addEvidence(state.agenda, item);
   state.copyFeedback = null;
   renderApp();
+  announceAction(`Round ${round.number} adicionado à pauta de treino`);
 }
 
 function reconcileIncompatibleRoundSelection(activeMetric) {
@@ -380,8 +430,8 @@ function renderMetricCards(fkMetric, ppMetric) {
             </div>
             ${
               isActive
-                ? `<span class="metric-active-pill">Indicador selecionado</span>`
-                : `<span class="badge badge-neutral">Selecionar</span>`
+                ? `<span class="metric-active-pill">Em análise ↗</span>`
+                : `<span class="badge badge-neutral">Explorar ↗</span>`
             }
           </div>
 
@@ -400,6 +450,8 @@ function renderMetricCards(fkMetric, ppMetric) {
             </span>
           </div>
 
+          <div class="conversion-track" aria-hidden="true"><span style="width: ${hasData ? m.rate * 100 : 0}%"></span><i></i></div>
+
           <div class="metric-badges">
             ${
               hasData
@@ -413,7 +465,7 @@ function renderMetricCards(fkMetric, ppMetric) {
             }
             ${
               m.smallSample
-                ? `<span class="badge badge-warn">⚠️ Amostra pequena (&lt; 10 oportunidades: ${m.opportunities})</span>`
+                ? `<span class="badge badge-warn">Amostra pequena · ${m.opportunities} oportunidades</span>`
                 : `<span class="badge badge-neutral">Amostra: ${m.opportunities} oportunidades</span>`
             }
             ${
@@ -455,7 +507,7 @@ function renderEvidenceList(activeMetric, roundLookup) {
   const lostCount = activeMetric.evidence.filter((e) => !e.won).length;
   const wonCount = activeMetric.evidence.filter((e) => e.won).length;
 
-  titleEl.textContent = `Situações Revisáveis — ${metricLabel}`;
+  titleEl.textContent = metricLabel;
   subtitleEl.textContent = `${totalCount} ${
     totalCount === 1 ? 'oportunidade sustentada' : 'oportunidades sustentadas'
   } pelos dados (${lostCount} ${lostCount === 1 ? 'derrota' : 'derrotas'}, ${wonCount} ${
@@ -471,6 +523,7 @@ function renderEvidenceList(activeMetric, roundLookup) {
       'active',
       btn.getAttribute('data-outcome-filter') === state.outcomeFilter
     );
+    btn.setAttribute('aria-pressed', String(btn.getAttribute('data-outcome-filter') === state.outcomeFilter));
   });
 
   const filteredEvidence = activeMetric.evidence.filter((ev) => {
@@ -518,11 +571,12 @@ function renderEvidenceList(activeMetric, roundLookup) {
             }"
             data-round-id="${escapeHtml(ev.roundId)}"
             tabindex="0"
-            role="button"
+            role="row"
             aria-selected="${isSelected ? 'true' : 'false'}"
+            aria-label="Round ${round.number}, ${escapeHtml(matchShort)}, ${ev.won ? 'vitória' : 'derrota'} — abrir evidências"
           >
             <td class="round-num-cell">Round ${round.number}</td>
-            <td>${escapeHtml(matchShort)}</td>
+            <td>${escapeHtml(matchShort)}<span class="evidence-role">${escapeHtml(roleLabel)}</span></td>
             <td><span class="badge badge-neutral">${escapeHtml(roleLabel)}</span></td>
             <td class="event-summary-cell">${eventSummaryHtml}</td>
             <td>${resultBadge}</td>
@@ -531,8 +585,9 @@ function renderEvidenceList(activeMetric, roundLookup) {
                 type="button"
                 class="btn btn-secondary btn-sm btn-inspect-round"
                 data-round-id="${escapeHtml(ev.roundId)}"
+                aria-label="Abrir round ${round.number} contra ${escapeHtml(opponent?.label || 'adversário')}"
               >
-                ${isSelected ? 'Aberto' : 'Ver round'}
+                <span aria-hidden="true">${isSelected ? '●' : '↗'}</span>
               </button>
               <button
                 type="button"
@@ -553,12 +608,12 @@ function renderEvidenceList(activeMetric, roundLookup) {
         <table class="evidence-table">
           <thead>
             <tr>
-              <th>Round</th>
-              <th>Partida / Mapa</th>
-              <th>Lado</th>
-              <th>Evento que sustenta o indicador</th>
-              <th>Resultado</th>
-              <th>Ações</th>
+              <th scope="col">Round</th>
+              <th scope="col">Partida / Mapa</th>
+              <th scope="col">Lado</th>
+              <th scope="col">Evento que sustenta o indicador</th>
+              <th scope="col">Resultado</th>
+              <th scope="col">Ações</th>
             </tr>
           </thead>
           <tbody>
@@ -572,15 +627,13 @@ function renderEvidenceList(activeMetric, roundLookup) {
       const roundId = row.getAttribute('data-round-id');
       row.addEventListener('click', (e) => {
         if (e.target.closest('.btn-add-agenda')) return;
-        state.selectedRoundId = roundId;
-        renderApp();
+        revealRound(roundId);
       });
       row.addEventListener('keydown', (e) => {
         if (e.target.closest('.btn-add-agenda')) return;
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
-          state.selectedRoundId = roundId;
-          renderApp();
+          revealRound(roundId);
         }
       });
     });
@@ -743,6 +796,10 @@ function renderRoundDetail(roundLookup) {
           Arquivo oficial: <code>${escapeHtml(match.source?.file)}</code> · Vencedor oficial:
           <strong>${escapeHtml(winnerLabel)}</strong>
         </p>
+        <div class="round-ribbon" aria-label="Resultados dos rounds da partida">
+          ${match.rounds.map((r) => `<span class="${r.winnerTeamId === state.filters.teamId ? 'win' : 'loss'} ${r.id === round.id ? 'current' : ''}" title="Round ${r.number}: ${r.winnerTeamId === state.filters.teamId ? 'vitória' : 'derrota'}" aria-label="Round ${r.number}: ${r.winnerTeamId === state.filters.teamId ? 'vitória' : 'derrota'}${r.id === round.id ? ', selecionado' : ''}">${r.number}<small aria-hidden="true">${r.winnerTeamId === state.filters.teamId ? '✓' : '×'}</small></span>`).join('')}
+        </div>
+        <div class="ribbon-caption"><span>SEQUÊNCIA DA PARTIDA</span><span>✓ Vitória · ✕ Derrota</span></div>
       </div>
       <div style="display: flex; gap: 6px; flex-wrap: wrap;">
         <button
@@ -845,6 +902,7 @@ function renderRoundDetail(roundLookup) {
     closeBtn.addEventListener('click', () => {
       state.selectedRoundId = null;
       renderApp();
+      document.getElementById('tab-outcome-all').focus({ preventScroll: true });
     });
   }
 }
@@ -1054,9 +1112,50 @@ function renderApp() {
   renderEvidenceList(activeMetric, roundLookup);
   renderRoundDetail(roundLookup);
   renderAgendaSection();
+  renderTacticalOverview(filteredMatches, filteredRounds, activeMetric);
+  if (motionAllowed() && typeof Element.prototype.animate === 'function') {
+    if (state.selectedRoundId && state.selectedRoundId !== previousDetailId) {
+      document.getElementById('round-detail-panel').animate(
+        [{ opacity: 0, transform: 'translateY(7px)' }, { opacity: 1, transform: 'translateY(0)' }],
+        { duration: 250, easing: 'cubic-bezier(.22,.8,.25,1)' }
+      );
+    }
+    if (state.agenda.length > previousAgendaCount) {
+      document.getElementById('rail-agenda-count').animate(
+        [{ transform: 'scale(1)' }, { transform: 'scale(1.4)', color: '#ff7765' }, { transform: 'scale(1)' }],
+        { duration: 280 }
+      );
+    }
+  }
+  previousDetailId = state.selectedRoundId;
+  previousAgendaCount = state.agenda.length;
 }
 
 function bindGlobalEvents() {
+  document.getElementById('btn-toggle-filters').addEventListener('click', (event) => {
+    const expanded = document.querySelector('.filters-panel').classList.toggle('filters-open');
+    event.currentTarget.setAttribute('aria-expanded', String(expanded));
+    event.currentTarget.textContent = expanded ? 'Fechar filtros ↑' : 'Refinar recorte ↓';
+  });
+  const navLinks = [...document.querySelectorAll('.rail-link')];
+  navLinks.forEach((link) => link.addEventListener('click', () => {
+    navLinks.forEach((item) => item.classList.toggle('active', item === link));
+  }));
+  if ('IntersectionObserver' in window) {
+    const navigationObserver = new IntersectionObserver((entries) => {
+      const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+      if (!visible) return;
+      const id = visible.target.id;
+      document.querySelectorAll('.rail-link, .mobile-flow a').forEach((link) => {
+        const active = link.getAttribute('href') === `#${id}`;
+        link.classList.toggle('active', active);
+        if (active) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+      document.querySelector('.header-current').textContent = id === 'agenda-section' ? 'Pauta de treino' : id === 'evidencias' ? 'Revisão de rounds' : 'Visão da equipe';
+    }, { rootMargin: '-90px 0px -35% 0px', threshold: 0 });
+    ['diagnostico', 'evidencias', 'agenda-section'].forEach((id) => navigationObserver.observe(document.getElementById(id)));
+  }
   document.getElementById('filter-team').addEventListener('change', (e) => {
     state.filters.teamId = e.target.value;
     state.filters.matchId = '';

@@ -2,6 +2,10 @@
 
 Ferramenta pós-partida para ajudar treinadores e equipes universitárias de VALORANT a transformar os dados oficiais do **Univavá (Classificatórias 1 a 4)** em análises coletivas rastreáveis e uma pauta de revisão e treino.
 
+![Centro tático do RoundLab, com visão da equipe e indicadores de conversão](docs/centro-tatico.png)
+
+A interface organiza a revisão em diagnóstico, evidências e pauta de treino. O Centro tático usa grafite e coral, filtros recolhíveis no celular e transições que respeitam a preferência por movimento reduzido. [Detalhes e verificação da reformulação](docs/centro-tatico.md).
+
 ---
 
 ## Escopo do Protótipo (MVP)
