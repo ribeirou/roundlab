@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RoundLab — Revisão Pós-Partida e Pauta de Treino (VALORANT Universitário)</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand">
+          <span class="brand-badge" aria-hidden="true">RL</span>
+          <div>
+            <h1 class="brand-title">RoundLab</h1>
+            <p class="brand-subtitle">
+              Análise coletiva rastreável e pauta de revisão pós-partida · Univavá (C1–C4)
+            </p>
+          </div>
+        </div>
+        <div class="topbar-actions">
+          <button
+            type="button"
+            id="btn-preset-c1"
+            class="btn btn-secondary"
+            title="Carregar o caso de referência validado na Classificatória 1 (Poli Plague 10 x 13 Unicamp Tritons Red)"
+          >
+            Caso referência C1 (Poli Plague)
+          </button>
+          <button
+            type="button"
+            id="btn-reset-filters"
+            class="btn btn-ghost"
+            title="Manter equipe atual e limpar filtros de classificatória, mapa, partida e site"
+          >
+            Ver todas as partidas da equipe
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container" id="main-content">
+      <!-- Estado de carregamento / erro -->
+      <section id="status-banner" class="status-banner" role="status" aria-live="polite">
+        Carregando dados derivados locais das Classificatórias 1 a 4…
+      </section>
+
+      <!-- Barra de filtros compartilhados -->
+      <section class="filters-panel" aria-label="Filtros de recorte">
+        <div class="filters-grid">
+          <div class="filter-field">
+            <label for="filter-team">Equipe analisada</label>
+            <select id="filter-team" name="teamId" disabled>
+              <option value="">Carregando equipes…</option>
+            </select>
+          </div>
+
+          <div class="filter-field">
+            <label for="filter-qualifier">Classificatória</label>
+            <select id="filter-qualifier" name="qualifier" disabled>
+              <option value="">Todas (C1 a C4)</option>
+              <option value="c1">Classificatória 1 (C1)</option>
+              <option value="c2">Classificatória 2 (C2)</option>
+              <option value="c3">Classificatória 3 (C3)</option>
+              <option value="c4">Classificatória 4 (C4)</option>
+            </select>
+          </div>
+
+          <div class="filter-field">
+            <label for="filter-map">Mapa</label>
+            <select id="filter-map" name="mapId" disabled>
+              <option value="">Todos os mapas</option>
+            </select>
+          </div>
+
+          <div class="filter-field">
+            <label for="filter-match">Partida</label>
+            <select id="filter-match" name="matchId" disabled>
+              <option value="">Todas as partidas do recorte</option>
+            </select>
+          </div>
+
+          <div class="filter-field">
+            <label for="filter-site">
+              Site do plant <span class="label-hint">(apenas Pós-Plant)</span>
+            </label>
+            <select id="filter-site" name="site" disabled>
+              <option value="">Todos os sites (A / B / C)</option>
+              <option value="A">Site A</option>
+              <option value="B">Site B</option>
+              <option value="C">Site C</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="scope-summary" id="scope-summary" aria-live="polite"></div>
+      </section>
+
+      <!-- Cartões dos dois indicadores coletivos -->
+      <section class="metrics-section" aria-label="Indicadores coletivos">
+        <div class="metrics-grid" id="metrics-grid"></div>
+      </section>
+
+      <!-- Painel dividido: lista de evidências por round + detalhe do round -->
+      <section class="workspace-grid" aria-label="Exploração de evidências e detalhe do round">
+        <div class="panel evidence-panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title" id="evidence-panel-title">Evidências por Round</h2>
+              <p class="panel-subtitle" id="evidence-panel-subtitle">
+                Selecione um round para inspecionar participantes, horários e linha do tempo.
+              </p>
+            </div>
+            <div class="outcome-tabs" role="group" aria-label="Filtrar situações por resultado">
+              <button
+                type="button"
+                class="tab-btn active"
+                data-outcome-filter="all"
+                id="tab-outcome-all"
+              >
+                Todos
+              </button>
+              <button
+                type="button"
+                class="tab-btn"
+                data-outcome-filter="lost"
+                id="tab-outcome-lost"
+              >
+                Derrotas para revisar
+              </button>
+              <button
+                type="button"
+                class="tab-btn"
+                data-outcome-filter="won"
+                id="tab-outcome-won"
+              >
+                Vitórias convertidas
+              </button>
+            </div>
+          </div>
+
+          <div id="evidence-list-container" class="evidence-list-container"></div>
+          <div id="excluded-rounds-container" class="excluded-rounds-container"></div>
+        </div>
+
+        <aside
+          class="panel detail-panel"
+          id="round-detail-panel"
+          aria-label="Detalhe do round selecionado"
+        ></aside>
+      </section>
+
+      <!-- Seção da Pauta de Treino (Tarefa 4) -->
+      <section
+        class="panel agenda-section"
+        id="agenda-section"
+        aria-label="Pauta de revisão e treino"
+      ></section>
+    </main>
+
+    <footer class="footer no-print">
+      <div class="container footer-inner">
+        <span>
+          <strong>Nota metodológica:</strong> Taxas expressam proporções observadas no recorte
+          selecionado, sem inferência de causalidade ou reconstrução contínua de trajetórias. Menos
+          de 10 oportunidades é sinalizado como amostra pequena.
+        </span>
+      </div>
+    </footer>
+
+    <script type="module" src="./app.mjs"></script>
+  </body>
+</html>

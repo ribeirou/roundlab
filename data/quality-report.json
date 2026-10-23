@@ -1,0 +1,4418 @@
+{
+  "generatedAt": "2026-10-23T03:02:55.394Z",
+  "coverage": {
+    "c1": {
+      "label": "Classificatória 1",
+      "folderId": "1yvp6ZBc6umzt0avoGRtEtrrinSnc0Cpk",
+      "observedRemoteFiles": 55,
+      "paginationDetected": false,
+      "source": "remote_drive_listing"
+    },
+    "c2": {
+      "label": "Classificatória 2",
+      "folderId": "17R43ZOHytkG6Yy9-ZuygxgzAFOX-ITV1",
+      "observedRemoteFiles": 39,
+      "paginationDetected": false,
+      "source": "remote_drive_listing"
+    },
+    "c3": {
+      "label": "Classificatória 3",
+      "folderId": "1GwFEdQPZ6hHRxTk4CC19swik_WDPm0kB",
+      "observedRemoteFiles": 43,
+      "paginationDetected": false,
+      "source": "remote_drive_listing"
+    },
+    "c4": {
+      "label": "Classificatória 4",
+      "folderId": "1UFMg9gx_s6GfGsa7edvs7d_RsCOh-e1y",
+      "observedRemoteFiles": 62,
+      "paginationDetected": false,
+      "source": "remote_drive_listing"
+    }
+  },
+  "totalFiles": 199,
+  "includedCount": 199,
+  "included": [
+    {
+      "file": "UNIVAVA_C1_002_27-06-26_poli_plague_10_x_13_unicamp_tritons_red_haven.json",
+      "qualifier": "c1",
+      "driveId": "1IkvAD_8CZoSIZEtjXgmkmjYQ2Q1vs-Pm",
+      "sha256": "8e03b3f045ee5eba3d3a7e98bb7c4fb80faca196b689bf718cd268c76919daab",
+      "matchId": "fc187928-9b72-42b3-aaaf-8ca6689a3937",
+      "mapId": "Haven",
+      "roundsCount": 23,
+      "teams": [
+        {
+          "id": "poli-plague",
+          "label": "Poli Plague",
+          "nameVerified": true
+        },
+        {
+          "id": "unicamp-tritons-red",
+          "label": "Unicamp Tritons Red",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_018_27-06-26_homem_passaro_0_x_13_ufg_eagles_haven.json",
+      "qualifier": "c1",
+      "driveId": "1uG3zUFtCCMwP7hzIkzBC6nuVpDU7eQ8d",
+      "sha256": "a8a8c924d0bb4711321deffa43eeddabe5f351d2b72749da5be2615785b02fcd",
+      "matchId": "728f1819-e2bc-427d-86ad-9cf68a705c40",
+      "mapId": "Haven",
+      "roundsCount": 13,
+      "teams": [
+        {
+          "id": "homem-passaro",
+          "label": "Homem Passaro",
+          "nameVerified": true
+        },
+        {
+          "id": "ufg-eagles",
+          "label": "UFG Eagles",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_026_27-06-26_ufg_eagles_blue_2_x_13_ufmt_turuna_ascent.json",
+      "qualifier": "c1",
+      "driveId": "1qqQ48WdKpCHTun8p0mq4aEIEqbT4K8PP",
+      "sha256": "dfd2551a6b2f4d48adf38dec4061ae245fd11ccd03feb12b7ec2f1f7ccdcb97e",
+      "matchId": "a7465d84-c755-4829-a650-986002947cce",
+      "mapId": "Ascent",
+      "roundsCount": 15,
+      "teams": [
+        {
+          "id": "ufmt-turuna",
+          "label": "UFMT Turuna",
+          "nameVerified": true
+        },
+        {
+          "id": "ufg-eagles-blue",
+          "label": "UFG Eagles Blue",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_033_27-06-26_caap_momentum_13_x_8_unicamp_tritons_red_ascent.json",
+      "qualifier": "c1",
+      "driveId": "1TsS-qddyobqfHVZgyXMjg8uHxROVwBVZ",
+      "sha256": "436a2944ad23914c14a72935e101cd383b6e6ff9cd421c2cfba8c675d937a41b",
+      "matchId": "26d34f41-5895-49e8-bcf9-b5e67dede133",
+      "mapId": "Ascent",
+      "roundsCount": 21,
+      "teams": [
+        {
+          "id": "caap-momentum",
+          "label": "CAAP Momentum",
+          "nameVerified": true
+        },
+        {
+          "id": "unicamp-tritons-red",
+          "label": "Unicamp Tritons Red",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_034_27-06-26_a2e_uff_10_x_13_ufpr_bbn_ascent.json",
+      "qualifier": "c1",
+      "driveId": "1WDVTHTGK43VqqUcft3IU5XhtuYnlsNQQ",
+      "sha256": "b1b4c2358ec17c230016ca35be06489e7539bda5a937b67da8df7ab05fd3b022",
+      "matchId": "6e3e21ad-d03d-4c75-97fc-e54034a02f27",
+      "mapId": "Ascent",
+      "roundsCount": 23,
+      "teams": [
+        {
+          "id": "a2e-uff",
+          "label": "A2E UFF",
+          "nameVerified": true
+        },
+        {
+          "id": "ufpr-bbn",
+          "label": "UFPR BBN",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_035_27-06-26_axis_aura_3_x_13_caap_hellhounds_pearl.json",
+      "qualifier": "c1",
+      "driveId": "1-KAzZwiJxALmBgsaANFrHGNj7z4plH4e",
+      "sha256": "1185ccf1ff326e729eecfd8588e8a26676218a2efecb23adb432ea5b622df14d",
+      "matchId": "81523acb-ec04-411f-8739-f56b51124285",
+      "mapId": "Pearl",
+      "roundsCount": 16,
+      "teams": [
+        {
+          "id": "axis-aura",
+          "label": "Axis Aura",
+          "nameVerified": true
+        },
+        {
+          "id": "caap-hellhounds",
+          "label": "CAAP Hellhounds",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_036_27-06-26_macklogic_red_13_x_5_octacore_javascript_lotus.json",
+      "qualifier": "c1",
+      "driveId": "1RbI_KzEJ8L_S920B1Ur9wzn20qqWMnxW",
+      "sha256": "e53761fc1f898d0ae564dd756ea2b0cab6ee21a7f960aee4e585dbef7848ad71",
+      "matchId": "5d2dc38e-f33e-4238-8608-c8068d176654",
+      "mapId": "Lotus",
+      "roundsCount": 18,
+      "teams": [
+        {
+          "id": "macklogic-red",
+          "label": "Macklogic Red",
+          "nameVerified": true
+        },
+        {
+          "id": "octacore-javascript",
+          "label": "Octacore Javascript",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_038_27-06-26_azure_bears_black_13_x_0_ufg_gc_eagles_ascent.json",
+      "qualifier": "c1",
+      "driveId": "1lgvS0ObtsZ--5Lr4cSk6r1CtyJ27Endf",
+      "sha256": "4acd9421747040ff31bd2b33de18cfe90a97ec4803a6ee0fa9efed6deebda422",
+      "matchId": "7aaa70d5-2827-4007-a71c-212ec684856e",
+      "mapId": "Ascent",
+      "roundsCount": 13,
+      "teams": [
+        {
+          "id": "ufg-gc-eagles",
+          "label": "UFG GC Eagles",
+          "nameVerified": true
+        },
+        {
+          "id": "azure-bears-black",
+          "label": "Azure Bears Black",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_039_27-06-26_ceub_octopus_vulgaris_10_x_13_ufu_saints_haven.json",
+      "qualifier": "c1",
+      "driveId": "19s9XNIZkieXi_H64qUTJl0BvTjLVuONU",
+      "sha256": "32ad409cb822e43f5fd5bcd7a66405130f89f703b397ee77568d72a27acf2e7d",
+      "matchId": "61244fa9-e7dd-424a-a093-632f5c83d2ba",
+      "mapId": "Haven",
+      "roundsCount": 23,
+      "teams": [
+        {
+          "id": "ceub-octopus-vulgaris",
+          "label": "CEUB Octopus Vulgaris",
+          "nameVerified": true
+        },
+        {
+          "id": "ufu-saints",
+          "label": "UFU Saints",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_040_27-06-26_azure_bears_golden_13_x_0_fei_darkowls_ascent.json",
+      "qualifier": "c1",
+      "driveId": "1VkXu2ZVX_zbvcI7kT-qZs0f7mCYCM4Tw",
+      "sha256": "4b1137a6e4abbf2e7b10e57e9a2013790d763babeaf6b22d118dd7e2adbf8fd6",
+      "matchId": "2272e656-1188-4f0a-90f6-2d14557611dc",
+      "mapId": "Ascent",
+      "roundsCount": 13,
+      "teams": [
+        {
+          "id": "fei-darkowls",
+          "label": "FEI Darkowls",
+          "nameVerified": true
+        },
+        {
+          "id": "azure-bears-golden",
+          "label": "Azure Bears Golden",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_041_27-06-26_ufg_eagles_8_x_13_uscs_hawks_ascent.json",
+      "qualifier": "c1",
+      "driveId": "12CDnr9puJW18B-OXOf1djO6ujITIS-E8",
+      "sha256": "550d3208224991a763cd91c8d63e8a8d9adab1047527f1d2c8dd01c21034b13e",
+      "matchId": "ff876f74-fc97-412e-bb5d-9999cdb1a968",
+      "mapId": "Ascent",
+      "roundsCount": 21,
+      "teams": [
+        {
+          "id": "uscs-hawks",
+          "label": "USCS Hawks",
+          "nameVerified": true
+        },
+        {
+          "id": "ufg-eagles",
+          "label": "UFG Eagles",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_042_27-06-26_azure_bears_silver_10_x_13_unifesp_erex_ascent.json",
+      "qualifier": "c1",
+      "driveId": "1JaXZ42mrzrin9JKFrIk83MqlVS6rTdAS",
+      "sha256": "33878fc6d26908ed0b57aeec549f790f103734c7907c2b952e85484492f79b01",
+      "matchId": "60b79ca9-5a4b-488a-a761-787995ebf26e",
+      "mapId": "Ascent",
+      "roundsCount": 23,
+      "teams": [
+        {
+          "id": "azure-bears-silver",
+          "label": "Azure Bears Silver",
+          "nameVerified": true
+        },
+        {
+          "id": "unifesp-erex",
+          "label": "UNIFESP Erex",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_044_27-06-26_gdu_ufpb_4_x_13_octacore_python_split.json",
+      "qualifier": "c1",
+      "driveId": "1KjEERjK5bQjBVUcGmJ5f2tsdtvpmOl_0",
+      "sha256": "af95ba6d1bc51df1f0780d2148eb362a60c0886e48338a055a65ad144cc70d99",
+      "matchId": "91c04bbd-f9d3-4249-bee9-c76146bf328c",
+      "mapId": "Split",
+      "roundsCount": 17,
+      "teams": [
+        {
+          "id": "gdu-ufpb",
+          "label": "GDU UFPB",
+          "nameVerified": true
+        },
+        {
+          "id": "octacore-python",
+          "label": "Octacore Python",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_045_27-06-26_inatel_legacy_8_x_13_ufmt_turuna_breeze.json",
+      "qualifier": "c1",
+      "driveId": "1eJuK66q14Lza3qlI9E37q6ZTGk6VI4rs",
+      "sha256": "f5186c8970a961e6d763d0f4a934f5d23caab04a1f43a32aaf6af8e261fd4eb9",
+      "matchId": "72a9e2e7-f86a-483b-a35c-8291e8c71c89",
+      "mapId": "Breeze",
+      "roundsCount": 21,
+      "teams": [
+        {
+          "id": "ufmt-turuna",
+          "label": "UFMT Turuna",
+          "nameVerified": true
+        },
+        {
+          "id": "inatel-legacy",
+          "label": "Inatel Legacy",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_046_27-06-26_pucc_cardinals_2_x_13_totale_umc_lotus.json",
+      "qualifier": "c1",
+      "driveId": "127-HJMBPbQYpmdgGRF5zV18Z8UwB9iAu",
+      "sha256": "3ae5e34e7e6b875bebc37381e869042e1e8f12474e7f4e2f7b5a8bdb027846c1",
+      "matchId": "e6385323-a3f0-4f0a-b903-b3bb797238cb",
+      "mapId": "Lotus",
+      "roundsCount": 15,
+      "teams": [
+        {
+          "id": "totale-umc",
+          "label": "Totale UMC",
+          "nameVerified": true
+        },
+        {
+          "id": "pucc-cardinals",
+          "label": "PUCC Cardinals",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_047_27-06-26_fei_whiteowls_13_x_7_ufmg_fenix_b_lotus.json",
+      "qualifier": "c1",
+      "driveId": "11uEAtM6uIxMnkZUb-a3p6en_IHo7DXEb",
+      "sha256": "97c56981772d31d43f2d42277a2c1d7804d5b716126a787fa6c0b339214521fd",
+      "matchId": "229517d9-abc5-4c79-b748-5ca1c4750c6f",
+      "mapId": "Lotus",
+      "roundsCount": 20,
+      "teams": [
+        {
+          "id": "ufmg-fenix-b",
+          "label": "UFMG Fenix B",
+          "nameVerified": true
+        },
+        {
+          "id": "fei-whiteowls",
+          "label": "FEI Whiteowls",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_049_27-06-26_caap_momentum_13_x_3_ufpr_bbn_haven.json",
+      "qualifier": "c1",
+      "driveId": "1diqhTZ7UOT4Zce3QXVgDc979pqScGIKw",
+      "sha256": "8edbcffdde51fe47e7f66c78c5ff7464159dc4ad46c71500b90750546d338359",
+      "matchId": "3ddcf453-6b4a-430b-8fce-3c8ba8597827",
+      "mapId": "Haven",
+      "roundsCount": 16,
+      "teams": [
+        {
+          "id": "caap-momentum",
+          "label": "CAAP Momentum",
+          "nameVerified": true
+        },
+        {
+          "id": "ufpr-bbn",
+          "label": "UFPR BBN",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_050_27-06-26_caap_hellhounds_13_x_7_macklogic_red_ascent.json",
+      "qualifier": "c1",
+      "driveId": "1NcVCL1gvCT6HQBXdezxYJOAaYkELGhCH",
+      "sha256": "2ee7ed2305a055654f8772bec601fe2f0ada9ca5575a1769a97b02305dfd6854",
+      "matchId": "0a632577-1d77-4898-b6c5-b3c4fefd430a",
+      "mapId": "Ascent",
+      "roundsCount": 20,
+      "teams": [
+        {
+          "id": "macklogic-red",
+          "label": "Macklogic Red",
+          "nameVerified": true
+        },
+        {
+          "id": "caap-hellhounds",
+          "label": "CAAP Hellhounds",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_051_27-06-26_azure_bears_black_13_x_8_macklogic_white_split.json",
+      "qualifier": "c1",
+      "driveId": "1lbW9hMxVG3_Gog1svCdhRywPY0KYdDdW",
+      "sha256": "62c7db3e6c2ce4d8df96403f417db52c4c08788b2cb05e6e54e2bf5c37fca2ce",
+      "matchId": "66e224d5-0c0b-4c8e-b276-ec29f8d51299",
+      "mapId": "Split",
+      "roundsCount": 21,
+      "teams": [
+        {
+          "id": "macklogic-white",
+          "label": "Macklogic White",
+          "nameVerified": true
+        },
+        {
+          "id": "azure-bears-black",
+          "label": "Azure Bears Black",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_052_27-06-26_azure_bears_golden_13_x_9_ufu_saints_split.json",
+      "qualifier": "c1",
+      "driveId": "1eBGY8ZPJwBFw1EqZGDSoDp_Ht9wWyj8x",
+      "sha256": "fc857de92d5bccbbe5f61030ae79262ee4d4c7847c7c735b6ed9c384a8bc80cb",
+      "matchId": "e7f9e7ce-75da-47fa-95e0-72623a8c0132",
+      "mapId": "Split",
+      "roundsCount": 22,
+      "teams": [
+        {
+          "id": "ufu-saints",
+          "label": "UFU Saints",
+          "nameVerified": true
+        },
+        {
+          "id": "azure-bears-golden",
+          "label": "Azure Bears Golden",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_053_27-06-26_unifesp_erex_1_x_13_uscs_hawks_lotus.json",
+      "qualifier": "c1",
+      "driveId": "1Z3yV7cVojScW-fLK2AX2kMkaGMuSOGTo",
+      "sha256": "6b868fee99fa975d7b086cc234454f4515684d1a795f4f07f338d4f6bae97fdb",
+      "matchId": "17d09d9a-9b1f-4eea-86f8-848bc73840b4",
+      "mapId": "Lotus",
+      "roundsCount": 14,
+      "teams": [
+        {
+          "id": "unifesp-erex",
+          "label": "UNIFESP Erex",
+          "nameVerified": true
+        },
+        {
+          "id": "uscs-hawks",
+          "label": "USCS Hawks",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_054_27-06-26_octacore_python_13_x_3_pucgo_sistematica_academy_lotus.json",
+      "qualifier": "c1",
+      "driveId": "1FOojbODxAqhmlcSnzSu70a6fhtrIwpo0",
+      "sha256": "648a5934c11d631fbc9c88574fd540db8beb900e380204c69a666a214e78682a",
+      "matchId": "efc5b638-a328-49f0-b51c-a7695d8e4923",
+      "mapId": "Lotus",
+      "roundsCount": 16,
+      "teams": [
+        {
+          "id": "pucgo-sistematica-academy",
+          "label": "PUCGO Sistematica Academy",
+          "nameVerified": true
+        },
+        {
+          "id": "octacore-python",
+          "label": "Octacore Python",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_055_27-06-26_totale_umc_13_x_6_ufmt_turuna_haven.json",
+      "qualifier": "c1",
+      "driveId": "1kjcO3ynyrthKOH5Eozq-_YJr3WGiCZWA",
+      "sha256": "778df15b755d612ef83343fbeb2dfb40e91cbcfe2a770542d88f7595bae3686b",
+      "matchId": "6265ad76-fd97-4b20-96e4-d27bfa11030b",
+      "mapId": "Haven",
+      "roundsCount": 19,
+      "teams": [
+        {
+          "id": "totale-umc",
+          "label": "Totale UMC",
+          "nameVerified": true
+        },
+        {
+          "id": "ufmt-turuna",
+          "label": "UFMT Turuna",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_056_27-06-26_ceub_octopus_13_x_1_fei_whiteowls_haven.json",
+      "qualifier": "c1",
+      "driveId": "1q8hTtPvgCga23T-DuZmPcwLtvKeLENB8",
+      "sha256": "4a21d39274697929eac164913e8ccb0491451a90e8f80123fc521cbff8ffc7e4",
+      "matchId": "715c349f-bccb-4dc1-a9d4-94fad0401692",
+      "mapId": "Haven",
+      "roundsCount": 14,
+      "teams": [
+        {
+          "id": "ceub-octopus",
+          "label": "CEUB Octopus",
+          "nameVerified": true
+        },
+        {
+          "id": "fei-whiteowls",
+          "label": "FEI Whiteowls",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_057_27-06-26_caap_hellhounds_13_x_3_caap_momentum_haven.json",
+      "qualifier": "c1",
+      "driveId": "1vafjU4L5CNGf0E-1MY3ZxBXC22PDd-Je",
+      "sha256": "0b8eb9bff6a44024f5d0d637567779f754396e822b4d95303ef0b3b9fd1e9e48",
+      "matchId": "52ca84f7-62d3-4259-9215-67b2c8f1ee16",
+      "mapId": "Haven",
+      "roundsCount": 16,
+      "teams": [
+        {
+          "id": "caap-hellhounds",
+          "label": "CAAP Hellhounds",
+          "nameVerified": true
+        },
+        {
+          "id": "caap-momentum",
+          "label": "CAAP Momentum",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_058_27-06-26_azure_bears_black_3_x_13_azure_bears_golden_breeze.json",
+      "qualifier": "c1",
+      "driveId": "1gAHxhrqjxmK0-nlPfWQ2BKlNFhiLZhsi",
+      "sha256": "a5bbc16ed612e62c3eeab8908eb11e4166f37bcf8af01aef713f4d100f46249e",
+      "matchId": "1588f7d4-7828-419e-a88d-350129bb375f",
+      "mapId": "Breeze",
+      "roundsCount": 16,
+      "teams": [
+        {
+          "id": "azure-bears-golden",
+          "label": "Azure Bears Golden",
+          "nameVerified": true
+        },
+        {
+          "id": "azure-bears-black",
+          "label": "Azure Bears Black",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_059_27-06-26_octacore_python_5_x_13_uscs_hawks_lotus.json",
+      "qualifier": "c1",
+      "driveId": "1Glph1SO594Py2rk-Gl7KEexke9patreb",
+      "sha256": "4b038e53543d28b5c75db9f4d19fd5a294358341d464db267c50d8a1233070b7",
+      "matchId": "fe3d5bbb-66e7-4cc8-83d4-f6dcead5eb36",
+      "mapId": "Lotus",
+      "roundsCount": 18,
+      "teams": [
+        {
+          "id": "uscs-hawks",
+          "label": "USCS Hawks",
+          "nameVerified": true
+        },
+        {
+          "id": "octacore-python",
+          "label": "Octacore Python",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_060_27-06-26_ceub_octopus_13_x_0_totale_umc_split.json",
+      "qualifier": "c1",
+      "driveId": "1ZyVsCRiIqA7rvA0lR7HqSA-NeVAK-vjY",
+      "sha256": "05a7130388426c73fad4e23c16de1d69302afcb4f97944d60ac2f65ed95215e8",
+      "matchId": "729b3d80-7e69-4244-aa80-06fceff0fca0",
+      "mapId": "Split",
+      "roundsCount": 13,
+      "teams": [
+        {
+          "id": "totale-umc",
+          "label": "Totale UMC",
+          "nameVerified": true
+        },
+        {
+          "id": "ceub-octopus",
+          "label": "CEUB Octopus",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_061_27-06-26_azure_bears_golden_13_x_4_caap_hellhounds_ascent.json",
+      "qualifier": "c1",
+      "driveId": "1HvwR8xW3lQA8gUfKaeQWWZTnq5QQs0Pu",
+      "sha256": "0af30a30c10a174d5453259835ff1ec297734091496b5c468cf733dba71c6e89",
+      "matchId": "1eff6c13-b5a0-4fe4-bf48-016fd5ad8d42",
+      "mapId": "Ascent",
+      "roundsCount": 17,
+      "teams": [
+        {
+          "id": "azure-bears-golden",
+          "label": "Azure Bears Golden",
+          "nameVerified": true
+        },
+        {
+          "id": "caap-hellhounds",
+          "label": "CAAP Hellhounds",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_062_27-06-26_ceub_octopus_13_x_0_uscs_hawks_ascent.json",
+      "qualifier": "c1",
+      "driveId": "1z--r9SBsBxwqQRcIcm-Xa0C5bF5n32C3",
+      "sha256": "c670c7ed4eb9e967a808a82ca7c83915f95f6e81396fb7fa78347b40e75c3623",
+      "matchId": "1c75c6ee-f5ce-4b83-ba33-40aeabf77db3",
+      "mapId": "Ascent",
+      "roundsCount": 13,
+      "teams": [
+        {
+          "id": "uscs-hawks",
+          "label": "USCS Hawks",
+          "nameVerified": true
+        },
+        {
+          "id": "ceub-octopus",
+          "label": "CEUB Octopus",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_088_27-06-26_fei_darkowls_13_x_7_homem_passaro_lotus.json",
+      "qualifier": "c1",
+      "driveId": "1MYfkOstj6N7sk-HEdlgk3Jj44Crt3PrA",
+      "sha256": "b7b80e8fd3dd5da9ae111f3b921269e7dd82f1d23c77c753bc00d016472514ea",
+      "matchId": "c6bce436-4777-4b35-a929-9a152ab5b709",
+      "mapId": "Lotus",
+      "roundsCount": 20,
+      "teams": [
+        {
+          "id": "fei-darkowls",
+          "label": "FEI Darkowls",
+          "nameVerified": true
+        },
+        {
+          "id": "homem-passaro",
+          "label": "Homem Passaro",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_092_27-06-26_octacore_javascript_3_x_13_ufg_eagles_blue_lotus.json",
+      "qualifier": "c1",
+      "driveId": "1tpbYFnoqGJvN4LUSsPJHYWBzJfQNLnk9",
+      "sha256": "6877a72b0833c0ea316203acc3248b3cc59b1bd704d760c5ac3fe3c32b381dbb",
+      "matchId": "68fd77e2-8f50-40ae-ac5f-eda2045960a8",
+      "mapId": "Lotus",
+      "roundsCount": 16,
+      "teams": [
+        {
+          "id": "ufg-eagles-blue",
+          "label": "UFG Eagles Blue",
+          "nameVerified": true
+        },
+        {
+          "id": "octacore-javascript",
+          "label": "Octacore Javascript",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_096_27-06-26_poli_plague_13_x_11_ufmg_fenix_b_pearl.json",
+      "qualifier": "c1",
+      "driveId": "1qYNmnWUetLXGj20vHhVK0kKiYDY_7dI3",
+      "sha256": "d67ec7eed437f97925c1e1460da83a76c77017153d514732346750e8a87fe2b9",
+      "matchId": "c05d5139-53c9-4b0d-9bc1-0e31c112cdc1",
+      "mapId": "Pearl",
+      "roundsCount": 24,
+      "teams": [
+        {
+          "id": "poli-plague",
+          "label": "Poli Plague",
+          "nameVerified": true
+        },
+        {
+          "id": "ufmg-fenix-b",
+          "label": "UFMG Fenix B",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_097_27-06-26_inatel_legacy_7_x_13_pucc_cardinals_ascent.json",
+      "qualifier": "c1",
+      "driveId": "1ktNR_tOjlIxrrnDLg-5ixNROlpzvFaod",
+      "sha256": "f5d2bad00c1e5af1e8171265fd9b820c2aedac7af8d9247af5814e764f58f57f",
+      "matchId": "b6d2d5a9-bd5b-4c53-a8a3-1c3a623a807a",
+      "mapId": "Ascent",
+      "roundsCount": 20,
+      "teams": [
+        {
+          "id": "pucc-cardinals",
+          "label": "PUCC Cardinals",
+          "nameVerified": true
+        },
+        {
+          "id": "inatel-legacy",
+          "label": "Inatel Legacy",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_099_27-06-26_azure_bears_silver_0_x_13_ufg_eagles_haven.json",
+      "qualifier": "c1",
+      "driveId": "1_5ct1gUt2fbsp_d4B2tyxTZvbg6UUdFk",
+      "sha256": "3220a81dc0e9c006e84e28aa9d881a4098a47d3aae071d90bf15cacca5b2a8bd",
+      "matchId": "ff74b926-e2f7-45df-9bc9-6563e808ebfb",
+      "mapId": "Haven",
+      "roundsCount": 13,
+      "teams": [
+        {
+          "id": "azure-bears-silver",
+          "label": "Azure Bears Silver",
+          "nameVerified": true
+        },
+        {
+          "id": "ufg-eagles",
+          "label": "UFG Eagles",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_100_27-06-26_ceub_octopus_vulgaris_13_x_7_fei_darkowls_lotus.json",
+      "qualifier": "c1",
+      "driveId": "16OZFXvCF4-HndgcLA05idnoHOUNID3NC",
+      "sha256": "ef1590a2211cfb3744f750904068e9d111087f2159750c7e8ed48f25d7f786f0",
+      "matchId": "0f27bb52-a8a8-48c2-9119-ef58d47e6eff",
+      "mapId": "Lotus",
+      "roundsCount": 20,
+      "teams": [
+        {
+          "id": "fei-darkowls",
+          "label": "FEI Darkowls",
+          "nameVerified": true
+        },
+        {
+          "id": "ceub-octopus-vulgaris",
+          "label": "CEUB Octopus Vulgaris",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_101_27-06-26_ufg_gc_eagles_0_x_13_wolf_gaming_ascent.json",
+      "qualifier": "c1",
+      "driveId": "16eEMIuy6IiBOs9s_HbdbeAoWib7JwnNG",
+      "sha256": "068d3b959dd45c5d62e16bbbba9838dd91aaf6e4e5614ca9a29be418dcbb5888",
+      "matchId": "6518d9d6-89bf-42ca-bfa2-4c90a8e0d5d2",
+      "mapId": "Ascent",
+      "roundsCount": 13,
+      "teams": [
+        {
+          "id": "wolf-gaming",
+          "label": "Wolf Gaming",
+          "nameVerified": true
+        },
+        {
+          "id": "ufg-gc-eagles",
+          "label": "UFG GC Eagles",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_102_27-06-26_axis_aura_13_x_10_ufg_eagles_blue_haven.json",
+      "qualifier": "c1",
+      "driveId": "1DsgrtbYEBk5fsoUFw2DAJoaShIrhBImI",
+      "sha256": "676f9cc7d4f6c737a2f7c8c0b19d28efc748c08c18580f5be9852ee656fab7bd",
+      "matchId": "a274af99-e974-42fc-b352-e15a3e359768",
+      "mapId": "Haven",
+      "roundsCount": 23,
+      "teams": [
+        {
+          "id": "axis-aura",
+          "label": "Axis Aura",
+          "nameVerified": true
+        },
+        {
+          "id": "ufg-eagles-blue",
+          "label": "UFG Eagles Blue",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_104_27-06-26_poli_plague_13_x_11_ufpr_bbn_lotus.json",
+      "qualifier": "c1",
+      "driveId": "1gJAPpXE_sy3jfb-ubH2r-1GjU83G6GyC",
+      "sha256": "9abb9fa154c572ea6bc8841c7edf56d5e9d918e9417c363e3682100071f2db98",
+      "matchId": "8ccf26e5-9a32-4ffe-8d81-7e16bc7a9d5d",
+      "mapId": "Lotus",
+      "roundsCount": 24,
+      "teams": [
+        {
+          "id": "poli-plague",
+          "label": "Poli Plague",
+          "nameVerified": true
+        },
+        {
+          "id": "ufpr-bbn",
+          "label": "UFPR BBN",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_105_27-06-26_macklogic_red_13_x_10_pucc_cardinals_ascent.json",
+      "qualifier": "c1",
+      "driveId": "1uAdut9YRey28cxFRUrmgZYsCHPOH-HAn",
+      "sha256": "6bf91241ad8e13360aa693493b3dab0414d22b2afdd36a2cd5bbc04ff6f78a19",
+      "matchId": "5f9b1638-0001-4301-a3a2-8dc89e865721",
+      "mapId": "Ascent",
+      "roundsCount": 23,
+      "teams": [
+        {
+          "id": "macklogic-red",
+          "label": "Macklogic Red",
+          "nameVerified": true
+        },
+        {
+          "id": "pucc-cardinals",
+          "label": "PUCC Cardinals",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_107_27-06-26_ufg_eagles_11_x_13_ufu_saints_lotus.json",
+      "qualifier": "c1",
+      "driveId": "111gMoeE6X_TGRmlIV3iX1f0bi1pvHkJx",
+      "sha256": "df7a148bc62697fee05587d936cbd2975be49d612a193aa827b38a88ebee4056",
+      "matchId": "dc6c3916-b397-40a1-bb78-7ca35c73d7b6",
+      "mapId": "Lotus",
+      "roundsCount": 24,
+      "teams": [
+        {
+          "id": "ufg-eagles",
+          "label": "UFG Eagles",
+          "nameVerified": true
+        },
+        {
+          "id": "ufu-saints",
+          "label": "UFU Saints",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_108_27-06-26_ceub_octopus_vulgaris_13_x_4_unifesp_erex_ascent.json",
+      "qualifier": "c1",
+      "driveId": "1YZwjS4FFdZXq5oEsAbqKm5UxkCNoL06W",
+      "sha256": "1708defe0da4df525853c77050d5cde40233e34bc8c1d88a5c660caf0453fed6",
+      "matchId": "bc6ea41f-6c2c-4a6f-bfa3-96332e6dc30b",
+      "mapId": "Ascent",
+      "roundsCount": 17,
+      "teams": [
+        {
+          "id": "ceub-octopus-vulgaris",
+          "label": "CEUB Octopus Vulgaris",
+          "nameVerified": true
+        },
+        {
+          "id": "unifesp-erex",
+          "label": "UNIFESP Erex",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_110_27-06-26_axis_aura_6_x_13_ufmt_turuna_ascent.json",
+      "qualifier": "c1",
+      "driveId": "1i5WR8l_8b1nV0Jf9fnZqVkrpmxbLStrn",
+      "sha256": "72abccd5158851d8e6f685ab72b9965641b8cfd8d871db75fb87501a6ffeb69e",
+      "matchId": "69585154-3019-4a4a-9137-cf932d7447ac",
+      "mapId": "Ascent",
+      "roundsCount": 19,
+      "teams": [
+        {
+          "id": "axis-aura",
+          "label": "Axis Aura",
+          "nameVerified": true
+        },
+        {
+          "id": "ufmt-turuna",
+          "label": "UFMT Turuna",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_111_27-06-26_fei_whiteowls_13_x_10_unicamp_tritons_red_haven.json",
+      "qualifier": "c1",
+      "driveId": "1m7cs5Iug-s-9JEZzG-Fi5Y3qY_6jSLuX",
+      "sha256": "86cfa77e946a528c1cf001a9db2083b5512a465fd05ed7fd60397c94278b45a9",
+      "matchId": "fc76b67e-09ba-4f30-b457-ee51788c74a0",
+      "mapId": "Haven",
+      "roundsCount": 23,
+      "teams": [
+        {
+          "id": "unicamp-tritons-red",
+          "label": "Unicamp Tritons Red",
+          "nameVerified": true
+        },
+        {
+          "id": "fei-whiteowls",
+          "label": "FEI Whiteowls",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_112_27-06-26_macklogic_red_13_x_2_poli_plague_haven.json",
+      "qualifier": "c1",
+      "driveId": "19Jf7uNk2-MJmTkGbqHDbErzO7Ze7BuhP",
+      "sha256": "3ed723641991e884beb5b44d6990c51238719fd6754d3229aa7588b58b627c32",
+      "matchId": "927f4e85-8fb6-42db-8862-36871ed18119",
+      "mapId": "Haven",
+      "roundsCount": 15,
+      "teams": [
+        {
+          "id": "poli-plague",
+          "label": "Poli Plague",
+          "nameVerified": true
+        },
+        {
+          "id": "macklogic-red",
+          "label": "Macklogic Red",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_114_28-06-26_ceub_octopus_vulgaris_8_x_13_wolf_gaming_ascent.json",
+      "qualifier": "c1",
+      "driveId": "1jA4auMlM_YVOLZRxBPBisUdZ-yqxT2lY",
+      "sha256": "376424ad88c7580d356db0f13706ca9a8454e3601cf183a919b59e70b433ef83",
+      "matchId": "224412d8-7b6b-4aee-bce1-e1db60f51ea8",
+      "mapId": "Ascent",
+      "roundsCount": 21,
+      "teams": [
+        {
+          "id": "ceub-octopus-vulgaris",
+          "label": "CEUB Octopus Vulgaris",
+          "nameVerified": true
+        },
+        {
+          "id": "wolf-gaming",
+          "label": "Wolf Gaming",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_115_28-06-26_fei_whiteowls_2_x_13_ufmt_turuna_haven.json",
+      "qualifier": "c1",
+      "driveId": "1Wz2gmouAm88Dh_ZqRZZTVfRSXq20XquP",
+      "sha256": "b2f68b679f66f0fad4a743025315ebab196b25a144fdd37ba95f36d9e849bc8b",
+      "matchId": "30c8cefb-3e60-4dae-9a9d-16df8eb110a1",
+      "mapId": "Haven",
+      "roundsCount": 15,
+      "teams": [
+        {
+          "id": "ufmt-turuna",
+          "label": "UFMT Turuna",
+          "nameVerified": true
+        },
+        {
+          "id": "fei-whiteowls",
+          "label": "FEI Whiteowls",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_116_28-06-26_macklogic_red_13_x_4_totale_umc_haven.json",
+      "qualifier": "c1",
+      "driveId": "1eBD_g1HXmGrRJ9isYN3eajzVIhTJZmVJ",
+      "sha256": "7f05b1d6f2a793dc0141fd274096d24772cccfd27858f86ab729992b5f1267a2",
+      "matchId": "6894091b-4990-4e3b-89ee-185291707382",
+      "mapId": "Haven",
+      "roundsCount": 17,
+      "teams": [
+        {
+          "id": "totale-umc",
+          "label": "Totale UMC",
+          "nameVerified": true
+        },
+        {
+          "id": "macklogic-red",
+          "label": "Macklogic Red",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_117_28-06-26_octacore_python_7_x_13_ufu_saints_lotus.json",
+      "qualifier": "c1",
+      "driveId": "128MEOl6OY4NCGHEd9qlrwUrPNfXDX3uz",
+      "sha256": "2782eb7d9a917e6baa51d8abc153be883cc1b205e713045cfc4d5b2d610d3b00",
+      "matchId": "d7d24c67-6b13-4c4b-8cf3-758eb72980a7",
+      "mapId": "Lotus",
+      "roundsCount": 20,
+      "teams": [
+        {
+          "id": "ufu-saints",
+          "label": "UFU Saints",
+          "nameVerified": true
+        },
+        {
+          "id": "octacore-python",
+          "label": "Octacore Python",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_118_28-06-26_azure_bears_black_11_x_13_wolf_gaming_haven.json",
+      "qualifier": "c1",
+      "driveId": "1P3u87_acZUm0FRUP_07__r8cF3_0fVs2",
+      "sha256": "9e8ac99df59b7c078f9ff80e0d9b1835bb28a11346342429f8c58275306d38b8",
+      "matchId": "dab2bc31-2300-4eab-8bfa-21faf4f27b09",
+      "mapId": "Haven",
+      "roundsCount": 24,
+      "teams": [
+        {
+          "id": "wolf-gaming",
+          "label": "Wolf Gaming",
+          "nameVerified": true
+        },
+        {
+          "id": "azure-bears-black",
+          "label": "Azure Bears Black",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_119_28-06-26_caap_momentum_8_x_13_ufmt_turuna_lotus.json",
+      "qualifier": "c1",
+      "driveId": "17gQB1T2aW0mCxlUDE6u9Qy7xy0NIZXv9",
+      "sha256": "7458f2539633e24feb6d868d1d64599f96bc0e992bf789a91bda505cf31ea423",
+      "matchId": "6339c937-5c5f-4f57-81ee-56ae339900b5",
+      "mapId": "Lotus",
+      "roundsCount": 21,
+      "teams": [
+        {
+          "id": "ufmt-turuna",
+          "label": "UFMT Turuna",
+          "nameVerified": true
+        },
+        {
+          "id": "caap-momentum",
+          "label": "CAAP Momentum",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_120_28-06-26_macklogic_red_13_x_4_ufu_saints_ascent.json",
+      "qualifier": "c1",
+      "driveId": "1FcIzH5K1xko8WArK5V4oCRcz4mM71FW-",
+      "sha256": "3006ed3f7d3a414c19542cdf6086db3adcc79361e4aa72f055933224a917210a",
+      "matchId": "d87c8611-ca56-476e-ae85-15dcd99ce81c",
+      "mapId": "Ascent",
+      "roundsCount": 17,
+      "teams": [
+        {
+          "id": "ufu-saints",
+          "label": "UFU Saints",
+          "nameVerified": true
+        },
+        {
+          "id": "macklogic-red",
+          "label": "Macklogic Red",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_121_28-06-26_ufmt_turuna_6_x_13_wolf_gaming_ascent.json",
+      "qualifier": "c1",
+      "driveId": "1y2jeieYNzuWtqXX6BIfTXO9DwJ8wHQxE",
+      "sha256": "9cb018679d6fbc4b8d2d8fe48d27fd18eb496906a91aabf00d557094443c3428",
+      "matchId": "f9c34d28-4af1-46fa-a9a9-1f9cfa55906f",
+      "mapId": "Ascent",
+      "roundsCount": 19,
+      "teams": [
+        {
+          "id": "wolf-gaming",
+          "label": "Wolf Gaming",
+          "nameVerified": true
+        },
+        {
+          "id": "ufmt-turuna",
+          "label": "UFMT Turuna",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_122_28-06-26_caap_hellhounds_9_x_13_macklogic_red_ascent.json",
+      "qualifier": "c1",
+      "driveId": "1rA96SS6k5Rv7QSyQD0IP0uSE_ebpq9a4",
+      "sha256": "4b82b896f903c8cb1c073f7b647b1f67e82080e16bb6001573e57c7ab55acd21",
+      "matchId": "32c16001-14be-4479-a982-329d7ad85afc",
+      "mapId": "Ascent",
+      "roundsCount": 22,
+      "teams": [
+        {
+          "id": "macklogic-red",
+          "label": "Macklogic Red",
+          "nameVerified": true
+        },
+        {
+          "id": "caap-hellhounds",
+          "label": "CAAP Hellhounds",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C1_123_28-06-26_uscs_hawks_15_x_17_wolf_gaming_ascent.json",
+      "qualifier": "c1",
+      "driveId": "1elg4k5ci9Y04v93ILH_KbaKf7D-4qtrp",
+      "sha256": "af6a17828e01e84e0a6f118b9a931764f5825974764f8146855255b151bd8eeb",
+      "matchId": "fdcc8977-35d4-4234-b985-eb1e5d2f3791",
+      "mapId": "Ascent",
+      "roundsCount": 32,
+      "teams": [
+        {
+          "id": "uscs-hawks",
+          "label": "USCS Hawks",
+          "nameVerified": true
+        },
+        {
+          "id": "wolf-gaming",
+          "label": "Wolf Gaming",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_002_25-07-26_caap_momentum_13_x_2_poli_plague_ascent.json",
+      "qualifier": "c2",
+      "driveId": "1IP25dHe82jGyt0mpKUxLgY_auDhu-zV_",
+      "sha256": "87ab2f8cc62f596d6db61bf7c92be209396490ef7bd8b4789ab42b1398042a17",
+      "matchId": "201f0244-1dc6-4954-bdcd-c7975075073c",
+      "mapId": "Ascent",
+      "roundsCount": 15,
+      "teams": [
+        {
+          "id": "poli-plague",
+          "label": "Poli Plague",
+          "nameVerified": true
+        },
+        {
+          "id": "caap-momentum",
+          "label": "CAAP Momentum",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_003_25-07-26_caap_auroras_4_x_13_pucc_cardinals_split.json",
+      "qualifier": "c2",
+      "driveId": "1JukPR1D2OS3pQsPnrztZOgHEkM9FTvSZ",
+      "sha256": "fc1861f6ebdf78f9701446e1fe4009a4ed02570ec56f853e34e10746b3b22fc8",
+      "matchId": "550ed86a-5778-403c-8eb8-3dfe253e997b",
+      "mapId": "Split",
+      "roundsCount": 17,
+      "teams": [
+        {
+          "id": "pucc-cardinals",
+          "label": "PUCC Cardinals",
+          "nameVerified": true
+        },
+        {
+          "id": "caap-auroras",
+          "label": "CAAP Auroras",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_004_25-07-26_inatel_gray_2_x_13_octacore_python_lotus.json",
+      "qualifier": "c2",
+      "driveId": "1yD8_45_musIcWPHjDG5lNu9ZQ5z-3amR",
+      "sha256": "7fe383dca228b8adcf5043612282c869c4e345bb774bf1ebe8e873e42590ac9a",
+      "matchId": "1666c566-3928-495c-8c29-13cf376e5264",
+      "mapId": "Lotus",
+      "roundsCount": 15,
+      "teams": [
+        {
+          "id": "inatel-gray",
+          "label": "Inatel Gray",
+          "nameVerified": true
+        },
+        {
+          "id": "octacore-python",
+          "label": "Octacore Python",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_006_25-07-26_caap_hellhounds_13_x_0_liga_vulkanica_haven.json",
+      "qualifier": "c2",
+      "driveId": "19MrefOhtLF0TOiklmdjqtssOx1Bo6WBi",
+      "sha256": "cd6a66360fd123ecbd812f3313b243a211cc27fefb4f7ae4ea685c2837e3c911",
+      "matchId": "2ea687d0-b61e-4a58-83b8-7d633f8e4e07",
+      "mapId": "Haven",
+      "roundsCount": 13,
+      "teams": [
+        {
+          "id": "caap-hellhounds",
+          "label": "CAAP Hellhounds",
+          "nameVerified": true
+        },
+        {
+          "id": "liga-vulkanica",
+          "label": "Liga Vulkanica",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_008_25-07-26_ime_wolves_red_3_x_13_uscs_hawks_ascent.json",
+      "qualifier": "c2",
+      "driveId": "1uxNTvcjTg_-W1wwGJFihLW8S7KjCTvx0",
+      "sha256": "69a715a1e2dfc738837c43d8fa2427e364eb74cb8276375dcf31550afc3aef22",
+      "matchId": "44830f76-3a0a-4fcf-85b1-2ef120fae55d",
+      "mapId": "Ascent",
+      "roundsCount": 16,
+      "teams": [
+        {
+          "id": "uscs-hawks",
+          "label": "USCS Hawks",
+          "nameVerified": true
+        },
+        {
+          "id": "ime-wolves-red",
+          "label": "IME Wolves Red",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_010_25-07-26_axis_anteaters_13_x_6_inatel_legacy_haven.json",
+      "qualifier": "c2",
+      "driveId": "1mSLOJuqQ7_nzcg5Q8N9FXy7ktKYq0Q6Q",
+      "sha256": "b760f6312bf92655d315e16f722ad711a934041a9e1ebc5b73c74f1b700f33fb",
+      "matchId": "fde5f937-22f6-4870-90c6-85c1960b2c1c",
+      "mapId": "Haven",
+      "roundsCount": 19,
+      "teams": [
+        {
+          "id": "axis-anteaters",
+          "label": "Axis Anteaters",
+          "nameVerified": true
+        },
+        {
+          "id": "inatel-legacy",
+          "label": "Inatel Legacy",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_012_25-07-26_ufmt_turuna_13_x_8_unicamp_tritons_black_lotus.json",
+      "qualifier": "c2",
+      "driveId": "1XvUB8ZStYmWOrJ89bac7wvm9GExBQe_X",
+      "sha256": "3364f5768d42b38d0e9c37b89c5903c1543deb7ebb623b48bc9ea915122097fd",
+      "matchId": "6d5008a5-f1e6-48a3-9540-728f533ef3f6",
+      "mapId": "Lotus",
+      "roundsCount": 21,
+      "teams": [
+        {
+          "id": "unicamp-tritons-black",
+          "label": "Unicamp Tritons Black",
+          "nameVerified": true
+        },
+        {
+          "id": "ufmt-turuna",
+          "label": "UFMT Turuna",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_014_25-07-26_rahnag_3_x_13_ufu_saints_ascent.json",
+      "qualifier": "c2",
+      "driveId": "16ygmHAD9bx_lj2h0yXDhYvqKHdfl_OBn",
+      "sha256": "fdc03c499f596faede9c620d289eb94e0b751102e1b75cf39d82fd1edc2e73f6",
+      "matchId": "993be9ed-d64a-487f-bf72-b7795552cd84",
+      "mapId": "Ascent",
+      "roundsCount": 16,
+      "teams": [
+        {
+          "id": "rahnag",
+          "label": "Rahnag",
+          "nameVerified": true
+        },
+        {
+          "id": "ufu-saints",
+          "label": "UFU Saints",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_016_25-07-26_a2e_uff_13_x_6_azure_bears_black_haven.json",
+      "qualifier": "c2",
+      "driveId": "1Xt3Oa6hLvnwvPBLY0j05PdeAjIRBY3gU",
+      "sha256": "96e2ea0693aba5980b5fb9157c43e4218c0d574a409bf7cdc049cfc3380713f0",
+      "matchId": "29984013-597d-42c8-9bcd-023a3b061f92",
+      "mapId": "Haven",
+      "roundsCount": 19,
+      "teams": [
+        {
+          "id": "a2e-uff",
+          "label": "A2E UFF",
+          "nameVerified": true
+        },
+        {
+          "id": "azure-bears-black",
+          "label": "Azure Bears Black",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_017_25-07-26_caap_momentum_13_x_1_inatel_dois_ascent.json",
+      "qualifier": "c2",
+      "driveId": "1Jl0WxMul9eDEeJnC-1rlqQoeforYlg6Y",
+      "sha256": "1c4fa96b1c977d5e0a4d4884ef922f2396e7eecc345365073c5f4453fbf0a159",
+      "matchId": "46ec6b35-a27e-4bb7-9b61-bf31b349690e",
+      "mapId": "Ascent",
+      "roundsCount": 14,
+      "teams": [
+        {
+          "id": "inatel-dois",
+          "label": "Inatel Dois",
+          "nameVerified": true
+        },
+        {
+          "id": "caap-momentum",
+          "label": "CAAP Momentum",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_018_25-07-26_octacore_python_9_x_13_pucc_cardinals_ascent.json",
+      "qualifier": "c2",
+      "driveId": "1PfHUQiLLHvkRHJl2N21d_HfTLSit5sWB",
+      "sha256": "1d1d792da3f714ea0315b3fbdff47a9e0c6e2896220b75b26c655fc38bb11c58",
+      "matchId": "f65a83ea-63e5-4105-a139-7cea9ae62822",
+      "mapId": "Ascent",
+      "roundsCount": 22,
+      "teams": [
+        {
+          "id": "pucc-cardinals",
+          "label": "PUCC Cardinals",
+          "nameVerified": true
+        },
+        {
+          "id": "octacore-python",
+          "label": "Octacore Python",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_019_25-07-26_caap_hellhounds_13_x_5_fei_darkowls_sunset.json",
+      "qualifier": "c2",
+      "driveId": "1ojPkh3Uf5xxdmdo0jRRRRXwOZD-k_-Ks",
+      "sha256": "ccaf7906959bcd476174cbc0055b8f76fc966d110ed01140128232a67f8aec28",
+      "matchId": "fbf58511-713e-426e-a95f-4add82abb756",
+      "mapId": "Sunset",
+      "roundsCount": 18,
+      "teams": [
+        {
+          "id": "fei-darkowls",
+          "label": "FEI Darkowls",
+          "nameVerified": true
+        },
+        {
+          "id": "caap-hellhounds",
+          "label": "CAAP Hellhounds",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_021_25-07-26_axis_anteaters_13_x_8_ceub_octopus_vulgaris_lotus.json",
+      "qualifier": "c2",
+      "driveId": "1ZxA_pN9lPiWHWhAkOS1-sWxLf6La6wpu",
+      "sha256": "591043f3a05da06105ca11a728ccda76a66c16b2871c0da5b4f8318555b9d097",
+      "matchId": "b312cbaa-dfb7-4306-b73c-b269cf0aa867",
+      "mapId": "Lotus",
+      "roundsCount": 21,
+      "teams": [
+        {
+          "id": "axis-anteaters",
+          "label": "Axis Anteaters",
+          "nameVerified": true
+        },
+        {
+          "id": "ceub-octopus-vulgaris",
+          "label": "CEUB Octopus Vulgaris",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_022_25-07-26_maua_blue_5_x_13_ufmt_turuna_ascent.json",
+      "qualifier": "c2",
+      "driveId": "171xWx0OuNKD4Avrtph-lFNE4p0bJi7nl",
+      "sha256": "99ed8ad13591b7b197a2db9b4714feb68e6db513add9a4ea72985e2eca9c12a4",
+      "matchId": "4a9fefc0-bbf3-467e-af87-162916013888",
+      "mapId": "Ascent",
+      "roundsCount": 18,
+      "teams": [
+        {
+          "id": "maua-blue",
+          "label": "Maua Blue",
+          "nameVerified": true
+        },
+        {
+          "id": "ufmt-turuna",
+          "label": "UFMT Turuna",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_023_25-07-26_green_owls_noctua_8_x_13_ufu_saints_haven.json",
+      "qualifier": "c2",
+      "driveId": "1z2uMyJ4EwFh7hLTfbYtfsEqVRerl2xAL",
+      "sha256": "04e52b97c7544ca445beadc5a4fb28b19eb485d2f271fa462e6cc44ae278d281",
+      "matchId": "582e084d-bf30-4a69-a329-ba30e5ac021e",
+      "mapId": "Haven",
+      "roundsCount": 21,
+      "teams": [
+        {
+          "id": "ufu-saints",
+          "label": "UFU Saints",
+          "nameVerified": true
+        },
+        {
+          "id": "green-owls-noctua",
+          "label": "Green Owls Noctua",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_024_25-07-26_a2e_uff_13_x_10_ufpr_bbn_ascent.json",
+      "qualifier": "c2",
+      "driveId": "18g92gLUj8gIxp32UuVz1BJ_pDPea7-n1",
+      "sha256": "10795bdab154d3cb0bad17a701a194f39e9e0dc5e873718397ea0199ada72a94",
+      "matchId": "3a1f1031-065f-4472-9d6b-95fc57a30fcf",
+      "mapId": "Ascent",
+      "roundsCount": 23,
+      "teams": [
+        {
+          "id": "ufpr-bbn",
+          "label": "UFPR BBN",
+          "nameVerified": true
+        },
+        {
+          "id": "a2e-uff",
+          "label": "A2E UFF",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_025_25-07-26_caap_momentum_6_x_13_pucc_cardinals_split.json",
+      "qualifier": "c2",
+      "driveId": "1MhT5zJN81l7LkWMfM04c8FqgnYqlAM4B",
+      "sha256": "5af7498847f8f21519265ed057fecf5b2737abf5b41aa06ea13da88d4a2bffbf",
+      "matchId": "7752dd30-5fcd-4d89-8714-c91c9cd277d1",
+      "mapId": "Split",
+      "roundsCount": 19,
+      "teams": [
+        {
+          "id": "pucc-cardinals",
+          "label": "PUCC Cardinals",
+          "nameVerified": true
+        },
+        {
+          "id": "caap-momentum",
+          "label": "CAAP Momentum",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_026_25-07-26_caap_hellhounds_13_x_6_uscs_hawks_breeze.json",
+      "qualifier": "c2",
+      "driveId": "1gEYFaWIBtskj6WridE9lyBxq-Ul1A92D",
+      "sha256": "bcf740f6b78d0ba50023ed1fccde63cc2779245a0b92359eaa1b1216d6c3f2ee",
+      "matchId": "e3345d70-c029-4acd-9f71-35795276f381",
+      "mapId": "Breeze",
+      "roundsCount": 19,
+      "teams": [
+        {
+          "id": "uscs-hawks",
+          "label": "USCS Hawks",
+          "nameVerified": true
+        },
+        {
+          "id": "caap-hellhounds",
+          "label": "CAAP Hellhounds",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_027_25-07-26_axis_anteaters_13_x_0_ufmt_turuna_lotus.json",
+      "qualifier": "c2",
+      "driveId": "1Fvp6QGgB75bFdDLYbDBm6R1H9YimPNDY",
+      "sha256": "23ea7af445139cc2bf835bd3d55c1150dbd8294edd011e32337340a6e91ab20b",
+      "matchId": "1ffd4af2-4b3a-46d3-af4f-dadecd43cf2f",
+      "mapId": "Lotus",
+      "roundsCount": 13,
+      "teams": [
+        {
+          "id": "axis-anteaters",
+          "label": "Axis Anteaters",
+          "nameVerified": true
+        },
+        {
+          "id": "ufmt-turuna",
+          "label": "UFMT Turuna",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_028_25-07-26_a2e_uff_6_x_13_ufu_saints_haven.json",
+      "qualifier": "c2",
+      "driveId": "1GiNNcBgfnmigJdwGF8DdulYqOVPUbOno",
+      "sha256": "7337bfb17f5e042904f7bb886c50607ae44e9d1e4fe16cfce3bb98eae8a52e6b",
+      "matchId": "dac6af07-0ba5-4661-9f08-6e82de6180a7",
+      "mapId": "Haven",
+      "roundsCount": 19,
+      "teams": [
+        {
+          "id": "ufu-saints",
+          "label": "UFU Saints",
+          "nameVerified": true
+        },
+        {
+          "id": "a2e-uff",
+          "label": "A2E UFF",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_029_25-07-26_caap_hellhounds_13_x_7_pucc_cardinals_haven.json",
+      "qualifier": "c2",
+      "driveId": "1XQhIdXz_3eNjD8oS_e_n0nznVn7xgtKm",
+      "sha256": "d9c14e00c57dce2f60bff3eeeb39bc675247098b91bd8027966e610e31ceaafe",
+      "matchId": "d5a367fa-0d1b-4045-89c5-090b11e6e739",
+      "mapId": "Haven",
+      "roundsCount": 20,
+      "teams": [
+        {
+          "id": "caap-hellhounds",
+          "label": "CAAP Hellhounds",
+          "nameVerified": true
+        },
+        {
+          "id": "pucc-cardinals",
+          "label": "PUCC Cardinals",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_030_25-07-26_axis_anteaters_2_x_13_ufu_saints_lotus.json",
+      "qualifier": "c2",
+      "driveId": "1DWkTkPic1JoW17UTCkCVKeaxqzT_iE8-",
+      "sha256": "23185287dbe43f5ffbd56a5e3eb433a940002ae4c3d7f97c2598b6ee681993de",
+      "matchId": "3d2b1443-5db0-44b9-b2be-de84c10a8572",
+      "mapId": "Lotus",
+      "roundsCount": 15,
+      "teams": [
+        {
+          "id": "ufu-saints",
+          "label": "UFU Saints",
+          "nameVerified": true
+        },
+        {
+          "id": "axis-anteaters",
+          "label": "Axis Anteaters",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_038_25-07-26_caap_auroras_13_x_7_inatel_gray_ascent.json",
+      "qualifier": "c2",
+      "driveId": "1QOTVoFJ7XyMlt1ewPTebbvTS0ZNWVmYU",
+      "sha256": "305f8f28ede4338b5e3bb47af98ab1b1eec5ca045e3d4591c2f616510ee208e7",
+      "matchId": "906aaf85-ba15-4e78-a1a2-6db0067cf0fd",
+      "mapId": "Ascent",
+      "roundsCount": 20,
+      "teams": [
+        {
+          "id": "inatel-gray",
+          "label": "Inatel Gray",
+          "nameVerified": true
+        },
+        {
+          "id": "caap-auroras",
+          "label": "CAAP Auroras",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_040_25-07-26_azure_bears_black_13_x_3_inatel_dois_split.json",
+      "qualifier": "c2",
+      "driveId": "19IeDO2E31xF36X0PW07U3K7XJ9vPuNkT",
+      "sha256": "19f1a005b456755e4a3f5e0792ed86680f98b0a1c2cd725f351158ec5ce7b1f1",
+      "matchId": "19955bd6-8cd9-4b7e-9159-5851fdfa0642",
+      "mapId": "Split",
+      "roundsCount": 16,
+      "teams": [
+        {
+          "id": "azure-bears-black",
+          "label": "Azure Bears Black",
+          "nameVerified": true
+        },
+        {
+          "id": "inatel-dois",
+          "label": "Inatel Dois",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_042_25-07-26_fei_darkowls_13_x_9_unicamp_tritons_black_ascent.json",
+      "qualifier": "c2",
+      "driveId": "1HrHRGYz8yvPpQtI8vi_vPp5w9oriIdLG",
+      "sha256": "571324e4c95c58cc6667ecc6b1ad6538cf0b5b2de223810647ac9883d1611c4e",
+      "matchId": "2f071590-db6f-434a-a77e-fee6017a0677",
+      "mapId": "Ascent",
+      "roundsCount": 22,
+      "teams": [
+        {
+          "id": "fei-darkowls",
+          "label": "FEI Darkowls",
+          "nameVerified": true
+        },
+        {
+          "id": "unicamp-tritons-black",
+          "label": "Unicamp Tritons Black",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_044_25-07-26_ceub_octopus_vulgaris_13_x_3_ime_wolves_red_haven.json",
+      "qualifier": "c2",
+      "driveId": "1EkeHeNvHvWgXHgGiPTFojV53bYpg9ntK",
+      "sha256": "80ac5e42137246eb2a3373b763801b357826226e35911e02ee039b4be34bbc01",
+      "matchId": "cce9b1cb-2e12-44b7-9a92-35573ad2485e",
+      "mapId": "Haven",
+      "roundsCount": 16,
+      "teams": [
+        {
+          "id": "ceub-octopus-vulgaris",
+          "label": "CEUB Octopus Vulgaris",
+          "nameVerified": true
+        },
+        {
+          "id": "ime-wolves-red",
+          "label": "IME Wolves Red",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_045_25-07-26_liga_vulkanica_4_x_13_maua_blue_lotus.json",
+      "qualifier": "c2",
+      "driveId": "1XWgsVwny7tREbbiU9_ANHpwWrmcKohbH",
+      "sha256": "e2475266aba8c9e2b4f4d9452af40f8479da8c9c4a9158a8726e528a2db9d6b5",
+      "matchId": "3e1dec35-c99e-4fe3-bcbc-cdbd5fc4340c",
+      "mapId": "Lotus",
+      "roundsCount": 17,
+      "teams": [
+        {
+          "id": "maua-blue",
+          "label": "Maua Blue",
+          "nameVerified": true
+        },
+        {
+          "id": "liga-vulkanica",
+          "label": "Liga Vulkanica",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_046_25-07-26_caap_auroras_8_x_13_green_owls_noctua_ascent.json",
+      "qualifier": "c2",
+      "driveId": "1xr6TtdbX9rMEi8cYFAJ7uBYAfF5uxz_W",
+      "sha256": "1ab9eb312cf16489f11c4641cef01981cc494fef220903e499e1bd3e044da2c6",
+      "matchId": "a409b986-a564-45fb-8037-cdef481559cc",
+      "mapId": "Ascent",
+      "roundsCount": 21,
+      "teams": [
+        {
+          "id": "green-owls-noctua",
+          "label": "Green Owls Noctua",
+          "nameVerified": true
+        },
+        {
+          "id": "caap-auroras",
+          "label": "CAAP Auroras",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_047_25-07-26_poli_plague_5_x_13_ufpr_bbn_lotus.json",
+      "qualifier": "c2",
+      "driveId": "1_7N5GMrpSnFGzp0wj29vU_cTG4lflr33",
+      "sha256": "b9beb0c5534f8f509fbe9baddaef8064eaf877c4a0e28f638b17ca694c6d6e0f",
+      "matchId": "b9f21091-df22-4639-9858-735d84d2836c",
+      "mapId": "Lotus",
+      "roundsCount": 18,
+      "teams": [
+        {
+          "id": "poli-plague",
+          "label": "Poli Plague",
+          "nameVerified": true
+        },
+        {
+          "id": "ufpr-bbn",
+          "label": "UFPR BBN",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_048_25-07-26_azure_bears_black_11_x_13_octacore_python_lotus.json",
+      "qualifier": "c2",
+      "driveId": "1z6x55cooRfZgajCGB_mwxD8oCPmtlm9d",
+      "sha256": "110df46033004bc045618ab0e556771cfd0b9d7da893625aef5e217070df4dce",
+      "matchId": "63faef84-819b-4926-8126-325b7d1db60d",
+      "mapId": "Lotus",
+      "roundsCount": 24,
+      "teams": [
+        {
+          "id": "octacore-python",
+          "label": "Octacore Python",
+          "nameVerified": true
+        },
+        {
+          "id": "azure-bears-black",
+          "label": "Azure Bears Black",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_049_25-07-26_fei_darkowls_10_x_13_inatel_legacy_lotus.json",
+      "qualifier": "c2",
+      "driveId": "1c8ogiGbpjGLltqhUBFU0TEmgaH4O7u6J",
+      "sha256": "39ab153d7bb5671bd80c02d4b4b0351a2e38a6b651138bf35ef498d105600072",
+      "matchId": "70526c7a-2d82-4291-99b3-0da8f583f1e4",
+      "mapId": "Lotus",
+      "roundsCount": 23,
+      "teams": [
+        {
+          "id": "fei-darkowls",
+          "label": "FEI Darkowls",
+          "nameVerified": true
+        },
+        {
+          "id": "inatel-legacy",
+          "label": "Inatel Legacy",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_050_25-07-26_ceub_octopus_vulgaris_9_x_13_maua_blue_haven.json",
+      "qualifier": "c2",
+      "driveId": "1fRSwG72BDRUfYHXFIeq1peM9izHCLwSm",
+      "sha256": "8dd698694e9da6e2c069e1c0bd5212075022cd70201ac7cc187d8c9cd8586b6c",
+      "matchId": "9df4e140-1706-4e1e-a92b-6a0d48f7363d",
+      "mapId": "Haven",
+      "roundsCount": 22,
+      "teams": [
+        {
+          "id": "ceub-octopus-vulgaris",
+          "label": "CEUB Octopus Vulgaris",
+          "nameVerified": true
+        },
+        {
+          "id": "maua-blue",
+          "label": "Maua Blue",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_052_26-07-26_a2e_uff_10_x_13_octacore_python_ascent.json",
+      "qualifier": "c2",
+      "driveId": "1HKLN3K7d_PRlLHod8gto37lQNi6s23mR",
+      "sha256": "2d999e0f2059a40c55bf09dae8eca9f6b76506e44e0e8b7858ffa2e4b4305b0b",
+      "matchId": "d8c125e5-c611-49c1-9c3c-cff821850439",
+      "mapId": "Ascent",
+      "roundsCount": 23,
+      "teams": [
+        {
+          "id": "a2e-uff",
+          "label": "A2E UFF",
+          "nameVerified": true
+        },
+        {
+          "id": "octacore-python",
+          "label": "Octacore Python",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_053_26-07-26_inatel_legacy_4_x_13_ufmt_turuna_lotus.json",
+      "qualifier": "c2",
+      "driveId": "1IHD2wCUp6j9KHrC0ohioK1cz-phwMe4Q",
+      "sha256": "a5029e3c8eed390417a159cc00980262130d5c746929fc8c0c092f1cb3f736bd",
+      "matchId": "454dd903-84cc-439c-b6bb-3612f3a9367c",
+      "mapId": "Lotus",
+      "roundsCount": 17,
+      "teams": [
+        {
+          "id": "ufmt-turuna",
+          "label": "UFMT Turuna",
+          "nameVerified": true
+        },
+        {
+          "id": "inatel-legacy",
+          "label": "Inatel Legacy",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_055_26-07-26_caap_momentum_9_x_13_ufpr_bbn_ascent.json",
+      "qualifier": "c2",
+      "driveId": "1D4t_-6tXtX5T0aSw3lIGv2BUkPjzCUlD",
+      "sha256": "b98963ee9970df8117003cf6e64f80861231acefb1aade6c5e168d21110d895d",
+      "matchId": "e69cfa02-7f85-44bb-a109-413dfc9e4e1c",
+      "mapId": "Ascent",
+      "roundsCount": 22,
+      "teams": [
+        {
+          "id": "ufpr-bbn",
+          "label": "UFPR BBN",
+          "nameVerified": true
+        },
+        {
+          "id": "caap-momentum",
+          "label": "CAAP Momentum",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_056_26-07-26_octacore_python_2_x_13_ufmt_turuna_ascent.json",
+      "qualifier": "c2",
+      "driveId": "1zvfTr6LcVu_VJORS9S5kF1AKSy2T5_og",
+      "sha256": "aee7177967774d6aa30b4e74d7088d3741d3f18d0f22e27b1820c86efdb29fba",
+      "matchId": "3cc2df9c-3118-41f4-afc4-54d5497a80b1",
+      "mapId": "Ascent",
+      "roundsCount": 15,
+      "teams": [
+        {
+          "id": "octacore-python",
+          "label": "Octacore Python",
+          "nameVerified": true
+        },
+        {
+          "id": "ufmt-turuna",
+          "label": "UFMT Turuna",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_057_26-07-26_ufpr_bbn_5_x_13_uscs_hawks_ascent.json",
+      "qualifier": "c2",
+      "driveId": "1bW-q2VcV9bqt1zN_tXIu9he2dCBgEoX0",
+      "sha256": "12c8e200cc4a66bb45b09a263ff842253a59ae94c6a419bf905048ae03a591e5",
+      "matchId": "0aa8678c-048e-4c58-8c5a-2f32664cf1e5",
+      "mapId": "Ascent",
+      "roundsCount": 18,
+      "teams": [
+        {
+          "id": "uscs-hawks",
+          "label": "USCS Hawks",
+          "nameVerified": true
+        },
+        {
+          "id": "ufpr-bbn",
+          "label": "UFPR BBN",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_058_26-07-26_pucc_cardinals_4_x_13_ufmt_turuna_ascent.json",
+      "qualifier": "c2",
+      "driveId": "1LIxRExiad8sqk2T_updPKGKPd5BxI03T",
+      "sha256": "54c5c5708fe4bd06e4495e6651ad0158e6f55d93335f1b24b32bdc96a8d74e3c",
+      "matchId": "be9e95d9-4be2-4c22-bd57-4c2c4c9c4859",
+      "mapId": "Ascent",
+      "roundsCount": 17,
+      "teams": [
+        {
+          "id": "pucc-cardinals",
+          "label": "PUCC Cardinals",
+          "nameVerified": true
+        },
+        {
+          "id": "ufmt-turuna",
+          "label": "UFMT Turuna",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C2_059_26-07-26_axis_anteaters_14_x_12_uscs_hawks_lotus.json",
+      "qualifier": "c2",
+      "driveId": "1NsDB0Ates_TzjNBMy_DMN_WU62OIG-OI",
+      "sha256": "9b5659e06c6017b74382c5f8803f65d80e4592f5d3c21f1bf96544d7015a509c",
+      "matchId": "05a1eecf-7f3d-4557-852a-7da1c3e7cffb",
+      "mapId": "Lotus",
+      "roundsCount": 26,
+      "teams": [
+        {
+          "id": "axis-anteaters",
+          "label": "Axis Anteaters",
+          "nameVerified": true
+        },
+        {
+          "id": "uscs-hawks",
+          "label": "USCS Hawks",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_002_15-08-26_liga_vulkanica_8_x_13_poli_plague_lotus.json",
+      "qualifier": "c3",
+      "driveId": "1i7WjE8wZEQmWR2vjvlmJhuGBj4d8mdHm",
+      "sha256": "7a4d2593d62e4d9478b5ab107eb5cf572e93433002a4f91af1947a51f8d47a61",
+      "matchId": "8a653fa9-9fa7-4a8c-8058-dd8cbecd793d",
+      "mapId": "Lotus",
+      "roundsCount": 21,
+      "teams": [
+        {
+          "id": "poli-plague",
+          "label": "Poli Plague",
+          "nameVerified": true
+        },
+        {
+          "id": "liga-vulkanica",
+          "label": "Liga Vulkanica",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_003_15-08-26_a2e_uff_2_x_13_inatel_dois_haven.json",
+      "qualifier": "c3",
+      "driveId": "1S6KwEO-I7hFzlkAq99Z23gmbadAFvftm",
+      "sha256": "fdc631614fc2acf2cf159fafb554795b601e61875b61822e2ff2ab84cc37cf1e",
+      "matchId": "a71d6684-c89a-4259-82cd-9557dd41c180",
+      "mapId": "Haven",
+      "roundsCount": 15,
+      "teams": [
+        {
+          "id": "inatel-dois",
+          "label": "Inatel Dois",
+          "nameVerified": true
+        },
+        {
+          "id": "a2e-uff",
+          "label": "A2E UFF",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_004_15-08-26_green_owls_noctua_13_x_6_unifesp_erex_ascent.json",
+      "qualifier": "c3",
+      "driveId": "1WstZo-BGDndS-DTbEGrYBrf0eqqln-Qu",
+      "sha256": "eb4b5afa5ca07fbd6320414337a2fbd6db45197a0fa6333b7c33df49e73b24cc",
+      "matchId": "e58ad304-415e-4d2b-aea7-16a9c8c037fd",
+      "mapId": "Ascent",
+      "roundsCount": 19,
+      "teams": [
+        {
+          "id": "green-owls-noctua",
+          "label": "Green Owls Noctua",
+          "nameVerified": true
+        },
+        {
+          "id": "unifesp-erex",
+          "label": "UNIFESP Erex",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_006_15-08-26_inatel_13_x_6_ufpr_bbn_lotus.json",
+      "qualifier": "c3",
+      "driveId": "1fJ_N6lfiblwxMmZvYLfclAkDFdchD25Z",
+      "sha256": "3095e1f8faa72d6758b69e7f4d6b4ded8851c0460a9951836a8a0b37170adb59",
+      "matchId": "7b4bf615-e299-42d7-a887-c44537c25f0d",
+      "mapId": "Lotus",
+      "roundsCount": 19,
+      "teams": [
+        {
+          "id": "ufpr-bbn",
+          "label": "UFPR BBN",
+          "nameVerified": true
+        },
+        {
+          "id": "inatel",
+          "label": "Inatel",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_008_15-08-26_pucgo_sistematica_5_x_13_totale_umc_haven.json",
+      "qualifier": "c3",
+      "driveId": "1MYzlBhQRsmqQ5VsYTyC4j3R2SU8dpO-7",
+      "sha256": "8268b8228d41aa3b0396cc6917132549e5368b05e63178341e89d814de7836a4",
+      "matchId": "18ce1700-bb6d-44ef-b7a2-aa3d0b7dad77",
+      "mapId": "Haven",
+      "roundsCount": 18,
+      "teams": [
+        {
+          "id": "totale-umc",
+          "label": "Totale UMC",
+          "nameVerified": true
+        },
+        {
+          "id": "pucgo-sistematica",
+          "label": "PUCGO Sistematica",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_010_15-08-26_azure_bears_silver_11_x_13_caap_malditos_sunset.json",
+      "qualifier": "c3",
+      "driveId": "1h4jVEZxbY5y0u8fR0MgcTIwd248RvZ5o",
+      "sha256": "ef2450af6cb848e7347d659dc0c3fd65d28893f8b2e8058268d6002f28d2b7e6",
+      "matchId": "de227ffa-5b8a-42a6-86e7-747887d9875c",
+      "mapId": "Sunset",
+      "roundsCount": 24,
+      "teams": [
+        {
+          "id": "azure-bears-silver",
+          "label": "Azure Bears Silver",
+          "nameVerified": true
+        },
+        {
+          "id": "caap-malditos",
+          "label": "CAAP Malditos",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_011_15-08-26_ceub_octopus_vulgaris_13_x_7_unicamp_tritons_black_sunset.json",
+      "qualifier": "c3",
+      "driveId": "1S_m9xHKDxZS0knAxgpgjTTVa232iYP4a",
+      "sha256": "9e616aaa588ee820aaa7a0f4d98d16f818d51307fbb28f7e66272180b98626c0",
+      "matchId": "03a33727-3275-4058-8891-a21885a29792",
+      "mapId": "Sunset",
+      "roundsCount": 20,
+      "teams": [
+        {
+          "id": "ceub-octopus-vulgaris",
+          "label": "CEUB Octopus Vulgaris",
+          "nameVerified": true
+        },
+        {
+          "id": "unicamp-tritons-black",
+          "label": "Unicamp Tritons Black",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_012_15-08-26_furia_utfpr_13_x_7_ufg_eagles_blue_lotus.json",
+      "qualifier": "c3",
+      "driveId": "14pP6ZvNkBec2HuhDyHQyGea5Ex1L1U32",
+      "sha256": "47ed00bac174915e4c8972d42483407a781604f45736c75a557692ece72a5be0",
+      "matchId": "d766d406-4eb2-4166-9cce-c067db61dcba",
+      "mapId": "Lotus",
+      "roundsCount": 20,
+      "teams": [
+        {
+          "id": "ufg-eagles-blue",
+          "label": "UFG Eagles Blue",
+          "nameVerified": true
+        },
+        {
+          "id": "furia-utfpr",
+          "label": "Furia UTFPR",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_014_15-08-26_azure_bears_black_13_x_6_uscs_hawks_haven.json",
+      "qualifier": "c3",
+      "driveId": "1x9dAogTzbiuXZqEsFx3NmzsuM70TU0KA",
+      "sha256": "d199b39b42ad0509eb8b699956c8ae62e783885072ae938ee78551d52f610afa",
+      "matchId": "b5157501-5829-45d1-b4da-b59156c45e9d",
+      "mapId": "Haven",
+      "roundsCount": 19,
+      "teams": [
+        {
+          "id": "uscs-hawks",
+          "label": "USCS Hawks",
+          "nameVerified": true
+        },
+        {
+          "id": "azure-bears-black",
+          "label": "Azure Bears Black",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_016_15-08-26_fei_whiteowls_1_x_13_maua_blue_haven.json",
+      "qualifier": "c3",
+      "driveId": "1ttLVjmdV-R-nVaSlylM2ukxYsZg456HS",
+      "sha256": "8fdf1dc86d975b8d0f2b66950921e08e8034d8885b484fdc6c35dada3dba029b",
+      "matchId": "05549113-5d73-4e42-bcbb-dfc1b8294c13",
+      "mapId": "Haven",
+      "roundsCount": 14,
+      "teams": [
+        {
+          "id": "fei-whiteowls",
+          "label": "FEI Whiteowls",
+          "nameVerified": true
+        },
+        {
+          "id": "maua-blue",
+          "label": "Maua Blue",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_017_15-08-26_poli_plague_13_x_11_pucgo_sistematica_academy_lotus.json",
+      "qualifier": "c3",
+      "driveId": "1luzGrttgc4hLUuVzj-JGLrD2k6-T50Ez",
+      "sha256": "bcabbe3a79a89e036286a2b8c4ea7a5d330c0a8633902d4163f4e91eea1cd90d",
+      "matchId": "d1645d9a-3027-40c7-a25f-4f653dfc2eea",
+      "mapId": "Lotus",
+      "roundsCount": 24,
+      "teams": [
+        {
+          "id": "poli-plague",
+          "label": "Poli Plague",
+          "nameVerified": true
+        },
+        {
+          "id": "pucgo-sistematica-academy",
+          "label": "PUCGO Sistematica Academy",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_018_15-08-26_green_owls_noctua_13_x_4_inatel_dois_haven.json",
+      "qualifier": "c3",
+      "driveId": "1a_Txzrklz2uhfqbol42J215zE0SzUuaP",
+      "sha256": "3bcf1349cea9e381d4f709e56ee1a1ae9d8d10921b0813ed294b3b4ff9253afe",
+      "matchId": "5b98efdc-9896-48ba-91ec-3b165872e03b",
+      "mapId": "Haven",
+      "roundsCount": 17,
+      "teams": [
+        {
+          "id": "inatel-dois",
+          "label": "Inatel Dois",
+          "nameVerified": true
+        },
+        {
+          "id": "green-owls-noctua",
+          "label": "Green Owls Noctua",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_020_15-08-26_inatel_legacy_7_x_13_totale_umc_haven.json",
+      "qualifier": "c3",
+      "driveId": "1zie5bHt76TaDvL0Vlwp53YS2Aqlj2j1w",
+      "sha256": "9c1d372e9501e3fdac9c7a61b97027b0729c0f8a4258de63e7f74893abe2aff8",
+      "matchId": "7b199d81-4bcc-466b-a9a6-f25e9eb2ddd2",
+      "mapId": "Haven",
+      "roundsCount": 20,
+      "teams": [
+        {
+          "id": "totale-umc",
+          "label": "Totale UMC",
+          "nameVerified": true
+        },
+        {
+          "id": "inatel-legacy",
+          "label": "Inatel Legacy",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_021_15-08-26_caap_malditos_13_x_6_ufmg_fenix_b_lotus.json",
+      "qualifier": "c3",
+      "driveId": "11XmlM_e7d8MYPDehHgxQSHqPdYvW_x6N",
+      "sha256": "f5113ddae8bc34efb970a1836c8608f52fcad96b0e8471a370996d73b5abc047",
+      "matchId": "71fa3332-1ce5-4496-a83d-66a72b0c978f",
+      "mapId": "Lotus",
+      "roundsCount": 19,
+      "teams": [
+        {
+          "id": "ufmg-fenix-b",
+          "label": "UFMG Fenix B",
+          "nameVerified": true
+        },
+        {
+          "id": "caap-malditos",
+          "label": "CAAP Malditos",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_022_15-08-26_ceub_octopus_vulgaris_13_x_5_furia_utfpr_split.json",
+      "qualifier": "c3",
+      "driveId": "1O_BcrB6zwtrHf2Lov0Dpl0TcHwvS8_KK",
+      "sha256": "6b7dd975c9a5509a03301e60121e5cfa006d83ef023bd52b0f2138487588e909",
+      "matchId": "898d4f25-f93f-48c4-ab69-b7cb9bbc7fdf",
+      "mapId": "Split",
+      "roundsCount": 18,
+      "teams": [
+        {
+          "id": "ceub-octopus-vulgaris",
+          "label": "CEUB Octopus Vulgaris",
+          "nameVerified": true
+        },
+        {
+          "id": "furia-utfpr",
+          "label": "Furia UTFPR",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_023_15-08-26_azure_bears_black_6_x_13_minerva_thunders_haven.json",
+      "qualifier": "c3",
+      "driveId": "1YC94xmI47oFWUbG4pWjwOUpJZtC6z0Hd",
+      "sha256": "286596345484e5ae5ad3601ba79e33069e128db3e69cd904ebf2a6fb068dda43",
+      "matchId": "dc1cfead-97b6-4e50-9e28-a3e59b26b9c4",
+      "mapId": "Haven",
+      "roundsCount": 19,
+      "teams": [
+        {
+          "id": "minerva-thunders",
+          "label": "Minerva Thunders",
+          "nameVerified": true
+        },
+        {
+          "id": "azure-bears-black",
+          "label": "Azure Bears Black",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_024_15-08-26_fei_darkowls_10_x_13_maua_blue_ascent.json",
+      "qualifier": "c3",
+      "driveId": "1rR4S8YmEjiwgBw4Ujd7f_NX3QKvyCMp-",
+      "sha256": "81f60e05653043b7c05ad6311b16f955b7c6050b03392cc794886bbcd361ded7",
+      "matchId": "cfe0fe33-b2c3-49d4-8fba-91b872a2f8a0",
+      "mapId": "Ascent",
+      "roundsCount": 23,
+      "teams": [
+        {
+          "id": "maua-blue",
+          "label": "Maua Blue",
+          "nameVerified": true
+        },
+        {
+          "id": "fei-darkowls",
+          "label": "FEI Darkowls",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_025_15-08-26_green_owls_noctua_13_x_6_poli_plague_haven.json",
+      "qualifier": "c3",
+      "driveId": "1VzbCRgt3ryUNqLWQHox2zaxEkp8GwQue",
+      "sha256": "04d6f9d0b2e625b6afccb3b38c3f9e0a4061fa336122caed440add26be42e843",
+      "matchId": "9adb9fbb-b140-468d-9db5-71c5787b4fa5",
+      "mapId": "Haven",
+      "roundsCount": 19,
+      "teams": [
+        {
+          "id": "poli-plague",
+          "label": "Poli Plague",
+          "nameVerified": true
+        },
+        {
+          "id": "green-owls-noctua",
+          "label": "Green Owls Noctua",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_026_15-08-26_inatel_11_x_13_totale_umc_ascent.json",
+      "qualifier": "c3",
+      "driveId": "1Q8JzDHt7iwEwjPUACeFvPgUpr8nobR1o",
+      "sha256": "e948cad0cfc40e0bd13abedec0c8c57d09fb04e56ccd419c8ba14e98e8a670e8",
+      "matchId": "692af88f-b34a-42e2-bd76-114fddfaa39b",
+      "mapId": "Ascent",
+      "roundsCount": 24,
+      "teams": [
+        {
+          "id": "inatel",
+          "label": "Inatel",
+          "nameVerified": true
+        },
+        {
+          "id": "totale-umc",
+          "label": "Totale UMC",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_027_15-08-26_caap_malditos_13_x_11_ceub_octopus_vulgaris_sunset.json",
+      "qualifier": "c3",
+      "driveId": "1goWln4O5I0wmNi69CHDBR5-Wbd4h4Z4Q",
+      "sha256": "95bcb068087ede49dae191c912f14a30c1870c38397812e33b0e582c80ceb608",
+      "matchId": "464827f9-2034-4fb4-98f8-9c21290f2802",
+      "mapId": "Sunset",
+      "roundsCount": 24,
+      "teams": [
+        {
+          "id": "ceub-octopus-vulgaris",
+          "label": "CEUB Octopus Vulgaris",
+          "nameVerified": true
+        },
+        {
+          "id": "caap-malditos",
+          "label": "CAAP Malditos",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_028_15-08-26_maua_blue_5_x_13_minerva_thunders_lotus.json",
+      "qualifier": "c3",
+      "driveId": "1coYdgdsVhXn3UX6ADv234NgD70fR_NFt",
+      "sha256": "5eddc7d40309024b452cccc07f18481f9d2296da9dee932e7742a5585676e5f9",
+      "matchId": "3e7a68ef-7019-4b52-8fa1-7af8eb429e1b",
+      "mapId": "Lotus",
+      "roundsCount": 18,
+      "teams": [
+        {
+          "id": "minerva-thunders",
+          "label": "Minerva Thunders",
+          "nameVerified": true
+        },
+        {
+          "id": "maua-blue",
+          "label": "Maua Blue",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_029_15-08-26_green_owls_noctua_13_x_11_totale_umc_haven.json",
+      "qualifier": "c3",
+      "driveId": "1iUcGo8nkF0UOCcunWwLaASh11s1dtYEL",
+      "sha256": "eed39ab0618ab1cff729a2a7b8d0d81f027e496446149d1a3e39fcbcf105309f",
+      "matchId": "6e9dad1e-02aa-4051-a6f6-d08065d36fd8",
+      "mapId": "Haven",
+      "roundsCount": 24,
+      "teams": [
+        {
+          "id": "totale-umc",
+          "label": "Totale UMC",
+          "nameVerified": true
+        },
+        {
+          "id": "green-owls-noctua",
+          "label": "Green Owls Noctua",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_030_15-08-26_caap_malditos_6_x_13_minerva_thunders_lotus.json",
+      "qualifier": "c3",
+      "driveId": "1Ue5pgvxq4F4HfJ0UonfP3_yBtj-V0dH5",
+      "sha256": "f85d0c6597c1c3dac2fe7babf11ba4733e717c22bb498b4b88bfa83f6494ee3d",
+      "matchId": "cedddccc-d9d0-438e-8395-76ac50eb338b",
+      "mapId": "Lotus",
+      "roundsCount": 19,
+      "teams": [
+        {
+          "id": "minerva-thunders",
+          "label": "Minerva Thunders",
+          "nameVerified": true
+        },
+        {
+          "id": "caap-malditos",
+          "label": "CAAP Malditos",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_034_15-08-26_ufg_eagles_blue_3_x_13_unicamp_tritons_black_ascent.json",
+      "qualifier": "c3",
+      "driveId": "1RZdecscAhdM6E69rlvgdLnEATzPF7SdR",
+      "sha256": "e52c1c3097d29dda468c975ee6831ead957de1ea5555e608337cd8a2e2a4cf00",
+      "matchId": "f234062e-ff72-4611-925a-34d51d029c8d",
+      "mapId": "Ascent",
+      "roundsCount": 16,
+      "teams": [
+        {
+          "id": "ufg-eagles-blue",
+          "label": "UFG Eagles Blue",
+          "nameVerified": true
+        },
+        {
+          "id": "unicamp-tritons-black",
+          "label": "Unicamp Tritons Black",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_038_15-08-26_a2e_uff_14_x_12_unifesp_erex_ascent.json",
+      "qualifier": "c3",
+      "driveId": "1yra12IRi86-K2E8uNbzq5gwHyVZwrBQq",
+      "sha256": "40f5b39ca48922e861588fc09dc78f460c8cc8458571afd7b79fe932e0030e89",
+      "matchId": "630851fd-4941-467e-adb2-df9b70f0003f",
+      "mapId": "Ascent",
+      "roundsCount": 26,
+      "teams": [
+        {
+          "id": "unifesp-erex",
+          "label": "UNIFESP Erex",
+          "nameVerified": true
+        },
+        {
+          "id": "a2e-uff",
+          "label": "A2E UFF",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_040_15-08-26_fei_whiteowls_9_x_13_pucgo_sistematica_academy_ascent.json",
+      "qualifier": "c3",
+      "driveId": "1ymheEbd9KREyo-HyzUlDAOsWoFb4x2Zn",
+      "sha256": "13ef88521bc0125c5ec06c07e76214b100a5e2dbc7221bd146258cfb8f5ce3c5",
+      "matchId": "466ce7ee-f12a-4fdf-9ba8-9deb6e01e60c",
+      "mapId": "Ascent",
+      "roundsCount": 22,
+      "teams": [
+        {
+          "id": "pucgo-sistematica-academy",
+          "label": "PUCGO Sistematica Academy",
+          "nameVerified": true
+        },
+        {
+          "id": "fei-whiteowls",
+          "label": "FEI Whiteowls",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_041_15-08-26_inatel_dois_15_x_17_uscs_hawks_split.json",
+      "qualifier": "c3",
+      "driveId": "1ShYx4CbKZsKiI4SarMfrnkuKVF89vnNU",
+      "sha256": "817e0eb3e96efbde080c30369dd8387cb5542fd84233eddffa090c820adff15b",
+      "matchId": "f7c70e91-f869-407b-a115-9bb8761afc2c",
+      "mapId": "Split",
+      "roundsCount": 32,
+      "teams": [
+        {
+          "id": "uscs-hawks",
+          "label": "USCS Hawks",
+          "nameVerified": true
+        },
+        {
+          "id": "inatel-dois",
+          "label": "Inatel Dois",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_043_15-08-26_azure_bears_silver_7_x_13_inatel_legacy_sunset.json",
+      "qualifier": "c3",
+      "driveId": "1yASEl4cCvAM03rbMV5UhumRtQc_ojkBK",
+      "sha256": "81cae882967b34c1770948da87217d8ebae23a12fc1395172ff044e30e745d73",
+      "matchId": "f58b3657-efd1-42b0-b1e3-6bb5d570b518",
+      "mapId": "Sunset",
+      "roundsCount": 20,
+      "teams": [
+        {
+          "id": "inatel-legacy",
+          "label": "Inatel Legacy",
+          "nameVerified": true
+        },
+        {
+          "id": "azure-bears-silver",
+          "label": "Azure Bears Silver",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_044_15-08-26_pucgo_sistematica_13_x_7_ufmg_fenix_b_lotus.json",
+      "qualifier": "c3",
+      "driveId": "1gIGTSUNaz96-7eNZtF2KR2QloxK50URt",
+      "sha256": "2f64dc311a10a0a7a805aaca91c6612e5187973116bad55b7378332d90ae5118",
+      "matchId": "a36e881f-d736-4df8-8f35-df00297bdf03",
+      "mapId": "Lotus",
+      "roundsCount": 20,
+      "teams": [
+        {
+          "id": "pucgo-sistematica",
+          "label": "PUCGO Sistematica",
+          "nameVerified": true
+        },
+        {
+          "id": "ufmg-fenix-b",
+          "label": "UFMG Fenix B",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_045_15-08-26_furia_utfpr_13_x_8_ufpr_bbn_ascent.json",
+      "qualifier": "c3",
+      "driveId": "1RFvEtCOWQJ1sA5bf_jfJ4fAsRM1-oEl3",
+      "sha256": "a72a8dcdd241826a2705037c3ca46169b13c2e01156f996cf8288d9f1da18d97",
+      "matchId": "8a698c76-27d6-43b2-bcc6-6ed2af391bfb",
+      "mapId": "Ascent",
+      "roundsCount": 21,
+      "teams": [
+        {
+          "id": "ufpr-bbn",
+          "label": "UFPR BBN",
+          "nameVerified": true
+        },
+        {
+          "id": "furia-utfpr",
+          "label": "Furia UTFPR",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_046_15-08-26_a2e_uff_8_x_13_azure_bears_black_ascent.json",
+      "qualifier": "c3",
+      "driveId": "1MBkzAkboJlqtxcM8EoIhQG7xnG1Cuo7x",
+      "sha256": "952c58d561bee9ea8c16ba61fc099bd0ce38a93327843e825b47cc15f9d3cee2",
+      "matchId": "50d67946-bd0b-4229-9d81-2fd85169c02f",
+      "mapId": "Ascent",
+      "roundsCount": 21,
+      "teams": [
+        {
+          "id": "azure-bears-black",
+          "label": "Azure Bears Black",
+          "nameVerified": true
+        },
+        {
+          "id": "a2e-uff",
+          "label": "A2E UFF",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_047_15-08-26_fei_darkowls_13_x_5_liga_vulkanica_lotus.json",
+      "qualifier": "c3",
+      "driveId": "16M2rv976KEDV760HByYLYckx_RR7Na_m",
+      "sha256": "3ca13e2a71b10c93488a1a9c7bd2201244bb0ef8dd3402e8453508a0f8b06b70",
+      "matchId": "7159fd9e-018d-4913-bd32-ee823e7994e4",
+      "mapId": "Lotus",
+      "roundsCount": 18,
+      "teams": [
+        {
+          "id": "fei-darkowls",
+          "label": "FEI Darkowls",
+          "nameVerified": true
+        },
+        {
+          "id": "liga-vulkanica",
+          "label": "Liga Vulkanica",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_048_15-08-26_pucgo_sistematica_academy_10_x_13_uscs_hawks_ascent.json",
+      "qualifier": "c3",
+      "driveId": "1l9vt4G0wVpret6xW-_i4RevMt-E3kSsU",
+      "sha256": "8f93e916b40de3bc6c67719720a7d10cc0d52c9ae8b74a09e89ee7a7eeef0151",
+      "matchId": "88a91554-a5cd-411b-8029-b4316f2c92eb",
+      "mapId": "Ascent",
+      "roundsCount": 23,
+      "teams": [
+        {
+          "id": "uscs-hawks",
+          "label": "USCS Hawks",
+          "nameVerified": true
+        },
+        {
+          "id": "pucgo-sistematica-academy",
+          "label": "PUCGO Sistematica Academy",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_049_15-08-26_inatel_legacy_13_x_5_unicamp_tritons_black_haven.json",
+      "qualifier": "c3",
+      "driveId": "13vGsIhT61kFrH2pHvIqfzy0XxKSN9h6A",
+      "sha256": "9380f4345067b51226e145a32cbeafb1238ae913cefb4dfef111799deac27389",
+      "matchId": "218e7837-02b4-4d06-acbb-a278544ca934",
+      "mapId": "Haven",
+      "roundsCount": 18,
+      "teams": [
+        {
+          "id": "unicamp-tritons-black",
+          "label": "Unicamp Tritons Black",
+          "nameVerified": true
+        },
+        {
+          "id": "inatel-legacy",
+          "label": "Inatel Legacy",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_050_15-08-26_furia_utfpr_13_x_11_pucgo_sistematica_lotus.json",
+      "qualifier": "c3",
+      "driveId": "1Rc1nOtWh2GnY4bB5Y0QfiZHcAEA_eaTk",
+      "sha256": "3c6f80d989d089320c2345763a883e70887792360265f947d8314dabbf7e5e31",
+      "matchId": "af7e7ac5-8a55-4eac-b820-acaa4fa6be0a",
+      "mapId": "Lotus",
+      "roundsCount": 24,
+      "teams": [
+        {
+          "id": "pucgo-sistematica",
+          "label": "PUCGO Sistematica",
+          "nameVerified": true
+        },
+        {
+          "id": "furia-utfpr",
+          "label": "Furia UTFPR",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_051_15-08-26_azure_bears_black_5_x_13_fei_darkowls_lotus.json",
+      "qualifier": "c3",
+      "driveId": "1Pkjdkfgm3r7gxOcV4EELrV3RMKWQNmrC",
+      "sha256": "99dcf2286e1378fafb7a53d5c71d0f11b56e4745a2029d497c52b6501e24278f",
+      "matchId": "2d38121a-1a49-4a95-af76-7c2621b7acf6",
+      "mapId": "Lotus",
+      "roundsCount": 18,
+      "teams": [
+        {
+          "id": "fei-darkowls",
+          "label": "FEI Darkowls",
+          "nameVerified": true
+        },
+        {
+          "id": "azure-bears-black",
+          "label": "Azure Bears Black",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_052_16-08-26_maua_blue_13_x_11_uscs_hawks_ascent.json",
+      "qualifier": "c3",
+      "driveId": "1sS9iZkMNjmn__izGXMxUzSiXgvGh6qyA",
+      "sha256": "91b72c5e2c47a24915bf8b58a1098b59335f2ea52ffc4b910217a6a352d61c78",
+      "matchId": "3299395a-3f92-454d-9a43-c8801b60e0fb",
+      "mapId": "Ascent",
+      "roundsCount": 24,
+      "teams": [
+        {
+          "id": "uscs-hawks",
+          "label": "USCS Hawks",
+          "nameVerified": true
+        },
+        {
+          "id": "maua-blue",
+          "label": "Maua Blue",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_053_16-08-26_ceub_octopus_vulgaris_3_x_13_inatel_legacy_split.json",
+      "qualifier": "c3",
+      "driveId": "1Ix7xfeCRp5DYi1oACbTI_k41j1STGZFT",
+      "sha256": "8a1d628cd7935b667507895a32561b5a91a093f29bb675d06a91eae86a6b473d",
+      "matchId": "cd483aa8-516b-4fb3-b9e0-ece5a161b937",
+      "mapId": "Split",
+      "roundsCount": 16,
+      "teams": [
+        {
+          "id": "ceub-octopus-vulgaris",
+          "label": "CEUB Octopus Vulgaris",
+          "nameVerified": true
+        },
+        {
+          "id": "inatel-legacy",
+          "label": "Inatel Legacy",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_054_16-08-26_furia_utfpr_13_x_11_inatel_lotus.json",
+      "qualifier": "c3",
+      "driveId": "1h6i3_6WE5VDjsti4evlClIucFt9oM0pw",
+      "sha256": "2d3701fbecc12896eb300b4c1e2a91f5c53d1f4c3bbe029967fd438be4483fc4",
+      "matchId": "4c0efe60-6b96-439c-8738-e1a935463eac",
+      "mapId": "Lotus",
+      "roundsCount": 24,
+      "teams": [
+        {
+          "id": "inatel",
+          "label": "Inatel",
+          "nameVerified": true
+        },
+        {
+          "id": "furia-utfpr",
+          "label": "Furia UTFPR",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_056_16-08-26_inatel_legacy_13_x_10_maua_blue_lotus.json",
+      "qualifier": "c3",
+      "driveId": "1Vu7PpQtH_QuFNEMuiuXgP2mIqmjcsOAQ",
+      "sha256": "2cdb09b5f5e02ee0e84e2effb54c8942942366726ed878e3acf0a0475371d107",
+      "matchId": "70c9514e-4760-4e0b-986e-70bc07221bc1",
+      "mapId": "Lotus",
+      "roundsCount": 23,
+      "teams": [
+        {
+          "id": "maua-blue",
+          "label": "Maua Blue",
+          "nameVerified": true
+        },
+        {
+          "id": "inatel-legacy",
+          "label": "Inatel Legacy",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_057_16-08-26_fei_darkowls_11_x_13_furia_utfpr_lotus.json",
+      "qualifier": "c3",
+      "driveId": "1lhp7rFJpLoADWt0fOduQEefz_6bhlO8U",
+      "sha256": "e86829b9c16d8724cd8d586c678107af61660d936a8c7d1196cdb8e2329d9aa7",
+      "matchId": "90b280c1-157c-4c78-b64b-c58d32de675d",
+      "mapId": "Lotus",
+      "roundsCount": 24,
+      "teams": [
+        {
+          "id": "fei-darkowls",
+          "label": "FEI Darkowls",
+          "nameVerified": true
+        },
+        {
+          "id": "furia-utfpr",
+          "label": "Furia UTFPR",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_058_16-08-26_inatel_legacy_12_x_14_totale_umc_lotus.json",
+      "qualifier": "c3",
+      "driveId": "15xjqGSxDpGoSAN9wu1VBBeVx2xOLl9TM",
+      "sha256": "98b9e707957a5078dd2f7e840a1f0b3ebd58d277eaafb39b7702444af5930a07",
+      "matchId": "21eb498e-23e4-4cc3-948b-6d631eb37e3a",
+      "mapId": "Lotus",
+      "roundsCount": 26,
+      "teams": [
+        {
+          "id": "totale-umc",
+          "label": "Totale UMC",
+          "nameVerified": true
+        },
+        {
+          "id": "inatel-legacy",
+          "label": "Inatel Legacy",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C3_059_16-08-26_caap_malditos_9_x_13_furia_utfpr_summit.json",
+      "qualifier": "c3",
+      "driveId": "1qv0Vtzz479PzPrsaUDCBqdz1mpJr70fi",
+      "sha256": "da88a6af4c0704e25901330522e12320d90dca699dec3f73df86b9a832e30f14",
+      "matchId": "304e0da1-3603-4a89-9fd4-5e6c593b5415",
+      "mapId": "Plummet",
+      "roundsCount": 22,
+      "teams": [
+        {
+          "id": "caap-malditos",
+          "label": "CAAP Malditos",
+          "nameVerified": true
+        },
+        {
+          "id": "furia-utfpr",
+          "label": "Furia UTFPR",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_002_12-09-26_pucgo_sistematica_academy_17_x_19_fatec_pg_sunset.json",
+      "qualifier": "c4",
+      "driveId": "1uLATjwjYLPQhNdG3-_g4pdbt67Qu1aFx",
+      "sha256": "261aa970d66d563c2a5ae42f7dfea1c6a5cf8f4736f766208fd3b0f97e20f44c",
+      "matchId": "560367e5-24b2-4a9e-9be0-c711ca258398",
+      "mapId": "Sunset",
+      "roundsCount": 36,
+      "teams": [
+        {
+          "id": "pucgo-sistematica-academy",
+          "label": "PUCGO Sistematica Academy",
+          "nameVerified": true
+        },
+        {
+          "id": "fatec-pg",
+          "label": "Fatec PG",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_010_12-09-26_inatel_dois_13_x_2_ufmg_fenix_b_haven.json",
+      "qualifier": "c4",
+      "driveId": "19FAKCk1BC2b1DDDUnAQl7v8YuszL-neO",
+      "sha256": "c4dad35c6bae6403114a5aea049bff556e44d6c40fa47828181704de8ce2b5cf",
+      "matchId": "eed6ab8c-eca7-4986-8b6b-74041101ef37",
+      "mapId": "Haven",
+      "roundsCount": 15,
+      "teams": [
+        {
+          "id": "inatel-dois",
+          "label": "Inatel Dois",
+          "nameVerified": true
+        },
+        {
+          "id": "ufmg-fenix-b",
+          "label": "UFMG Fenix B",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_018_12-09-26_unifesp_erex_8_x_13_liga_vulkanica_lotus.json",
+      "qualifier": "c4",
+      "driveId": "18j-gjgCv6WfR71NjHyWzeYMWZzB_exCC",
+      "sha256": "28b033ca4ae3902c74f77ffa7f528150c0be02386cf68d0f25b5429503bf341f",
+      "matchId": "8d16d0a8-7de3-4f21-98a4-ff57f6cf2687",
+      "mapId": "Lotus",
+      "roundsCount": 21,
+      "teams": [
+        {
+          "id": "unifesp-erex",
+          "label": "UNIFESP Erex",
+          "nameVerified": true
+        },
+        {
+          "id": "liga-vulkanica",
+          "label": "Liga Vulkanica",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_026_12-09-26_ufrj_minerva_11_x_13_gambiarra_ufg_lotus.json",
+      "qualifier": "c4",
+      "driveId": "1373KQBVimoNIY0NlvwLC5S79mTmRtKee",
+      "sha256": "37a70343b9aa4051d64709d77cbf38539bfff33bc9d649954ab495b3ad51c263",
+      "matchId": "49930367-6459-414d-8c59-008751ef5019",
+      "mapId": "Lotus",
+      "roundsCount": 24,
+      "teams": [
+        {
+          "id": "ufrj-minerva",
+          "label": "UFRJ Minerva",
+          "nameVerified": true
+        },
+        {
+          "id": "gambiarra-ufg",
+          "label": "Gambiarra UFG",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_033_12-09-26_pucgo_sistematica_15_x_13_fatec_pg_lotus.json",
+      "qualifier": "c4",
+      "driveId": "1CWsSGNNr4ZUhnHrox2ojK6DdGQ0JQ8w5",
+      "sha256": "449ae786b66efe22f4d2f53c6799e3febbabb0045d96a0ca0b34cb1d09cf9578",
+      "matchId": "a17ba56c-5b91-498c-9df0-b38b1e8c220a",
+      "mapId": "Lotus",
+      "roundsCount": 28,
+      "teams": [
+        {
+          "id": "fatec-pg",
+          "label": "Fatec PG",
+          "nameVerified": true
+        },
+        {
+          "id": "pucgo-sistematica",
+          "label": "PUCGO Sistematica",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_034_12-09-26_fametro_berserkers_13_x_0_caap_auroras_lotus.json",
+      "qualifier": "c4",
+      "driveId": "1kwrZOzF21nV8JROaoQNsIfY_zMqxqq56",
+      "sha256": "06c4d502c7fecc86fad514663383249838969280ecdbd00d2ec6a5faafc25896",
+      "matchId": "f6dff37e-7bcf-4100-a725-57df0c7c611d",
+      "mapId": "Lotus",
+      "roundsCount": 13,
+      "teams": [
+        {
+          "id": "caap-auroras",
+          "label": "CAAP Auroras",
+          "nameVerified": true
+        },
+        {
+          "id": "fametro-berserkers",
+          "label": "Fametro Berserkers",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_035_12-09-26_azure_bears_black_13_x_3_pucc_cardinals_split.json",
+      "qualifier": "c4",
+      "driveId": "1UJShH6CZUn4pAUh2k_E-Kh5RARwxVeQt",
+      "sha256": "22d269667f7156a13d0fa6a3f9c341e8085c1b660c62ac8962c734d5a06bbb56",
+      "matchId": "3de737bb-0d3a-4228-876f-76ac4605cf7b",
+      "mapId": "Split",
+      "roundsCount": 16,
+      "teams": [
+        {
+          "id": "azure-bears-black",
+          "label": "Azure Bears Black",
+          "nameVerified": true
+        },
+        {
+          "id": "pucc-cardinals",
+          "label": "PUCC Cardinals",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_036_12-09-26_uscs_hawks_13_x_6_panterao_gaming_lotus.json",
+      "qualifier": "c4",
+      "driveId": "15cdM-r6_8y2rIoPsF-21wq4FsXdH_QGl",
+      "sha256": "dd210f19914ed455474cfb7264ef30ce2ac0f3e9c9d4dc46a51cee2d1b2e2711",
+      "matchId": "773a2663-9fb5-4792-a7f8-21abd975b802",
+      "mapId": "Lotus",
+      "roundsCount": 19,
+      "teams": [
+        {
+          "id": "panterao-gaming",
+          "label": "Panterao Gaming",
+          "nameVerified": true
+        },
+        {
+          "id": "uscs-hawks",
+          "label": "USCS Hawks",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_037_12-09-26_green_owls_jacurutu_13_x_3_inatel_dois_haven.json",
+      "qualifier": "c4",
+      "driveId": "1L9hp2VqU9fER1ZrtWcKwxhYzJErNO2Bz",
+      "sha256": "d52c81b1d01825861f32c2a8d7fa95003825cb46c37ac22fa46e4d1555f5119d",
+      "matchId": "cd0c452c-b9a4-4147-8a2e-9c1b881be04d",
+      "mapId": "Haven",
+      "roundsCount": 16,
+      "teams": [
+        {
+          "id": "inatel-dois",
+          "label": "Inatel Dois",
+          "nameVerified": true
+        },
+        {
+          "id": "green-owls-jacurutu",
+          "label": "Green Owls Jacurutu",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_038_12-09-26_inatel_13_x_8_azure_bears_silver_sunset.json",
+      "qualifier": "c4",
+      "driveId": "1mcQjSPjGbF5Cou0_96QtCHLc4ggqs6Z-",
+      "sha256": "9109c06f566f17b0042f4eee829c02d72a7b0e00d3eeb69ef1c33b4ce63a956b",
+      "matchId": "519cf8f7-8ede-4189-b90c-bf821762120f",
+      "mapId": "Sunset",
+      "roundsCount": 21,
+      "teams": [
+        {
+          "id": "inatel",
+          "label": "Inatel",
+          "nameVerified": true
+        },
+        {
+          "id": "azure-bears-silver",
+          "label": "Azure Bears Silver",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_039_12-09-26_a2e_uff_13_x_4_unirio_krakens_abyss.json",
+      "qualifier": "c4",
+      "driveId": "1CQy553fklil4b_yJw87Xi8JVdzvDv22H",
+      "sha256": "d735a9d342d24e20aa3a57d339e88430b5b38b09c31e194dcfe324fea1a2799f",
+      "matchId": "b05ec182-4726-47d8-9dee-1e84e7fd03c2",
+      "mapId": "Abyss",
+      "roundsCount": 17,
+      "teams": [
+        {
+          "id": "unirio-krakens",
+          "label": "UNIRIO Krakens",
+          "nameVerified": true
+        },
+        {
+          "id": "a2e-uff",
+          "label": "A2E UFF",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_040_12-09-26_unicamp_tritons_black_8_x_13_ufpr_bbn_ascent.json",
+      "qualifier": "c4",
+      "driveId": "1m_QTwM0NLpnYdP5PQYnyl3YaqHqBvK9y",
+      "sha256": "db144b24df0e4a079309cda140f90239612f366bd9427f8f88a14cd7f00c1e7f",
+      "matchId": "fbc2e627-409e-459c-a338-c87397157150",
+      "mapId": "Ascent",
+      "roundsCount": 21,
+      "teams": [
+        {
+          "id": "ufpr-bbn",
+          "label": "UFPR BBN",
+          "nameVerified": true
+        },
+        {
+          "id": "unicamp-tritons-black",
+          "label": "Unicamp Tritons Black",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_041_12-09-26_usp_stars_13_x_2_liga_vulkanica_lotus.json",
+      "qualifier": "c4",
+      "driveId": "1ZqcFv30QKZQdShRGxit3JaUFLVTzbQ4W",
+      "sha256": "8e40d2cb23fd00454a066c5a350a46f557104265b2af0c03e016f833ad22e8d1",
+      "matchId": "fc92e080-4f8e-4ed6-a345-a593796d8755",
+      "mapId": "Lotus",
+      "roundsCount": 15,
+      "teams": [
+        {
+          "id": "usp-stars",
+          "label": "USP Stars",
+          "nameVerified": true
+        },
+        {
+          "id": "liga-vulkanica",
+          "label": "Liga Vulkanica",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_042_12-09-26_macklogic_white_13_x_5_ufu_saints_trigons_haven.json",
+      "qualifier": "c4",
+      "driveId": "1_toLpW6B6ZIHvoQ1I_DadQfLG9BUI679",
+      "sha256": "c662e5398dcdca174e07f526add7ed1e2f8f9ee36bd778ebfee554b4a8f93645",
+      "matchId": "bab92cd2-e522-4648-8a83-83444160c55c",
+      "mapId": "Haven",
+      "roundsCount": 18,
+      "teams": [
+        {
+          "id": "ufu-saints-trigons",
+          "label": "UFU Saints Trigons",
+          "nameVerified": true
+        },
+        {
+          "id": "macklogic-white",
+          "label": "Macklogic White",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_043_12-09-26_fei_darkowls_13_x_1_inatel_gray_ascent.json",
+      "qualifier": "c4",
+      "driveId": "1-yiFZ3u-WwQvTemYB-306uOpS1UCNK6E",
+      "sha256": "b0eddd94ea4d6553494e37bc91fc381ee869755314de4a0ab33bd027afbbc69d",
+      "matchId": "3cb451d4-1338-4584-8fdd-5d3da917119c",
+      "mapId": "Ascent",
+      "roundsCount": 14,
+      "teams": [
+        {
+          "id": "fei-darkowls",
+          "label": "FEI Darkowls",
+          "nameVerified": true
+        },
+        {
+          "id": "inatel-gray",
+          "label": "Inatel Gray",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_044_12-09-26_brutal_esports_13_x_8_sistematica_unievangelica_lotus.json",
+      "qualifier": "c4",
+      "driveId": "1Qe3FW0ERG3WViHWRZ4EUyfDsbwN0sy5J",
+      "sha256": "f7c656581cb59af7c1314c1fe71c4925321022115121fce98140c5e5b24bfe88",
+      "matchId": "55fa07e1-7c7f-4502-88f7-92caed76bdcd",
+      "mapId": "Lotus",
+      "roundsCount": 21,
+      "teams": [
+        {
+          "id": "sistematica-unievangelica",
+          "label": "Sistematica Unievangelica",
+          "nameVerified": true
+        },
+        {
+          "id": "brutal-esports",
+          "label": "Brutal Esports",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_045_12-09-26_caap_malditos_13_x_7_gambiarra_ufg_ascent.json",
+      "qualifier": "c4",
+      "driveId": "1gqkCPf5ESH7DjGjTDGiqWYiMcufet2Bm",
+      "sha256": "f89f3262f6c1447e87f30a301cbc7673e475a8acb547fcec4a277ffda963f4f1",
+      "matchId": "47b4157e-cf30-44e8-9b92-8bfc844e3e89",
+      "mapId": "Ascent",
+      "roundsCount": 20,
+      "teams": [
+        {
+          "id": "caap-malditos",
+          "label": "CAAP Malditos",
+          "nameVerified": true
+        },
+        {
+          "id": "gambiarra-ufg",
+          "label": "Gambiarra UFG",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_046_12-09-26_poli_plague_6_x_13_fei_whiteowls_lotus.json",
+      "qualifier": "c4",
+      "driveId": "1MSg9xeaTAv7jrc4a2Ykvq68gWQ45b1Ua",
+      "sha256": "7e6c6189d28c0a0e3f17a390b575eeab4ffd8c695dc27be5397be6e2c1c35df8",
+      "matchId": "c8bc36ed-fa65-4abf-902d-67f4e423e3bf",
+      "mapId": "Lotus",
+      "roundsCount": 19,
+      "teams": [
+        {
+          "id": "fei-whiteowls",
+          "label": "FEI Whiteowls",
+          "nameVerified": true
+        },
+        {
+          "id": "poli-plague",
+          "label": "Poli Plague",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_047_12-09-26_maua_blue_13_x_3_sheriff_iff_haven.json",
+      "qualifier": "c4",
+      "driveId": "1TeZ47JTz9STVJYXD0EAABFpG5AdKbmA7",
+      "sha256": "a0ddcfc0899ac4fd8c71f29d5a27e9b24db0b29841371f08034867a5615240c7",
+      "matchId": "2e0f77d6-e82a-49f9-a944-d40cc91226cf",
+      "mapId": "Haven",
+      "roundsCount": 16,
+      "teams": [
+        {
+          "id": "maua-blue",
+          "label": "Maua Blue",
+          "nameVerified": true
+        },
+        {
+          "id": "sheriff-iff",
+          "label": "Sheriff IFF",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_048_12-09-26_ceub_octopus_vulgaris_13_x_1_nox_unievangelica_sunset.json",
+      "qualifier": "c4",
+      "driveId": "1kMoeRd350jamjcVCN4NrAPK6L4W3vRdD",
+      "sha256": "6b87df93d42c7afce7f89169a89ee788df2fc8defbadca40cbca5150a7b483ca",
+      "matchId": "1fb145dd-4d58-4acb-8e8f-864dbcd5313d",
+      "mapId": "Sunset",
+      "roundsCount": 14,
+      "teams": [
+        {
+          "id": "nox-unievangelica",
+          "label": "Nox Unievangelica",
+          "nameVerified": true
+        },
+        {
+          "id": "ceub-octopus-vulgaris",
+          "label": "CEUB Octopus Vulgaris",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_049_12-09-26_pucgo_sistematica_13_x_8_fametro_berserkers_lotus.json",
+      "qualifier": "c4",
+      "driveId": "11w8E3nW38zB-tG2CtHsdUzpouUwYqyRb",
+      "sha256": "6a2291b2d1fe26d1878608021442929efe80d74b4bbeba1767a3e9f4d164f37e",
+      "matchId": "47555c2c-530b-4e41-b6ac-01057404d5dd",
+      "mapId": "Lotus",
+      "roundsCount": 21,
+      "teams": [
+        {
+          "id": "fametro-berserkers",
+          "label": "Fametro Berserkers",
+          "nameVerified": true
+        },
+        {
+          "id": "pucgo-sistematica",
+          "label": "PUCGO Sistematica",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_050_12-09-26_azure_bears_black_13_x_10_uscs_hawks_split.json",
+      "qualifier": "c4",
+      "driveId": "1BWpzj9r_0j7_2Q5BJAeyp8pmkin4eAm_",
+      "sha256": "f9591dd26d0a6e7483d1360dc17bc72a494f967b75f2a20999f3388ffe597e1e",
+      "matchId": "7cb92685-29ea-456a-b742-98d8f31d58f8",
+      "mapId": "Split",
+      "roundsCount": 23,
+      "teams": [
+        {
+          "id": "azure-bears-black",
+          "label": "Azure Bears Black",
+          "nameVerified": true
+        },
+        {
+          "id": "uscs-hawks",
+          "label": "USCS Hawks",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_051_12-09-26_green_owls_jacurutu_13_x_9_inatel_ascent.json",
+      "qualifier": "c4",
+      "driveId": "1IBpGrJxdFNAv0BxJlaQmdaw930V8C9Ig",
+      "sha256": "d93143546afba4c0042834043247babe8d8cb7172df5b1a28129124b3cfa0c3b",
+      "matchId": "ba665fd5-b579-49db-ac24-b46239641198",
+      "mapId": "Ascent",
+      "roundsCount": 22,
+      "teams": [
+        {
+          "id": "green-owls-jacurutu",
+          "label": "Green Owls Jacurutu",
+          "nameVerified": true
+        },
+        {
+          "id": "inatel",
+          "label": "Inatel",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_052_12-09-26_a2e_uff_9_x_13_ufpr_bbn_ascent.json",
+      "qualifier": "c4",
+      "driveId": "1RLuBav1F4rtPL2HKhLRnAefMtrWHDQlj",
+      "sha256": "98e0487b906c822236b496044838017ec771327049004222411fa0eb68122924",
+      "matchId": "a8147670-0125-4a1e-bcc2-26b3149096b4",
+      "mapId": "Ascent",
+      "roundsCount": 22,
+      "teams": [
+        {
+          "id": "a2e-uff",
+          "label": "A2E UFF",
+          "nameVerified": true
+        },
+        {
+          "id": "ufpr-bbn",
+          "label": "UFPR BBN",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_053_12-09-26_usp_stars_13_x_7_macklogic_white_haven.json",
+      "qualifier": "c4",
+      "driveId": "1TRl7eniKh9q1n8BEL9Rt5iFPaBXl60IE",
+      "sha256": "f2b456824adfa14cc731b3bbfbcd2aeef7d30c9b91e854c9b5ced889a421a895",
+      "matchId": "d8282745-93b7-4a7c-b5e7-873e4779e2d3",
+      "mapId": "Haven",
+      "roundsCount": 20,
+      "teams": [
+        {
+          "id": "usp-stars",
+          "label": "USP Stars",
+          "nameVerified": true
+        },
+        {
+          "id": "macklogic-white",
+          "label": "Macklogic White",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_054_12-09-26_fei_darkowls_8_x_13_brutal_esports_lotus.json",
+      "qualifier": "c4",
+      "driveId": "1IERGlNLwZGt2gWolPkvjt44uGjPq0XrJ",
+      "sha256": "568047fe122d4361355f891f3a685e7639c1f3dd1b1559c679891bd80515f3b0",
+      "matchId": "32fb6419-04c8-47a6-9740-cba17b4c2bd8",
+      "mapId": "Lotus",
+      "roundsCount": 21,
+      "teams": [
+        {
+          "id": "fei-darkowls",
+          "label": "FEI Darkowls",
+          "nameVerified": true
+        },
+        {
+          "id": "brutal-esports",
+          "label": "Brutal Esports",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_055_12-09-26_caap_malditos_13_x_6_fei_whiteowls_ascent.json",
+      "qualifier": "c4",
+      "driveId": "1wEn7MdeoALhprHSSBMfdXlRRAy4JE1uF",
+      "sha256": "81a6772218e67e295f87de771467c1156653d24fd9159e0d33ecf74dc03608de",
+      "matchId": "c39fff7d-e8d9-4010-ab53-be7e9cf09eeb",
+      "mapId": "Ascent",
+      "roundsCount": 19,
+      "teams": [
+        {
+          "id": "fei-whiteowls",
+          "label": "FEI Whiteowls",
+          "nameVerified": true
+        },
+        {
+          "id": "caap-malditos",
+          "label": "CAAP Malditos",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_056_12-09-26_maua_blue_6_x_13_ceub_octopus_vulgaris_sunset.json",
+      "qualifier": "c4",
+      "driveId": "1_7GXB5DaIQXb7NiIUzCC0KuOMTsXWvUD",
+      "sha256": "50c83498242ad8641c6f653efaa50a5e28e9f177caafff7a2086af07bac0168b",
+      "matchId": "b7f50790-a155-44e7-a2c1-ba14dec12c63",
+      "mapId": "Sunset",
+      "roundsCount": 19,
+      "teams": [
+        {
+          "id": "ceub-octopus-vulgaris",
+          "label": "CEUB Octopus Vulgaris",
+          "nameVerified": true
+        },
+        {
+          "id": "maua-blue",
+          "label": "Maua Blue",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_057_12-09-26_pucgo_sistematica_3_x_13_azure_bears_black_split.json",
+      "qualifier": "c4",
+      "driveId": "1VzC1xX1_ls6-7CEjzkE7Rvf9UBOLlzGB",
+      "sha256": "cb98c3f978fc723302fc152c81724faf887fed0352df85e5d1a57f2bf7e88817",
+      "matchId": "1ffa9320-61f0-4b0d-bf57-731c262c6e80",
+      "mapId": "Split",
+      "roundsCount": 16,
+      "teams": [
+        {
+          "id": "azure-bears-black",
+          "label": "Azure Bears Black",
+          "nameVerified": true
+        },
+        {
+          "id": "pucgo-sistematica",
+          "label": "PUCGO Sistematica",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_058_12-09-26_green_owls_jacurutu_13_x_0_ufpr_bbn_lotus.json",
+      "qualifier": "c4",
+      "driveId": "1Ehan21pKoJGIcYxeHKKZDTchw9FO06Oc",
+      "sha256": "2d56b6648c687171e3bdd3684b6d65fcdca299df9b67b3b20bd6d2fda4f982f1",
+      "matchId": "ffbebd48-659e-431d-a7c5-cadf9f5dceaa",
+      "mapId": "Lotus",
+      "roundsCount": 13,
+      "teams": [
+        {
+          "id": "green-owls-jacurutu",
+          "label": "Green Owls Jacurutu",
+          "nameVerified": true
+        },
+        {
+          "id": "ufpr-bbn",
+          "label": "UFPR BBN",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_059_12-09-26_usp_stars_13_x_6_brutal_esports_lotus.json",
+      "qualifier": "c4",
+      "driveId": "1pyabFGoClh58PgeRYlqPgSii1hVVrUTh",
+      "sha256": "3fe7ce6b4258347e9867d8f05711953b9db71d81efe299a1b839f458c2c78813",
+      "matchId": "d89e1826-76a4-4fbb-91f1-a971127ba4a2",
+      "mapId": "Lotus",
+      "roundsCount": 19,
+      "teams": [
+        {
+          "id": "usp-stars",
+          "label": "USP Stars",
+          "nameVerified": true
+        },
+        {
+          "id": "brutal-esports",
+          "label": "Brutal Esports",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_060_12-09-26_caap_malditos_7_x_13_ceub_octopus_vulgaris_sunset.json",
+      "qualifier": "c4",
+      "driveId": "1qCy1JwZYXsqJjE8V7Q88rVCBZ4myRqzb",
+      "sha256": "0356db3edb0d202961614983c5ede5681ed9bf6e3cc33b769aff1a5b9de2c1f1",
+      "matchId": "d1b9dfbf-98f9-4f94-aee4-adfa8389e4e1",
+      "mapId": "Sunset",
+      "roundsCount": 20,
+      "teams": [
+        {
+          "id": "ceub-octopus-vulgaris",
+          "label": "CEUB Octopus Vulgaris",
+          "nameVerified": true
+        },
+        {
+          "id": "caap-malditos",
+          "label": "CAAP Malditos",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_062_12-09-26_usp_stars_13_x_5_ceub_octopus_vulgaris_haven.json",
+      "qualifier": "c4",
+      "driveId": "18SnE1FIGb2Fln4taWDYjaB2v5qtk23Ou",
+      "sha256": "66a7a23e8ae97794c8dfdd689c42883437506d813c19a708b88e7050c4dd1731",
+      "matchId": "ca8290e9-82e4-43f0-b0dc-6139ca6219a9",
+      "mapId": "Haven",
+      "roundsCount": 18,
+      "teams": [
+        {
+          "id": "ceub-octopus-vulgaris",
+          "label": "CEUB Octopus Vulgaris",
+          "nameVerified": true
+        },
+        {
+          "id": "usp-stars",
+          "label": "USP Stars",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_088_12-09-26_unicamp_tritons_black_13_x_8_unifesp_erex_haven.json",
+      "qualifier": "c4",
+      "driveId": "1TYmNZDJrFb1Yg1Uq_k3OZctfL5Jm48pK",
+      "sha256": "ed8c7ac32b4cd24f5e0ca91e94e9c532ad257960250ba44dd90523d4135b7b4a",
+      "matchId": "e9b75f1b-a837-4f5c-b529-81be76a72f47",
+      "mapId": "Haven",
+      "roundsCount": 21,
+      "teams": [
+        {
+          "id": "unicamp-tritons-black",
+          "label": "Unicamp Tritons Black",
+          "nameVerified": true
+        },
+        {
+          "id": "unifesp-erex",
+          "label": "UNIFESP Erex",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_092_12-09-26_panterao_gaming_4_x_13_ufrj_minerva_abyss.json",
+      "qualifier": "c4",
+      "driveId": "1VpR-wzrvNKlT21eQ-7bjoy-Tv2cfQmZv",
+      "sha256": "eb29ef0f36eca440804770a318d456dee1c0b2fd4af06c4d8c25e75646a66f7f",
+      "matchId": "c6f1b43c-e66e-45c5-85b7-f6baffce3020",
+      "mapId": "Abyss",
+      "roundsCount": 17,
+      "teams": [
+        {
+          "id": "ufrj-minerva",
+          "label": "UFRJ Minerva",
+          "nameVerified": true
+        },
+        {
+          "id": "panterao-gaming",
+          "label": "Panterao Gaming",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_097_12-09-26_poli_plague_5_x_13_gambiarra_ufg_haven.json",
+      "qualifier": "c4",
+      "driveId": "1UQ9HZucwzMJOIR0WvoGW7IFKBooWK0cQ",
+      "sha256": "86e63e7168d5ce42ce91342ce61b9b021faa419ed1f70fd0e55d5bb5dc60fcfa",
+      "matchId": "fae0d60f-79d6-4254-8544-c7e0e12b2193",
+      "mapId": "Haven",
+      "roundsCount": 18,
+      "teams": [
+        {
+          "id": "poli-plague",
+          "label": "Poli Plague",
+          "nameVerified": true
+        },
+        {
+          "id": "gambiarra-ufg",
+          "label": "Gambiarra UFG",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_098_12-09-26_ufmg_fenix_b_13_x_8_inatel_gray_ascent.json",
+      "qualifier": "c4",
+      "driveId": "1xdmX785w2f7TJrJiGFPHUgDlbzz2qhh3",
+      "sha256": "a0d433fd075f720a4b7351da7a027087a266a64e67bac0de7776015620ff795a",
+      "matchId": "e52e73f0-e2c3-46ce-8e8a-8f6e829b29a3",
+      "mapId": "Ascent",
+      "roundsCount": 21,
+      "teams": [
+        {
+          "id": "inatel-gray",
+          "label": "Inatel Gray",
+          "nameVerified": true
+        },
+        {
+          "id": "ufmg-fenix-b",
+          "label": "UFMG Fenix B",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_099_12-09-26_ufu_saints_trigons_13_x_10_liga_vulkanica_lotus.json",
+      "qualifier": "c4",
+      "driveId": "19wCfK3iNtlK1sd45mcXQE8DyLutPP0hZ",
+      "sha256": "5e9ce0b553fc2306b3e78f56468c4cdad7c5c8a2a3139534cb2c3d87108933d7",
+      "matchId": "283acac6-7a88-442d-8487-0f6819339a5c",
+      "mapId": "Lotus",
+      "roundsCount": 23,
+      "teams": [
+        {
+          "id": "ufu-saints-trigons",
+          "label": "UFU Saints Trigons",
+          "nameVerified": true
+        },
+        {
+          "id": "liga-vulkanica",
+          "label": "Liga Vulkanica",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_100_12-09-26_unicamp_tritons_black_13_x_3_unirio_krakens_lotus.json",
+      "qualifier": "c4",
+      "driveId": "1Eo_lvT5PUuLMtbSDrKbn6PApJn_YrssZ",
+      "sha256": "3e193ef7351e96845a38bd13a43a232fe77e9e97b978abeff3348c4b37ff59fe",
+      "matchId": "60ac2fe7-bd7f-403a-832f-ddae4026cb5b",
+      "mapId": "Lotus",
+      "roundsCount": 16,
+      "teams": [
+        {
+          "id": "unicamp-tritons-black",
+          "label": "Unicamp Tritons Black",
+          "nameVerified": true
+        },
+        {
+          "id": "unirio-krakens",
+          "label": "UNIRIO Krakens",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_101_12-09-26_azure_bears_silver_13_x_11_inatel_dois_abyss.json",
+      "qualifier": "c4",
+      "driveId": "1HHlqqe3W8RvLBo1SiRqVINs0NQJbCX4D",
+      "sha256": "ef81f68d433e7218bb89487769e1667e8b4a6833798b157f4eafd21a1b805cbb",
+      "matchId": "4a184dde-1bed-479f-8fcb-a2a48fc208f0",
+      "mapId": "Abyss",
+      "roundsCount": 24,
+      "teams": [
+        {
+          "id": "azure-bears-silver",
+          "label": "Azure Bears Silver",
+          "nameVerified": true
+        },
+        {
+          "id": "inatel-dois",
+          "label": "Inatel Dois",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_102_12-09-26_ufrj_minerva_6_x_13_pucc_cardinals_abyss.json",
+      "qualifier": "c4",
+      "driveId": "14qxfi_bGS4FWvk57JIC1NjjagH_3zQtD",
+      "sha256": "b4d025cea30c8f8e14ff5f9b7af0c92c78d539c92b2e9d07b25bbc94d748951d",
+      "matchId": "8340be3e-3943-44a5-b1d4-5994eb0752fa",
+      "mapId": "Abyss",
+      "roundsCount": 19,
+      "teams": [
+        {
+          "id": "ufrj-minerva",
+          "label": "UFRJ Minerva",
+          "nameVerified": true
+        },
+        {
+          "id": "pucc-cardinals",
+          "label": "PUCC Cardinals",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_103_12-09-26_caap_auroras_1_x_13_fatec_pg_split.json",
+      "qualifier": "c4",
+      "driveId": "1xgQHLgsY737Cy6889RRfNXSy9wdkjjW_",
+      "sha256": "a3781b02bb17bada1b0aac292c2d85ff1420c417be13aaeeba04d5c01834e47d",
+      "matchId": "bfd280e0-5096-47ed-9bb1-85cd102ff31d",
+      "mapId": "Split",
+      "roundsCount": 14,
+      "teams": [
+        {
+          "id": "caap-auroras",
+          "label": "CAAP Auroras",
+          "nameVerified": true
+        },
+        {
+          "id": "fatec-pg",
+          "label": "Fatec PG",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_104_12-09-26_fametro_berserkers_13_x_6_pucgo_sistematica_academy_lotus.json",
+      "qualifier": "c4",
+      "driveId": "1EuZGZxxvkrBHD6rPV8XGg4offwvr6mgM",
+      "sha256": "89369c200ff1cc2245d6f0ad407a18c3730616133cb7fd2071e6869d46d16f9a",
+      "matchId": "f9bf172b-78f0-4ce2-8448-15a55b425d7e",
+      "mapId": "Lotus",
+      "roundsCount": 19,
+      "teams": [
+        {
+          "id": "pucgo-sistematica-academy",
+          "label": "PUCGO Sistematica Academy",
+          "nameVerified": true
+        },
+        {
+          "id": "fametro-berserkers",
+          "label": "Fametro Berserkers",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_105_12-09-26_uscs_hawks_13_x_5_gambiarra_ufg_lotus.json",
+      "qualifier": "c4",
+      "driveId": "1etba_9SV7skTKnh2iiCMHeE6b5YQNLsh",
+      "sha256": "a762cfad98ce1f7d6201bba7379131bc639dd0014f182bdabe2ef8e2245e90d6",
+      "matchId": "10750fb6-5963-419f-96ab-979010337652",
+      "mapId": "Lotus",
+      "roundsCount": 18,
+      "teams": [
+        {
+          "id": "uscs-hawks",
+          "label": "USCS Hawks",
+          "nameVerified": true
+        },
+        {
+          "id": "gambiarra-ufg",
+          "label": "Gambiarra UFG",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_106_12-09-26_inatel_13_x_3_ufmg_fenix_b_ascent.json",
+      "qualifier": "c4",
+      "driveId": "1pE_Lns25TlTYgveJcEIHS69Cgoo-Jxl8",
+      "sha256": "f387064d8e6bab93c24caac469c48e92a24a0896a06780c878212b353a481c4e",
+      "matchId": "8b95bcb1-04a1-4887-a7e1-eb313333fcd0",
+      "mapId": "Ascent",
+      "roundsCount": 16,
+      "teams": [
+        {
+          "id": "inatel",
+          "label": "Inatel",
+          "nameVerified": true
+        },
+        {
+          "id": "ufmg-fenix-b",
+          "label": "UFMG Fenix B",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_107_12-09-26_a2e_uff_13_x_5_ufu_saints_trigons_haven.json",
+      "qualifier": "c4",
+      "driveId": "1Or051O7jQYiQ1NyoQQsZIe795BDyeFh6",
+      "sha256": "5af95a267bf39fd7ac80118a110958b775ae929e911f45440daa1caff090c5a5",
+      "matchId": "807010c0-522f-4bea-b587-5b7db8d33279",
+      "mapId": "Haven",
+      "roundsCount": 18,
+      "teams": [
+        {
+          "id": "a2e-uff",
+          "label": "A2E UFF",
+          "nameVerified": true
+        },
+        {
+          "id": "ufu-saints-trigons",
+          "label": "UFU Saints Trigons",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_108_12-09-26_macklogic_white_13_x_11_unicamp_tritons_black_ascent.json",
+      "qualifier": "c4",
+      "driveId": "1buy1XZnh3t-aX-3NeLjYzfHAqrpcNx19",
+      "sha256": "4712e3a1a6bf62eed500c005e490030e56d763b9c4ca3e55500f42e0d66d3b99",
+      "matchId": "df55ab2c-5a3b-4e49-b40f-62627fbea176",
+      "mapId": "Ascent",
+      "roundsCount": 24,
+      "teams": [
+        {
+          "id": "macklogic-white",
+          "label": "Macklogic White",
+          "nameVerified": true
+        },
+        {
+          "id": "unicamp-tritons-black",
+          "label": "Unicamp Tritons Black",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_109_12-09-26_fei_darkowls_13_x_3_azure_bears_silver_sunset.json",
+      "qualifier": "c4",
+      "driveId": "1slvwyNj_cdBgebSnkfwhma4K4sKEo9fx",
+      "sha256": "68be8e0866de822f28b45a4baa6ac3e4b3e0d4ac2d07240ea91de4ebb5110fcd",
+      "matchId": "5bb111ed-de95-4d13-9de8-e550d3487d41",
+      "mapId": "Sunset",
+      "roundsCount": 16,
+      "teams": [
+        {
+          "id": "azure-bears-silver",
+          "label": "Azure Bears Silver",
+          "nameVerified": true
+        },
+        {
+          "id": "fei-darkowls",
+          "label": "FEI Darkowls",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_110_12-09-26_fei_whiteowls_4_x_13_pucc_cardinals_split.json",
+      "qualifier": "c4",
+      "driveId": "1nlOUbYZYhs3mY2YRT6wwGX9aHZXUDM-Q",
+      "sha256": "edeffba863de96d92690ad931a4bfed3db04e8e83c315a5ac96ee21474f19abd",
+      "matchId": "b0af34ce-6c49-4cf8-96f4-953061ad8f72",
+      "mapId": "Split",
+      "roundsCount": 17,
+      "teams": [
+        {
+          "id": "pucc-cardinals",
+          "label": "PUCC Cardinals",
+          "nameVerified": true
+        },
+        {
+          "id": "fei-whiteowls",
+          "label": "FEI Whiteowls",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_111_12-09-26_maua_blue_16_x_14_fatec_pg_haven.json",
+      "qualifier": "c4",
+      "driveId": "1_49fp8WIbY8D_TPleWb80VgyzBpoewL1",
+      "sha256": "bba21d53cd750f08d86dc41b7829e3314ee24162f892b74c7be679e488eca89d",
+      "matchId": "9c6f85e2-8eb5-422b-8831-0b41242a3c64",
+      "mapId": "Haven",
+      "roundsCount": 30,
+      "teams": [
+        {
+          "id": "fatec-pg",
+          "label": "Fatec PG",
+          "nameVerified": true
+        },
+        {
+          "id": "maua-blue",
+          "label": "Maua Blue",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_112_12-09-26_fametro_berserkers_13_x_8_uscs_hawks_lotus.json",
+      "qualifier": "c4",
+      "driveId": "11e71ouLcVnWPjGdDeCkNNRVZS8m-4izL",
+      "sha256": "13d064736345a15c5dfc27a0f442a325709b656311384934aba7248901751dc7",
+      "matchId": "92e8617e-d410-47f4-96a2-5b4979abfc78",
+      "mapId": "Lotus",
+      "roundsCount": 21,
+      "teams": [
+        {
+          "id": "uscs-hawks",
+          "label": "USCS Hawks",
+          "nameVerified": true
+        },
+        {
+          "id": "fametro-berserkers",
+          "label": "Fametro Berserkers",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_113_12-09-26_inatel_5_x_13_a2e_uff_haven.json",
+      "qualifier": "c4",
+      "driveId": "1O9BgkYcCQUdP6t6OnRmo67XPahxLNGV5",
+      "sha256": "da35734a1e9390249800615e8da07503b2c32876f92fb429e10a80022df45618",
+      "matchId": "5f1363dc-c30c-449f-9a22-0985460a444b",
+      "mapId": "Haven",
+      "roundsCount": 18,
+      "teams": [
+        {
+          "id": "a2e-uff",
+          "label": "A2E UFF",
+          "nameVerified": true
+        },
+        {
+          "id": "inatel",
+          "label": "Inatel",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_114_12-09-26_macklogic_white_11_x_13_fei_darkowls_ascent.json",
+      "qualifier": "c4",
+      "driveId": "18b_1vFIecdsEBWYdNKneDSq35rEo65MT",
+      "sha256": "3a9673f71e39b21c1c2ba1fdc73db647fa49cd446eaa7d8cc72fb3acd8fd3426",
+      "matchId": "f0345b5b-07ca-4cd4-9850-84a6c594f873",
+      "mapId": "Ascent",
+      "roundsCount": 24,
+      "teams": [
+        {
+          "id": "fei-darkowls",
+          "label": "FEI Darkowls",
+          "nameVerified": true
+        },
+        {
+          "id": "macklogic-white",
+          "label": "Macklogic White",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_115_12-09-26_pucc_cardinals_2_x_13_maua_blue_ascent.json",
+      "qualifier": "c4",
+      "driveId": "1ZcRdFuoKDMyktOjhuXg-EgV0Nkre0o7D",
+      "sha256": "24b7758be203682cd1d78a7bc2053b485556b1a9528d8683876d0152fa8dd034",
+      "matchId": "904ea7bc-5f8b-4f7a-b3fb-60b60c576f9b",
+      "mapId": "Ascent",
+      "roundsCount": 15,
+      "teams": [
+        {
+          "id": "pucc-cardinals",
+          "label": "PUCC Cardinals",
+          "nameVerified": true
+        },
+        {
+          "id": "maua-blue",
+          "label": "Maua Blue",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_116_13-09-26_caap_malditos_13_x_11_fametro_berserkers_ascent.json",
+      "qualifier": "c4",
+      "driveId": "1u8LRsZL9MYEf4W2MalfIEw48MErrsBi0",
+      "sha256": "4d87515c33c1ef863baeef38972b155360e10b06e42ef8a91dd7a8768694aad7",
+      "matchId": "f4c01b9e-c84b-431a-bfed-0a0b823fa4ef",
+      "mapId": "Ascent",
+      "roundsCount": 24,
+      "teams": [
+        {
+          "id": "caap-malditos",
+          "label": "CAAP Malditos",
+          "nameVerified": true
+        },
+        {
+          "id": "fametro-berserkers",
+          "label": "Fametro Berserkers",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_117_13-09-26_brutal_esports_6_x_13_a2e_uff_sunset.json",
+      "qualifier": "c4",
+      "driveId": "1dXOE4xORvj96B_6ZXXm_TmmsSyZvI5vR",
+      "sha256": "8a3cb4645b2a82826d62513b2d0d8119ae126161070984524ae5fff8f421b149",
+      "matchId": "3a3caa92-b861-4d32-b51d-2680727cedcd",
+      "mapId": "Sunset",
+      "roundsCount": 19,
+      "teams": [
+        {
+          "id": "a2e-uff",
+          "label": "A2E UFF",
+          "nameVerified": true
+        },
+        {
+          "id": "brutal-esports",
+          "label": "Brutal Esports",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_118_13-09-26_ufpr_bbn_3_x_13_fei_darkowls_ascent.json",
+      "qualifier": "c4",
+      "driveId": "1DY68TzkS6mkbDqXxeQ3pTMIyg0coURia",
+      "sha256": "a20a40f16d2905020c93b4e2b4e7c255d3a1bccbd218cdaf3b57de75ef313027",
+      "matchId": "50e69ed1-38f2-4250-9796-8810b88c77b8",
+      "mapId": "Ascent",
+      "roundsCount": 16,
+      "teams": [
+        {
+          "id": "fei-darkowls",
+          "label": "FEI Darkowls",
+          "nameVerified": true
+        },
+        {
+          "id": "ufpr-bbn",
+          "label": "UFPR BBN",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_119_13-09-26_pucgo_sistematica_13_x_9_maua_blue_ascent.json",
+      "qualifier": "c4",
+      "driveId": "1cCcoR-uCimOFQru5oacw-JOdJ4NounUf",
+      "sha256": "ef5f1104f54e0a6caf8be8185385c869d668fca5ab9ec108a3b3ba9598fd3233",
+      "matchId": "08526ee3-9fef-48ce-82d8-2fa20e3c4066",
+      "mapId": "Ascent",
+      "roundsCount": 22,
+      "teams": [
+        {
+          "id": "maua-blue",
+          "label": "Maua Blue",
+          "nameVerified": true
+        },
+        {
+          "id": "pucgo-sistematica",
+          "label": "PUCGO Sistematica",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_120_13-09-26_caap_malditos_13_x_5_a2e_uff_abyss.json",
+      "qualifier": "c4",
+      "driveId": "113rm2vTFrPo10Ntd8alZewEyyc57qRnc",
+      "sha256": "a65b85a22d04376911a7dada509971ecb946ab06bc68d9ea52a04ee78c41b257",
+      "matchId": "88867051-ae53-4375-b8bc-8c7309e94211",
+      "mapId": "Abyss",
+      "roundsCount": 18,
+      "teams": [
+        {
+          "id": "caap-malditos",
+          "label": "CAAP Malditos",
+          "nameVerified": true
+        },
+        {
+          "id": "a2e-uff",
+          "label": "A2E UFF",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_121_13-09-26_fei_darkowls_13_x_6_pucgo_sistematica_sunset.json",
+      "qualifier": "c4",
+      "driveId": "1kcBfq1X8YhCPDchRWgz07ulC8xWf89kh",
+      "sha256": "5bb5c4feff9b2f36914f850691746f8dc2558cca17852fb4b5ed058c4bd724fa",
+      "matchId": "68cd217b-5c92-48b7-9e6d-a7ff59f3d147",
+      "mapId": "Sunset",
+      "roundsCount": 19,
+      "teams": [
+        {
+          "id": "fei-darkowls",
+          "label": "FEI Darkowls",
+          "nameVerified": true
+        },
+        {
+          "id": "pucgo-sistematica",
+          "label": "PUCGO Sistematica",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_122_13-09-26_green_owls_jacurutu_13_x_7_caap_malditos_sunset.json",
+      "qualifier": "c4",
+      "driveId": "11m2nwGcsyvS7ZDNHDu2oYywzvCtmrWid",
+      "sha256": "9685609fbbb98174ba271a23f2b9dd56a8d2492bece9643e87d04d0c29022c20",
+      "matchId": "69586366-bc7a-4c73-9365-6c3b659703a8",
+      "mapId": "Sunset",
+      "roundsCount": 20,
+      "teams": [
+        {
+          "id": "caap-malditos",
+          "label": "CAAP Malditos",
+          "nameVerified": true
+        },
+        {
+          "id": "green-owls-jacurutu",
+          "label": "Green Owls Jacurutu",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    },
+    {
+      "file": "UNIVAVA_C4_123_13-09-26_ceub_octopus_vulgaris_13_x_5_fei_darkowls_haven.json",
+      "qualifier": "c4",
+      "driveId": "1Ed0_fUi9q7hRYXnUvRVXHNpGwDB9Gtte",
+      "sha256": "d7dd33adb9703a6e7d0b7ab04c7dd4f7da234c444906569ccdf5388034ea58f3",
+      "matchId": "77b6c853-21c9-4456-8576-55c005d42d27",
+      "mapId": "Haven",
+      "roundsCount": 18,
+      "teams": [
+        {
+          "id": "fei-darkowls",
+          "label": "FEI Darkowls",
+          "nameVerified": true
+        },
+        {
+          "id": "ceub-octopus-vulgaris",
+          "label": "CEUB Octopus Vulgaris",
+          "nameVerified": true
+        }
+      ],
+      "issues": []
+    }
+  ],
+  "duplicates": [],
+  "excluded": [],
+  "ambiguousTeams": []
+}
