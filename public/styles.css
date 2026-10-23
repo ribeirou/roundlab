@@ -827,13 +827,25 @@ code {
     display: none !important;
   }
   .panel {
-    border: 1px solid #ccc;
+    border: 1px solid #444;
     background: #fff;
     color: #000;
   }
+  .panel-title,
+  .panel-subtitle,
+  .agenda-block-label,
+  .label-hint,
+  code {
+    color: #111 !important;
+  }
+  .badge {
+    border: 1px solid #222 !important;
+    background: #f1f5f9 !important;
+    color: #000 !important;
+  }
   .agenda-card,
   .agenda-block {
-    border: 1px solid #999;
+    border: 1px solid #666;
     background: #fff;
     color: #000;
     break-inside: avoid;
